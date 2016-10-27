@@ -1,0 +1,67 @@
+/*背景*/
+
+.wrapper {
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(254, 205, 82);
+    overflow: auto;
+}
+
+
+/*初始化*/
+
+.container {
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB";
+    color: rgb(42, 31, 27);
+}
+
+h2,
+div {
+    text-align: center;
+}
+
+
+/*问题容器*/
+
+.question {
+    margin-top: 21px;
+    height: auto;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 3px solid #666;
+    text-align: left;
+    /*width: auto;*/
+}
+
+
+/*答案容器*/
+
+.answer {
+    display: none;
+    text-align: left;
+    background-color: black;
+    color: #EEE;
+    font-weight: normal;
+    font-family: "微软雅黑";
+    padding: 0 15px;
+    margin: 0 -15px;
+    height: auto;
+}
+
+
+/*问题事件设置*/
+
+.question:hover .answer {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    overflow: auto;
+}
+
+/*最后一个问题的答案*/
+#lastAnswer{
+    margin-top: -180px;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0096)file:///Users/LinK/Desktop/%E6%9E%81%E5%AE%A2%E5%AD%A6%E9%99%A2%E9%A6%96%E9%A1%B5/JiKeIndex.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>极客学院IT在线教育平台</title>
+    <style>
+    /*初始化*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*包装*/
+    
+    .wrapper {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        min-width: 1200px;
+        min-height: 3000px;
+    }
+    /*第一列的容器*/
+    
+    .wraFirst {
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        width: 1000px;
+        min-width: 750px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    /*logo属性*/
+    
+    .wraFirst .logo {
+        float: left;
+        display: inline-block;
+        width: 113px;
+        height: 42px;
+        margin-top: 4px;
+        background-image: url(./Images/logo.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        vertical-align: center;
+    }
+    /*搜索栏*/
+    
+    .wraFirst .searchBar {
+        position: absolute;
+        width: 380px;
+        left: 50%;
+        border: 1px solid #e4e4e4;
+        border-right: none;
+        text-align: left;
+        margin: 5px 0 0 -190px;
+        height: 38px;
+        line-height: 38px;
+    }
+    /*搜索栏中的搜索框*/
+    
+    .wraFirst .searchBar .searchField {
+        float: left;
+        height: 18px;
+        width: 300px;
+        padding: 10px 25px 8px 15px;
+        border: none;
+        outline: none;
+        line-height: 18px;
+        color: #333;
+        background: #fff;
+        font-size: 12px;
+        text-align: left;
+    }
+    
+    .wraFirst .searchBar .searchField:visited + .searchBtn {
+        border: 1px solid #35b558;
+        background: #35b558 url(./Images/Magnifiers_transparent.png) center center no-repeat;
+    }
+    /*搜索栏中的按钮*/
+    
+    .wraFirst .searchBar .searchBtn {
+        float: left;
+        background-color: green;
+        background: url(./Images/Magnifiers.png) center center no-repeat;
+        border: 1px solid #e4e4e4;
+        height: 40px;
+        width: 40px;
+        margin-top: -1px;
+        margin-right: -1px;
+        outline: none;
+    }
+    
+    .wraFirst .searchBar .searchBtn:hover {
+        border: 1px solid #35b558;
+        background: #35b558 url(./Images/Magnifiers_transparent.png) center center no-repeat;
+    }
+    /*搜索栏中的热门关键字容器*/
+    
+    .wraFirst .searchBar .keyWordBox {
+        position: absolute;
+        top: 9px;
+        right: 51px;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+    }
+    /*搜索栏中的热门关键字*/
+    
+    .wraFirst .searchBar .keyWordBox a {
+        display: inline-block;
+        padding: 1px 3px;
+        margin-left: 5px;
+        color: gray;
+        background: #f3f3f3;
+        text-decoration: none;
+        font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    }
+    
+    .wraFirst .searchBar .keyWordBox a:hover {
+        color: #333;
+        background: #dfdfdf;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 包装 -->
+    <div class="wrapper">
+        <!-- 第一列 -->
+        <div class="wraFirst">
+            <!-- logo -->
+            <a href="http://www.jikexueyuan.com/" class="logo">
+            </a>
+            <!-- logo end -->
+            <!-- searchBar -->
+            <div class="searchBar">
+                <!-- 还没学到的跳转模块 -->
+                <form action="http://search.jikexueyuan.com/course/" method="get" target="_self">
+                    <!-- 搜索框 -->
+                    <input class="searchField" type="text" name="q" placeholder="搜索课程、问答或Wiki">
+                    <!-- 搜索按钮 -->
+                    <button class="searchBtn" type="submit"></button>
+                    <!-- 搜索按钮 end -->
+                </form>
+                <!-- 还没学到的跳转模块 end -->
+                <!-- 热门关键字 -->
+                <div class="keyWordBox">
+                    <a href="http://search.jikexueyuan.com/course/?q=Android">Android</a>
+                    <a href="http://search.jikexueyuan.com/course/?q=iOS">iOS</a>
+                    <a href="http://search.jikexueyuan.com/course/?q=HTML5">HTML5</a>
+                </div>
+                <!-- 热门关键字 end -->
+            </div>
+            <!-- searchBar end -->
+        </div>
+        <!-- 第一列 end -->
+    </div>
+    <!-- 包装 end -->
+
+
+
+</body></html>

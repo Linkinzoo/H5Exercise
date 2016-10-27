@@ -1,0 +1,3149 @@
+/*包装*/
+
+.wrapper {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    min-height: 3000px;
+}
+
+
+/******************************* 第一部分：header容器 *******************************/
+
+.wraFirst {
+    position: relative;
+    min-height: 50px;
+    width: 1000px;
+    min-width: 750px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+/*logo属性*/
+
+.wraFirst .logo {
+    float: left;
+    display: inline-block;
+    width: 113px;
+    height: 42px;
+    margin-top: 4px;
+    background-image: url(../Images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    vertical-align: center;
+}
+
+
+/*搜索栏*/
+
+.wraFirst .searchBar {
+    position: absolute;
+    width: 380px;
+    left: 50%;
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    text-align: left;
+    margin: 5px 0 0 -190px;
+    height: 38px;
+    line-height: 38px;
+}
+
+
+/*搜索栏中的搜索框*/
+
+.wraFirst .searchBar .searchField {
+    float: left;
+    height: 18px;
+    width: 300px;
+    padding: 10px 25px 8px 15px;
+    border: none;
+    outline: none;
+    line-height: 18px;
+    color: #333;
+    background: #fff;
+    font-size: 12px;
+    text-align: left;
+}
+
+.wraFirst .searchBar .searchField:focus + .searchBtn {
+    border: 1px solid #35b558;
+    background: #35b558 url(../Images/Magnifiers_transparent.png) center center no-repeat;
+}
+
+
+/*搜索栏中的按钮*/
+
+.wraFirst .searchBar .searchBtn {
+    float: left;
+    background-color: green;
+    background: url(../Images/Magnifiers.png) center center no-repeat;
+    border: 1px solid #e4e4e4;
+    height: 40px;
+    width: 40px;
+    margin-top: -1px;
+    margin-right: -1px;
+    outline: none;
+}
+
+.wraFirst .searchBar .searchBtn:hover {
+    border: 1px solid #35b558;
+    background: #35b558 url(../Images/Magnifiers_transparent.png) center center no-repeat;
+}
+
+
+/*搜索栏中的热门关键字容器*/
+
+.wraFirst .searchBar .keyWordBox {
+    position: absolute;
+    top: 9px;
+    right: 51px;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+}
+
+
+/*搜索栏中的热门关键字*/
+
+.wraFirst .searchBar .keyWordBox a {
+    display: inline-block;
+    padding: 1px 3px;
+    margin-left: 5px;
+    color: gray;
+    background: #f3f3f3;
+    text-decoration: none;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+.wraFirst .searchBar .keyWordBox a:hover {
+    color: #333;
+    background: #dfdfdf;
+}
+
+
+/*登陆模块*/
+
+.loginBox {
+    float: right;
+    text-align: right;
+    line-height: 50px;
+    font-size: 12px;
+    color: #333;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*登陆模块图标1*/
+
+.loginBox .loginBox1 {
+    display: inline-block;
+    width: 15px;
+    height: 50px;
+    line-height: 50px;
+    background: url(../Images/loginBox1.gif) left center no-repeat;
+    background-size: 15px 13px;
+    cursor: pointer;
+}
+
+
+/*分隔线*/
+
+.desLine {
+    padding: 0 10px;
+}
+
+
+/*登陆模块中的跳转链接*/
+
+.loginBox .loginLink {
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*大分隔线*/
+
+.dividingLine {
+    width: 100%;
+    background-color: #35b550;
+    height: 2px;
+    overflow: hidden;
+    background: linear-gradient(left top, #35b550, #8aca8c, #2d85ca);
+    background: -webkit-linear-gradient(left top, #35b550, #8aca8c, #2d85ca);
+    background: -o-linear-gradient(left top, #35b550, #8aca8c, #2d85ca);
+    background: -moz-linear-gradient(left top, #35b550, #8aca8c, #2d85ca);
+    /*极客的写法*/
+    /*background: -webkit-gradient(linear,10% 10%,100% 100%,color-stop(0.14,#35b550),color-stop(0.5,#8aca8c),color-stop(1,#2d85ca));*/
+}
+
+
+/******************************* 第二部分：导航栏的容器 *******************************/
+
+.wraSecond {
+    /*让菜单压住第三列内容，需要设置优先级*/
+    z-index: 1100;
+    position: relative;
+    min-height: 42px;
+    width: 100%;
+    min-width: 750px;
+    border-bottom: 1px solid #e8e8e8;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+}
+
+
+/*导航栏容器*/
+
+.navBox {
+    position: relative;
+    width: 1000px;
+    min-height: 42px;
+    margin: 0 auto;
+}
+
+
+/*导航栏*/
+
+.navBox .navBar {
+    position: relative;
+    width: 740px;
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+}
+
+.navBox .navBar:hover + .navBarMenu {
+    display: block;
+}
+
+
+/*导航栏中的链接*/
+
+.navBox .navBar a {
+    display: inline-block;
+    float: left;
+    width: 120px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    color: #828282;
+    font-family: 'Microsoft Yahei', sans-serif;
+}
+
+.navBox .navBar a:hover {
+    color: #35b558;
+}
+
+
+/*首个链接*/
+
+.navBox .navBar .indexLinkage {
+    width: 28px;
+    margin-right: 22px;
+}
+
+
+/*导航栏下拉菜单*/
+
+.navBarMenu {
+    display: none;
+    position: absolute;
+    top: 42px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 948px;
+    background: rgba(255, 255, 255, .97);
+    border: 1px solid #e8e8e8;
+    padding-left: 48px;
+    position: absolute;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+}
+
+.navBarMenu:hover {
+    display: block;
+}
+
+
+/*下拉菜单的子菜单*/
+
+.menuItem {
+    box-sizing: border-box;
+    position: relative;
+    width: 120px;
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    height: 100%;
+    border-left: 1px solid #F7F7F7;
+}
+
+.menuItem:hover {
+    background-color: #F7F7F7;
+}
+
+.menuItem:hover .arrowUp {
+    display: block;
+}
+
+
+/*向上箭头*/
+
+.arrowUp {
+    display: none;
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    background: url(../Images/arrowUp.png) center center no-repeat;
+    background-size: 100% 100%;
+    top: -7px;
+    left: 54px;
+}
+
+
+/*最后一栏子菜单*/
+
+.lastMenuItem {
+    box-sizing: border-box;
+    position: relative;
+    width: 120px;
+    border-right: 1px solid #F7F7F7;
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    height: 100%;
+    border-left: 1px solid #F7F7F7;
+}
+
+.lastMenuItem:hover {
+    background-color: #F7F7F7;
+}
+
+.lastMenuItem:hover .arrowUp {
+    display: block;
+}
+
+
+/*下拉菜单的子菜单中的文字容器*/
+
+.menuItem .itemBox {
+    list-style: none;
+    padding: 0;
+}
+
+.lastMenuItem .itemBox {
+    list-style: none;
+    padding: 0;
+}
+
+
+/*下拉菜单的子菜单中的文字链接*/
+
+.menuItem .itemBox a {
+    text-decoration: none;
+    line-height: 29px;
+    display: block;
+    text-align: left;
+    margin-right: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.lastMenuItem .itemBox a {
+    text-decoration: none;
+    line-height: 29px;
+    display: block;
+    text-align: left;
+    margin-right: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.itemBox a:hover {
+    color: #35b558;
+}
+
+
+/*基础功能条*/
+
+.basicBox {
+    float: right;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    top: 0;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    width: 310px;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+
+/*基础功能条中的VIP链接*/
+
+.basicBox .vip {
+    width: 70px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0;
+    margin-left: 20px;
+    line-height: 42px;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+}
+
+
+/*基础功能条中的问卷链接*/
+
+.basicBox .investigation {
+    width: 96px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0;
+    margin-left: 20px;
+    line-height: 42px;
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+}
+
+
+/*基础功能条中的APP下载链接*/
+
+.basicBox .app {
+    width: 67px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 0;
+    margin-left: 20px;
+    line-height: 42px;
+    text-decoration: none;
+    text-align: right;
+    color: #333;
+}
+
+
+/*基础功能条中的链接图片*/
+
+.basicBox img {
+    float: left;
+    margin-top: 14px;
+    /*padding: 0;*/
+}
+
+
+/*基础功能条中的最后一个链接的角标*/
+
+.basicBox .recently {
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    right: -19px;
+    top: -13px;
+    display: block;
+}
+
+//*******************************第三部分：页面主要内容的容器/*******************************/
+.mainContent {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+
+/*初始化*/
+
+.mainContent div {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+/*******************************第三部分：第一列容器*******************************/
+
+.wraThird {
+    position: relative;
+    width: 1000px;
+    height: 373px;
+    min-width: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+/****************第三部分：第一列：第一部分:课程目录（树状图）****************/
+
+.wraThird .catalogue {
+    box-sizing: border-box;
+    position: relative;
+    width: 210px;
+    float: left;
+    border-top: 2px solid #35b558;
+    border-right: 0;
+    height: 373px;
+    /*极客字体：Verdana,"Lantinghei SC","Hiragino Sans GB"*/
+    font-family: Verdana, 'Microsoft Yahei', sans-serif;
+}
+
+
+/*表格轮廓*/
+
+.wraThird .catalogue ul {
+    box-sizing: border-box;
+    position: absolute;
+    width: 210px;
+    height: 371px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*表格中的行属性*/
+
+.catalogue ul li {
+    list-style: none;
+    display: list-item;
+    padding: 0;
+}
+
+
+/*表格中的行包装*/
+
+.catalogue ul li .wraDiv {
+    box-sizing: border-box;
+    width: 208px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #F5F5F5;
+    background: #fff url(../Images/arrowRight.png) 186px center no-repeat;
+    background-size: 6px 10px;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: left;
+    z-index: 101;
+}
+
+
+/*鼠标滑过时，小标题的变化*/
+
+.catalogue ul li .wraDiv:hover {
+    padding-left: 18px;
+    border-left: 2px solid #35b558;
+    box-sizing: content-box;
+    height: 36px;
+}
+
+
+/*鼠标滑过时，弹出菜单*/
+
+.catalogue ul li .wraDiv:hover .menu {
+    display: block;
+    /*border: 1px solid black;*/
+}
+
+
+/*鼠标没过时，小标题的变化*/
+
+.catalogue ul li .wraDiv:hover .titleA {
+    color: #35b558;
+}
+
+
+/*表格中行包装里的链接*/
+
+.catalogue ul li .wraDiv a {
+    text-decoration: none;
+    color: #828282;
+}
+
+.catalogue ul li .wraDiv a:hover {
+    color: #35b558;
+}
+
+
+/*弹出的菜单*/
+
+.catalogue .menu {
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    width: 591px;
+    min-height: 373px;
+    min-width: 401px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    position: absolute;
+    left: 209px;
+    top: -2px;
+    border-left: 0;
+    display: none;
+    padding-bottom: 30px;
+    z-index: 500;
+}
+
+
+/*菜单内容包装*/
+
+.menu .menuContent {
+    width: 590px;
+    float: left;
+}
+
+
+/*菜单中的定义列表*/
+
+.menu .menuContent dl {
+    margin: 0 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+/*菜单中的定义列表元素*/
+
+.menu .menuContent dl dt {
+    display: block;
+    border-bottom: 1px solid #f5f5f5;
+    height: 37px;
+    line-height: 45px;
+}
+
+.menu .menuContent dl dd {
+    margin-left: -6px;
+    padding: 3px 0;
+}
+
+.menu .menuContent dl dd a {
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding: 0 7px;
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    border-left: 1px solid #e0e0e0;
+    float: left;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+
+/****************第三部分：第一列：第二部分容器****************/
+
+.wraThird .centerPart {
+    width: 560px;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    /*overflow: hidden;*/
+}
+
+
+/**************** 走马灯 ****************/
+
+.wraThird .centerPart .runningLamp {
+    z-index: 99;
+    width: 560px;
+    height: 260px;
+    /*float: left;*/
+    /*margin-left: 10px;*/
+    overflow: hidden;
+    position: relative;
+}
+
+.wraThird .centerPart .runningLamp:hover .leftArrow {
+    display: block;
+}
+
+.wraThird .centerPart .runningLamp:hover .rightArrow {
+    display: block;
+}
+
+
+/*左箭头*/
+
+.wraThird .centerPart .runningLamp .leftArrow {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 100;
+    display: none;
+    cursor: pointer;
+    background: url(../Images/bannerLeft.png) -10px -5px no-repeat;
+}
+
+.wraThird .centerPart .runningLamp .leftArrow:hover {
+    background: url(../Images/bannerLeft.png) -10px -65px no-repeat;
+}
+
+
+/*右箭头*/
+
+.wraThird .centerPart .runningLamp .rightArrow {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+    margin-top: -25px;
+    display: none;
+    cursor: pointer;
+    background: url(../Images/bannerRight.png) -10px -5px no-repeat;
+}
+
+.wraThird .centerPart .runningLamp .rightArrow:hover {
+    background: url(../Images/bannerRight.png) -10px -65px no-repeat;
+}
+
+
+/*链接图片*/
+
+.wraThird .centerPart .runningLamp .image {
+    display: block;
+    z-index: 100;
+    width: 560px;
+    height: 260px;
+    background: url(../Images/runningImage.jpg) center center no-repeat rgb(53, 181, 88);
+}
+
+
+/*下方滚动条部分*/
+
+.wraThird .centerPart .centerBottomContainer {
+    box-sizing: border-box;
+    border: 1px solid #E2E2E2;
+    height: 100px;
+    width: 560px;
+    margin-top: 13px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wraThird .centerPart .centerBottomContainer:hover .arrow {
+    display: block;
+}
+
+
+/*箭头*/
+
+.wraThird .centerPart .centerBottomContainer .arrow {
+    display: none;
+    position: absolute;
+    top: 30px;
+    z-index: 200;
+    width: 24px;
+    height: 40px;
+}
+
+
+/*左箭头*/
+
+.wraThird .centerPart .centerBottomContainer .leftArrow {
+    left: 0;
+    background: url(../Images/tinyArrow.png) 0 0 no-repeat;
+    background-size: 48px 80px;
+}
+
+.wraThird .centerPart .centerBottomContainer .leftArrow:hover {
+    background: url(../Images/tinyArrow.png) 0 -40px no-repeat;
+    background-size: 48px 80px;
+}
+
+
+/*右箭头*/
+
+.wraThird .centerPart .centerBottomContainer .rightArrow {
+    right: 0;
+    background: url(../Images/tinyArrow.png) -24px 0 no-repeat;
+    background-size: 48px 80px;
+}
+
+.wraThird .centerPart .centerBottomContainer .rightArrow:hover {
+    background: url(../Images/tinyArrow.png) -24px -40px no-repeat;
+    background-size: 48px 80px;
+}
+
+
+/*滚动条内容容器*/
+
+.wraThird .centerPart .centerBottomContainer ul {
+    width: 560px;
+    height: 100px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/*滚动条内容单位容器*/
+
+.wraThird .centerPart .centerBottomContainer ul li {
+    float: left;
+    width: 186.5px;
+    height: 100px;
+    text-align: center;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+.wraThird .centerPart .centerBottomContainer ul li a {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-right: 1px solid #F5F5F5;
+    text-decoration: none;
+}
+
+.wraThird .centerPart .centerBottomContainer ul li a img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 8px auto;
+}
+
+.wraThird .centerPart .centerBottomContainer ul li a p {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.wraThird .centerPart .centerBottomContainer .colorGray {
+    color: #666;
+}
+
+
+/****************第三部分：第一列：第三部分容器****************/
+
+.wraThird .rightPart {
+    box-sizing: border-box;
+    width: 210px;
+    height: 373px;
+    border: 1px solid #E4E4E4;
+    float: left;
+    margin-left: 10px;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+
+
+/*新闻容器*/
+
+.wraThird .rightPart .news {
+    padding: 0 13px;
+    height: 125px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+
+/*新闻标题*/
+
+.wraThird .rightPart .news h3 {
+    margin: 0;
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+/*新闻列表*/
+
+.wraThird .rightPart .news ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    text-align: left;
+    list-style: none;
+}
+
+.wraThird .rightPart .news ul a {
+    text-decoration: none;
+    display: block;
+    color: #666;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.8;
+}
+
+.wraThird .rightPart .news ul a:hover {
+    color: #35b558;
+}
+
+.wraThird .rightPart .news ul .redColor {
+    color: red;
+}
+
+.wraThird .rightPart .news ul .redColor:hover {
+    color: red;
+}
+
+
+/*用户信息窗口容器*/
+
+.wraThird .rightPart .userInfoBox {
+    height: 86px;
+    border-bottom: 1px solid #E4E4E4;
+    overflow: hidden;
+}
+
+
+/*头像容器*/
+
+.wraThird .rightPart .userInfoBox .iconBox {
+    float: left;
+    width: 64px;
+    margin-top: 10px;
+}
+
+.wraThird .rightPart .userInfoBox .iconBox img {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*用户信息*/
+
+.wraThird .rightPart .userInfoBox .infoBox {
+    float: left;
+    width: 140px;
+}
+
+
+/*欢迎标语*/
+
+.wraThird .rightPart .userInfoBox .helloWordWra {
+    text-align: left;
+    margin-top: 16px;
+}
+
+.wraThird .rightPart .userInfoBox .helloWordWra p {
+    font-size: 12px;
+    color: #333;
+    margin-top: 2px;
+}
+
+.wraThird .rightPart .userInfoBox .helloWordWra span {
+    font-size: 12px;
+    color: #666;
+}
+
+
+/*按钮包装*/
+
+.wraThird .rightPart .userInfoBox .btnBox {
+    margin-top: 7px;
+}
+
+.wraThird .rightPart .userInfoBox .btnBox .btn {
+    display: block;
+    float: left;
+    width: 48px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+}
+
+.wraThird .rightPart .userInfoBox .btnBox .loginBtn {
+    margin-right: 10px;
+    background: #FB5D20;
+}
+
+.wraThird .rightPart .userInfoBox .btnBox .resignBtn {
+    background: #35b558;
+}
+
+
+/*推荐区域*/
+
+.wraThird .rightPart .recommendBox {
+    box-sizing: border-box;
+}
+
+
+/*正常时菜单*/
+
+.wraThird .rightPart .recommendBox #normalList {
+    display: block;
+    height: 152px;
+    width: 100%;
+}
+
+
+/*有菜单的格子*/
+
+.wraThird .rightPart .recommendBox .menuList {
+    float: left;
+    display: block;
+    color: #000;
+    width: 52px;
+    height: 76px;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+    border-bottom: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+}
+
+.wraThird .rightPart .recommendBox .menuList:hover .title {
+    color: #35b558;
+}
+
+.wraThird .rightPart .recommendBox .menuList a {
+    display: block;
+    color: #666;
+    width: 52px;
+    height: 76px;
+    overflow: hidden;
+}
+
+
+/*图标*/
+
+.wraThird .rightPart .recommendBox .icon {
+    background-image: url(../Images/recommendBox.png);
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 13px auto 0;
+    background-size: 71px 232px;
+}
+
+.wraThird .rightPart .recommendBox .question {
+    background-position: -5px -3px;
+}
+
+.wraThird .rightPart .recommendBox .wiki {
+    background-position: -5px -31px;
+}
+
+.wraThird .rightPart .recommendBox .lesson {
+    background-position: -5px -59px;
+}
+
+.wraThird .rightPart .recommendBox .group {
+    background-position: -5px -87px;
+}
+
+.wraThird .rightPart .recommendBox .downLoad {
+    background-position: -5px -117px;
+}
+
+#downLoad:hover .downLoad {
+    background-position: -41px -117px;
+}
+
+.wraThird .rightPart .recommendBox .knowledge {
+    background-position: -5px -144px;
+}
+
+#knowledge:hover .knowledge {
+    background-position: -41px -144px;
+}
+
+.wraThird .rightPart .recommendBox .occupation {
+    background-position: -5px -173px;
+}
+
+#occupation:hover .occupation {
+    background-position: -41px -173px;
+}
+
+.wraThird .rightPart .recommendBox .VIP {
+    background-position: -5px -202px;
+}
+
+#VIP:hover .VIP {
+    background-position: -41px -202px;
+}
+
+
+/*图标end*/
+
+.wraThird .rightPart .title {
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+    color: #666;
+}
+
+.wraThird .rightPart .recommendBox .arrowDown {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #E4E4E4;
+    box-sizing: content-box;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    margin: 0 auto;
+}
+
+
+/*鼠标划过时出现的菜单*/
+
+.wraThird .rightPart .recommendBox #popList {
+    display: none;
+    height: 152px;
+    width: 100%;
+}
+
+
+/*菜单标题栏*/
+
+.wraThird .rightPart .recommendBox #popList .titleList {
+    box-sizing: border-box;
+    list-style: none;
+    height: 24px;
+}
+
+.wraThird .rightPart .recommendBox #popList .titleList li {
+    float: left;
+    width: 52px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    background: #FCFCFC;
+    border-bottom: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+    cursor: pointer;
+}
+
+.wraThird .rightPart .recommendBox #popList .titleList li:hover {
+    border-bottom: 0;
+    background: #FFF;
+    color: #35b558;
+}
+
+.wraThird .rightPart .recommendBox #popList .contentBox {
+    position: relative;
+    height: 125px;
+}
+
+
+/*问答版块*/
+
+#questionContent {
+    overflow: hidden;
+    display: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    height: 130px;
+}
+
+#questionContent img {
+    display: inline;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+#questionContent a {
+    text-align: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+#questionContent a:hover .title {
+    color: #35b558;
+}
+
+
+/*wiki版块*/
+
+#wikiContent {
+    box-sizing: border-box;
+    height: 130px;
+    display: none;
+}
+
+#wikiContent ul {
+    margin: 15px 10px;
+    display: block;
+}
+
+#wikiContent ul li {
+    float: left;
+    width: 55px;
+    font-size: 12px;
+    margin-right: 7px;
+}
+
+#wikiContent ul li img {
+    width: 55px;
+    height: 73px;
+    display: block;
+    vertical-align: middle;
+}
+
+#wikiContent ul li .title {
+    display: block;
+    margin-top: 8px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#wikiContent ul li a:hover .title {
+    color: #35b558;
+}
+
+
+/*课程版块*/
+
+#lessonContent {
+    box-sizing: border-box;
+    height: 130px;
+    display: none;
+}
+
+#lessonContent ul {
+    display: block;
+}
+
+#lessonContent ul li {
+    float: left;
+}
+
+#lessonContent ul li a {
+    box-sizing: border-box;
+    width: 104px;
+    height: 64px;
+    border-bottom: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+    display: block;
+    color: #666;
+    overflow: hidden;
+}
+
+#lessonContent ul li img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 7px auto;
+}
+
+#lessonContent ul li p {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#lessonContent ul li a:hover p {
+    color: #35b558;
+}
+
+
+/*社群版块*/
+
+#groupContent {
+    box-sizing: border-box;
+    height: 130px;
+    display: none;
+}
+
+#groupContent ul {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+#groupContent ul li {
+    height: 54px;
+    border-bottom: 1px solid #F5F5F5;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#groupContent ul li img {
+    float: left;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+#groupContent ul li div {
+    float: left;
+    width: 95px;
+}
+
+#groupContent ul li a {
+    float: left;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    color: #FFF;
+    background: #ff5c00;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#groupContent ul li div p {
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/****************第三部分：第二列：热门课程索引****************/
+
+.wraFourth {
+    position: relative;
+    width: 1000px;
+    height: 41px;
+    min-width: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+}
+
+
+/*索引列表*/
+
+.wraFourth ul {
+    height: 41px;
+    background: url(../Images/grayLine.jpg) 0 100% repeat-x;
+}
+
+.wraFourth ul li {
+    width: 16.6%;
+    height: 41px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.wraFourth .lesson1 {
+    border-bottom: 2px solid #35b558;
+    background: url(../Images/GreenArrowUp.png) center bottom no-repeat;
+    background-size: 10px 4px;
+    color: #35b558;
+}
+
+
+/*js控制hover时用的类*/
+
+.onLesson {
+    color: #35b558!important;
+    border-bottom: 2px solid #35b558;
+    background: url(../Images/GreenArrowUp.png) center bottom no-repeat;
+    background-size: 10px 4px;
+}
+
+.unLesson {
+    color: #666!important;
+    border-bottom: none;
+    background: none;
+}
+
+
+/****************第三部分：第三列：热门课程****************/
+
+.wraFifth {
+    position: relative;
+    width: 1000px;
+    height: 480px;
+    min-width: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /*border: 1px solid black;*/
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+.wraFifth .lessonList {
+    width: 1050px;
+    margin-top: 0;
+}
+
+.wraFifth .lessonList li {
+    float: left;
+    margin-right: 20px;
+    background: 0 0;
+    margin-bottom: 20px;
+    height: 220px;
+    width: 235px;
+}
+
+
+/*单元格动画控制*/
+
+.wraFifth .lessonList li:hover > .imgBox .favor {
+    /*display: block;*/
+    opacity: 1;
+}
+
+.wraFifth .lessonList li:hover > .imgBox .hudBox {
+    opacity: 1;
+}
+
+.wraFifth .lessonList li:hover > .imgBox .hudBox {
+    opacity: 1;
+}
+
+.wraFifth .lessonList li:hover > .infoBox {
+    display: block;
+    height: 175px;
+}
+
+.wraFifth .lessonList li:hover > .infoBox p {
+    /*display: block;*/
+    position: relative;
+    opacity: 1;
+}
+
+.wraFifth .lessonList li:hover > .infoBox .descriptionBox .studentCountDiv {
+    position: relative;
+    opacity: 1;
+}
+
+.wraFifth .lessonList li:hover > .infoBox .descriptionBox .difficultyDiv {
+    position: relative;
+    opacity: 1;
+}
+
+
+/*版块控制*/
+
+#lesson2Content {
+    display: none;
+}
+
+#lesson3Content {
+    display: none;
+}
+
+#lesson4Content {
+    display: none;
+}
+
+#lesson5Content {
+    display: none;
+}
+
+#lesson6Content {
+    display: none;
+}
+
+
+/*图片容器*/
+
+.wraFifth .lessonList li .imgBox {
+    border: 1px solid #e4e4e4;
+    border-bottom: 0;
+    width: 235px;
+    height: 130px;
+    position: relative;
+    z-index: 100;
+}
+
+.wraFifth .lessonList li .imgBox .freeIcon {
+    height: 22px;
+    width: 38px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 8px;
+    z-index: 101;
+    background: url(../Images/iconGroup.png) -58px -43px no-repeat;
+}
+
+.wraFifth .lessonList li .imgBox .favor {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(../Images/favor.png);
+    background-size: 16px 16px;
+    z-index: 101;
+    cursor: pointer;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.wraFifth .lessonList li .imgBox a {
+    width: 233px;
+}
+
+.wraFifth .lessonList li .imgBox a img {
+    width: 100%;
+    height: 130px;
+    vertical-align: middle;
+}
+
+.wraFifth .lessonList li .imgBox a .hudBox {
+    background: #000;
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.wraFifth .lessonList li .imgBox a .hudBox i {
+    position: absolute;
+    z-index: 120;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(../Images/playIcon.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px;
+}
+
+
+/*信息容器*/
+
+.wraFifth .lessonList li .infoBox {
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    background: #fff;
+    height: 88px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+    transition: height 0.3s;
+}
+
+.wraFifth .lessonList li .infoBox h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 18px;
+    text-align: left;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.wraFifth .lessonList li .infoBox h2 a {
+    color: #333;
+}
+
+.wraFifth .lessonList li .infoBox p {
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    height: 52px;
+    overflow: hidden;
+    text-align: left;
+    opacity: 0;
+    margin-bottom: 10px;
+    /*display: none;*/
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox {
+    font-size: 12px;
+    color: gray;
+    position: relative;
+}
+
+
+/*时间容器*/
+
+.wraFifth .lessonList li .infoBox .descriptionBox .timeDiv {
+    width: 120px;
+    float: left;
+    text-align: left;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .timeDiv .timeIcon {
+    background: url(../Images/time.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .studentCountDiv {
+    float: right;
+    text-align: right;
+    margin-bottom: 8px;
+    opacity: 0;
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .difficultyDiv {
+    float: left;
+    text-align: left;
+    opacity: 0;
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .difficultyDiv .signal1 {
+    background: url(../Images/signal1.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .difficultyDiv .signal2 {
+    background: url(../Images/signal2.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .difficultyDiv .signal3 {
+    background: url(../Images/signal3.png) 0 0 no-repeat;
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .iconBox {
+    float: right;
+    text-align: right;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .iconBox a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.wraFifth .lessonList li .infoBox .descriptionBox .iconBox img {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+
+/****************第三部分：第四列：职业路径图****************/
+
+.wraSixth {
+    position: relative;
+    width: 1000px;
+    height: 641px;
+    min-width: 750px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+
+
+/*模块首部*/
+
+.wraSixth .indexBox {
+    margin-bottom: 16px;
+    height: 25px;
+}
+
+.wraSixth .indexBox strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.wraSixth .indexBox strong a {
+    color: #333;
+}
+
+.wraSixth .indexBox .questionMark {
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 5px 8px 0;
+    cursor: pointer;
+}
+
+.wraSixth .indexBox .questionMark:hover +.answerBox {
+    opacity: 1;
+    margin-left: 0px;
+}
+
+.wraSixth .indexBox .answerBox {
+    float: left;
+    font-size: 12px;
+    color: #666;
+    padding: 2px 4px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    margin-left: -5px;
+    transition-property: opacity margin;
+    transition-duration: 0.3s;
+}
+
+.wraSixth .indexBox .answerBox i {
+    background: url(../Images/arrowLeftForAnswer.jpg) center center no-repeat;
+    width: 5px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+
+.wraSixth .indexBox .moreLesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+
+/*模块内容*/
+
+.wraSixth .lineMapBox {
+    display: block;
+    height: 600px;
+    /*border: 1px solid #E4E4E4;*/
+    /*border-width: 1px 0 0 1px;*/
+}
+
+.wraSixth .lineMapBox a {
+    position: relative;
+    margin-top: -1px;
+    margin-left: -1px;
+    width: 201px;
+    box-sizing: border-box;
+    border: 1px solid #E4E4E4;
+    float: left;
+    text-align: center;
+    display: block;
+    height: 300px;
+    /*border-right: 0;*/
+    overflow: hidden;
+    z-index: 50;
+}
+
+.wraSixth .lineMapBox a:hover {
+    border: 1px solid rgb(52, 181, 88);
+    z-index: 500;
+}
+
+.wraSixth .lineMapBox a:hover .greenBtn {
+    background: #35b558;
+    color: #fff;
+}
+
+.wraSixth .lineMapBox a img {
+    width: 100%;
+    height: 120px;
+    vertical-align: middle;
+    border: 0;
+}
+
+.wraSixth .lineMapBox a h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.wraSixth .lineMapBox a p {
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+    height: 20px;
+    width: 199px;
+    overflow: hidden;
+}
+
+.wraSixth .lineMapBox a .greenBtn {
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: 0;
+    padding: 0;
+    display: inline-block;
+    color: #35b558;
+    font-size: 16px;
+    background: #f3fff6;
+    border: 1px solid #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+
+/****************第三部分：第五列：知识体系图****************/
+
+.wraSeventh {
+    position: relative;
+    width: 1200px;
+    height: 522px;
+    min-width: 750px;
+    margin: 0 auto;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    /*border: 1px solid black;*/
+}
+
+.wraSeventh .wrapper7Box {
+    width: 1000px;
+    height: 522px;
+    margin: 40px auto 0;
+    /*border: 1px solid black;*/
+}
+
+
+/*模块首部*/
+
+.wraSeventh .indexBox {
+    margin-bottom: 16px;
+    height: 25px;
+}
+
+.wraSeventh .indexBox strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.wraSeventh .indexBox strong a {
+    color: #333;
+}
+
+.wraSeventh .indexBox .questionMark {
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 5px 8px 0;
+    cursor: pointer;
+}
+
+.wraSeventh .indexBox .questionMark:hover +.answerBox {
+    opacity: 1;
+    margin-left: 0px;
+}
+
+.wraSeventh .indexBox .answerBox {
+    float: left;
+    font-size: 12px;
+    color: #666;
+    padding: 2px 4px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    margin-left: -5px;
+    transition-property: opacity margin;
+    transition-duration: 0.3s;
+}
+
+.wraSeventh .indexBox .answerBox i {
+    background: url(../Images/arrowLeftForAnswer.jpg) center center no-repeat;
+    width: 5px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+
+.wraSeventh .indexBox .moreLesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+
+/*模块内容*/
+
+.wraSeventh .mapBox {
+    border-bottom: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+    width: 1000px;
+    height: 481px;
+    overflow: hidden;
+}
+
+.wraSeventh .mapBox .contentWrapper {
+    width: 1050px;
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard {
+    width: 167px;
+    height: 120px;
+    border: 1px solid #E4E4E4;
+    border-right: 0;
+    border-bottom: 0;
+    float: left;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard:hover .back {
+    transform: rotateY(0deg);
+}
+
+
+/*正面*/
+
+.wraSeventh .mapBox .contentWrapper .transformCard a .front {
+    /*border-bottom: 1px solid #E4E4E4;*/
+    padding: 15px 0;
+    transition: .6s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background-color: #fff;
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard a .front img {
+    margin-bottom: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard a .front h2 {
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #333;
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard a .front span {
+    font-size: 14px;
+    color: #35b558;
+}
+
+
+/*反面*/
+
+.wraSeventh .mapBox .contentWrapper .transformCard a .back {
+    padding-top: 30px;
+    background-color: #f5f5f5;
+    /*display: none;*/
+    transform: rotateY(-180deg);
+    transition: .6s;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #E4E4E4;
+    width: 167px;
+    height: 120px;
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard a .back strong {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard a .back .greenBtn {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    width: 140px;
+    height: 36px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 18px;
+    background: #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    border: 0 none;
+    outline-style: none;
+    -webkit-box-shadow: #666 0 1px 5px;
+    -moz-box-shadow: #666 0 1px 5px;
+    box-shadow: #666 0 1px 5px;
+}
+
+.wraSeventh .mapBox .contentWrapper .transformCard a .back .greenBtn:hover {
+    background: #66d178;
+}
+
+
+/**************** 第三部分：第六列：精品系列课程 ****************/
+
+.wraEighth {
+    position: relative;
+    width: 1200px;
+    height: 306px;
+    min-width: 750px;
+    margin: 0 auto;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    /*border: 1px solid black;*/
+}
+
+.wraEighth .wrapper8Box {
+    width: 1000px;
+    height: 306px;
+    margin: 40px auto 0;
+    /*border: 1px solid black;*/
+}
+
+
+/*模块首部*/
+
+.wraEighth .indexBox {
+    margin-bottom: 16px;
+    height: 25px;
+}
+
+.wraEighth .indexBox strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.wraEighth .indexBox strong a {
+    color: #333;
+}
+
+.wraEighth .indexBox .questionMark {
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 5px 8px 0;
+    cursor: pointer;
+}
+
+.wraEighth .indexBox .questionMark:hover +.answerBox {
+    opacity: 1;
+    margin-left: 0px;
+}
+
+.wraEighth .indexBox .answerBox {
+    float: left;
+    font-size: 12px;
+    color: #666;
+    padding: 2px 4px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    margin-left: -5px;
+    transition-property: opacity margin;
+    transition-duration: 0.3s;
+}
+
+.wraEighth .indexBox .answerBox i {
+    background: url(../Images/arrowLeftForAnswer.jpg) center center no-repeat;
+    width: 5px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+
+.wraEighth .indexBox .moreLesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+
+/*模块内容*/
+
+.wraEighth .qualityBox {
+    margin-top: 20px;
+}
+
+.wraEighth .qualityBox .lessonCard {
+    float: left;
+    position: relative;
+    width: 235px;
+    height: 261px;
+    padding: 16px;
+    margin-right: 20px;
+    border: 1px solid #e4e4e4;
+    font-size: 12px;
+    transition: border-color .3s;
+}
+
+.wraEighth .qualityBox .lessonCard:hover {
+    border: 1px solid #35b558;
+}
+
+.wraEighth .qualityBox .lessonCard:hover .description {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wraEighth .qualityBox .lessonCard h2 {
+    margin: 0;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.wraEighth .qualityBox .lessonCard .imageBox {
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.wraEighth .qualityBox .lessonCard .imageBox img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.wraEighth .qualityBox .lessonCard .infoBox {
+    position: relative;
+    z-index: 20;
+    color: gray;
+    line-height: 18px;
+    text-align: left;
+}
+
+.wraEighth .qualityBox .lessonCard .infoBox span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.wraEighth .qualityBox .lessonCard .infoBox .collectBox {
+    overflow: hidden;
+    width: 56px;
+    height: 20px;
+    float: right;
+}
+
+.wraEighth .qualityBox .lessonCard .infoBox .collectBox .collectBtn {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 6px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    background: #35b558;
+    -webkit-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    transition-property: background;
+    cursor: pointer;
+}
+
+.wraEighth .qualityBox .lessonCard .infoBox .collectBox .collectBtn:hover {
+    background: #66d178;
+}
+
+.wraEighth .qualityBox .lessonCard .description {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+
+.wraEighth .qualityBox .lessonCard .description .iconBox {
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.wraEighth .qualityBox .lessonCard .description .iconBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.wraEighth .qualityBox .lessonCard .description a {
+    color: #666;
+}
+
+.wraEighth .qualityBox .lessonCard .description a:hover {
+    color: #35b558;
+}
+
+.wraEighth .qualityBox .lessonCard .description .nameBox {
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 100%;
+}
+
+.wraEighth .qualityBox .lessonCard .description .textBox {
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    text-align: left;
+    line-height: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.wraEighth .qualityBox .lessonCard .description .greenBtn {
+    position: absolute;
+    top: 164px;
+    left: 50%;
+    width: 100px;
+    height: 28px;
+    margin-left: -50px;
+    font-size: 14px;
+    line-height: 26px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    background: #35b558;
+    -webkit-transition-duration: .8s;
+    -moz-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    transition-property: background;
+}
+
+.wraEighth .qualityBox .lessonCard .description .greenBtn:hover {
+    background: #66d178;
+    color: #fff;
+}
+
+#pythonQulity {
+    margin-right: 0;
+}
+
+
+/**************** 第三部分：第七列：Wiki ****************/
+
+.wraNinth {
+    position: relative;
+    width: 1200px;
+    height: 413px;
+    min-width: 750px;
+    margin: 0 auto;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    /*border: 1px solid black;*/
+}
+
+.wraNinth .wrapper9Box {
+    width: 1000px;
+    height: 413px;
+    margin: 40px auto 0;
+    /*border: 1px solid black;*/
+}
+
+
+/*模块首部*/
+
+.wraNinth .indexBox {
+    margin-bottom: 16px;
+    height: 25px;
+}
+
+.wraNinth .indexBox strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.wraNinth .indexBox strong a {
+    color: #333;
+}
+
+.wraNinth .indexBox .questionMark {
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    background: #999;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    float: left;
+    margin: 5px 8px 0;
+    cursor: pointer;
+}
+
+.wraNinth .indexBox .questionMark:hover +.answerBox {
+    opacity: 1;
+    margin-left: 0px;
+}
+
+.wraNinth .indexBox .answerBox {
+    float: left;
+    font-size: 12px;
+    color: #666;
+    padding: 2px 4px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    display: inline-block;
+    box-shadow: 1px 1px 3px #ccc;
+    opacity: 0;
+    margin-left: -5px;
+    transition-property: opacity margin;
+    transition-duration: 0.3s;
+}
+
+.wraNinth .indexBox .answerBox i {
+    background: url(../Images/arrowLeftForAnswer.jpg) center center no-repeat;
+    width: 5px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+}
+
+.wraNinth .indexBox .moreLesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+
+/*模块内容*/
+
+.wraNinth .wikiWrapper {
+    margin-top: 20px;
+}
+
+.wraNinth .wikiWrapper .wikiBox {
+    position: relative;
+    width: 333.3px;
+    height: 370px;
+    float: left;
+    padding: 15px;
+    border: 1px solid #e4e4e4;
+    margin-left: -1px;
+    z-index: 50;
+}
+
+.wraNinth .wikiWrapper .wikiBox:first-child {
+    margin-left: 0;
+}
+
+.wraNinth .wikiWrapper .wikiBox:hover {
+    z-index: 500;
+    border: 1px solid #35b558;
+}
+
+.wraNinth .wikiWrapper .wikiBox h2 {
+    margin: 0;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package {
+    margin-top: 10px;
+}
+
+
+/*书架*/
+
+.wraNinth .wikiWrapper .wikiBox .package dl {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 249px;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl dd:first-child {
+    margin-right: 15px;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl dd {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 142px;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl dd:hover h3 {
+    color: #35b558;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl dd:hover span {
+    color: #35b558;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl .imgBox {
+    position: relative;
+    width: 142px;
+    height: 200px;
+    background: #999;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl .imgBox .haveALook {
+    position: absolute;
+    width: 40px;
+    z-index: 10;
+    right: -10px;
+    top: -13px;
+    background: url(../Images/haveALook.png) center center no-repeat;
+    background-size: 100% 100%;
+    height: 20px;
+    display: none;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl .imgBox img {
+    width: 142px;
+    height: 200px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl .imgBox img:hover {
+    transform-origin: 0 0 0;
+    -moz-animation: animation 1s ease forwards;
+    -webkit-animation: animation 1s ease forwards;
+    -o-animation: animation 1s ease forwards;
+    -ms-animation: animation 1s ease forwards;
+    animation: animation 1s ease forwards;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl .imgBox img:hover + .haveALook {
+    display: block;
+}
+
+@keyframes animation {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-20deg);
+    }
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl dd h3 {
+    font-size: 13px;
+    color: #333;
+    height: 13px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 13px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package dl dd span {
+    font-size: 12px;
+    color: #999;
+    display: block;
+}
+
+
+/*目录精选*/
+
+.wraNinth .wikiWrapper .wikiBox .package ul {
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package ul li {
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package ul li:hover a {
+    color: #35b558;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package ul li a {
+    color: #999;
+    box-sizing: border-box;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package ul li a p {
+    width: 200px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    text-align: left;
+}
+
+.wraNinth .wikiWrapper .wikiBox .package ul li a span {
+    text-align: right;
+    display: block;
+    float: right;
+    width: 90px;
+}
+
+
+/**************** 第三部分：第八列：战略合作企业 ****************/
+
+.wraTenth {
+    position: relative;
+    width: 1200px;
+    height: 131px;
+    min-width: 750px;
+    margin: 0 auto;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    /*border: 1px solid black;*/
+}
+
+.wraTenth .wrapperTenBox {
+    width: 1000px;
+    height: 131px;
+    margin: 40px auto 0;
+    /*border: 1px solid black;*/
+}
+
+
+/*模块首部*/
+
+.wraTenth .indexBox {
+    margin-bottom: 16px;
+    height: 25px;
+}
+
+.wraTenth .indexBox strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.wraTenth .indexBox .moreLesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+
+/*模块内容*/
+
+.wraTenth .cooperationWrapper {
+    border: 1px solid #E4E4E4;
+    width: 1000px;
+    height: 90px;
+    padding: 20px;
+    position: relative;
+}
+
+.wraTenth .cooperationWrapper .cooperationBox {
+    box-sizing: border-box;
+}
+
+.wraTenth .cooperationWrapper .cooperationBox .bannerLeft {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    /*display: none;*/
+    cursor: pointer;
+    background: url(../Images/bannerLeft.png) -10px -5px no-repeat;
+    width: 40px;
+    height: 50px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.6s;
+}
+
+.wraTenth .cooperationWrapper:hover .bannerLeft {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wraTenth .cooperationWrapper .cooperationBox .bannerRight {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    /*display: none;*/
+    cursor: pointer;
+    background: url(../Images/bannerRight.png) -10px -5px no-repeat;
+    width: 40px;
+    height: 50px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.6s;
+}
+
+.wraTenth .cooperationWrapper:hover .bannerRight {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wraTenth .cooperationWrapper .cooperationBox .swiperCooBox {
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /*border:1px solid black;*/
+}
+
+.wraTenth .cooperationWrapper .cooperationBox .swiperCooBox .contentWrapper {
+    position: relative;
+    /*width: 5269px;*/
+    width: 1000px;
+    height: 50px;
+    /*transform: translate3d(-958px, 0px, 0px);*/
+    /*transition-duration: 0.3s;*/
+}
+
+.wraTenth .cooperationWrapper .cooperationBox .swiperCooBox .contentWrapper a {
+    width: 159.667px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.wraTenth .cooperationWrapper .cooperationBox .swiperCooBox .contentWrapper a img {
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #e4e4e4;
+}
+
+
+/**************** 第三部分：第九列：媒体报道 ****************/
+
+.wraEleventh {
+    position: relative;
+    width: 1200px;
+    height: 131px;
+    min-width: 750px;
+    margin: 0 auto;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    /*border: 1px solid black;*/
+}
+
+.wraEleventh .wrapper11Box {
+    width: 1000px;
+    height: 131px;
+    margin: 40px auto 0;
+    /*border: 1px solid black;*/
+}
+
+
+/*模块首部*/
+
+.wraEleventh .indexBox {
+    margin-bottom: 16px;
+    height: 25px;
+}
+
+.wraEleventh .indexBox strong {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: 500;
+}
+
+.wraEleventh .indexBox .moreLesson {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+
+/*模块内容*/
+
+.wraEleventh .cooperationWrapper {
+    border: 1px solid #E4E4E4;
+    width: 1000px;
+    height: 90px;
+    padding: 20px;
+    position: relative;
+}
+
+.wraEleventh .cooperationWrapper .cooperationBox {
+    box-sizing: border-box;
+}
+
+.wraEleventh .cooperationWrapper .cooperationBox .bannerLeft {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    /*display: none;*/
+    cursor: pointer;
+    background: url(../Images/bannerLeft.png) -10px -5px no-repeat;
+    width: 40px;
+    height: 50px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.6s;
+}
+
+.wraEleventh .cooperationWrapper:hover .bannerLeft {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wraEleventh .cooperationWrapper .cooperationBox .bannerRight {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 800;
+    /*display: none;*/
+    cursor: pointer;
+    background: url(../Images/bannerRight.png) -10px -5px no-repeat;
+    width: 40px;
+    height: 50px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.6s;
+}
+
+.wraEleventh .cooperationWrapper:hover .bannerRight {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wraEleventh .cooperationWrapper .cooperationBox .swiperCooBox {
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /*border:1px solid black;*/
+}
+
+.wraEleventh .cooperationWrapper .cooperationBox .swiperCooBox .contentWrapper {
+    position: relative;
+    /*width: 5269px;*/
+    width: 1000px;
+    height: 50px;
+    /*transform: translate3d(-958px, 0px, 0px);*/
+    /*transition-duration: 0.3s;*/
+}
+
+.wraEleventh .cooperationWrapper .cooperationBox .swiperCooBox .contentWrapper a {
+    width: 159.667px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.wraEleventh .cooperationWrapper .cooperationBox .swiperCooBox .contentWrapper a img {
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #e4e4e4;
+}
+
+
+/******************************* 第四部分：footer容器 *******************************/
+
+.wraTwelfth {
+    position: relative;
+    min-width: 1000px;
+    margin-top: 50px;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+.wraTwelfth .footerBox {
+    height: 253px;
+    background: #fafafa;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+
+/*模块内容*/
+
+.wraTwelfth .footerBox .footer {
+    width: 1000px;
+    margin: 0 auto;
+    min-height: 251px;
+}
+
+.wraTwelfth .footerBox .footer dl {
+    box-sizing: border-box;
+    width: 185px;
+    padding-left: 30px;
+    color: gray;
+    margin: 25px 0;
+    float: left;
+    border-left: 1px solid #E4E4E4;
+    text-align: left;
+    min-height: 175px;
+}
+
+.wraTwelfth .footerBox .footer dl dt {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.wraTwelfth .footerBox .footer dl dd {
+    font-size: 12px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.wraTwelfth .footerBox .footer dl a {
+    color: gray;
+    padding-left: 5px;
+}
+
+.wraTwelfth .footerBox .footer dl a:hover {
+    color: #35b558;
+}
+
+
+/*分享区域*/
+
+.wraTwelfth .footerBox .footer .shareCorner {
+    box-sizing: border-box;
+    width: 260px;
+    float: left;
+    min-height: 226px;
+    border-left: 1px solid #E4E4E4;
+    padding: 20px 0 0 40px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .jkWord {
+    font-size: 15px;
+    color: #35b558;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+/*下载模块*/
+
+.wraTwelfth .footerBox .footer .shareCorner .appDownLoadBox img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 21px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .appDownLoadBox div {
+    text-align: left;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .appDownLoadBox strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .appDownLoadBox strong:hover {
+    color: #35b558;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .appDownLoadBox p {
+    text-align: left;
+    font-size: 14px;
+    color: gray;
+    background: url(../Images/arrowRightForFooter.png) 160px center no-repeat;
+    background-size: 7px 13px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .appDownLoadBox p:hover {
+    color: #35b558;
+}
+
+
+/*转发模块*/
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox {
+    height: 32px;
+    margin-top: 15px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox .sinaIcon {
+    background: url(../Images/logoImages.png) -23px 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox .sinaIcon:hover {
+    background-position: -23px -40px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox .tieBaIcon {
+    background: url(../Images/logoImages.png) -145px 0 no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox .tieBaIcon:hover {
+    background-position: -145px -40px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox .weChatIcon {
+    background: url(../Images/logoImages.png) -23px -82px no-repeat;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox .weChatIcon:hover {
+    background-position: -23px -122px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox .weChatIcon .weChatPop {
+    position: absolute;
+    bottom: 32px;
+    left: -48px;
+    display: none;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .shareBox .weChatIcon:hover .weChatPop {
+    display: block;
+}
+
+
+/*客服模块*/
+
+.wraTwelfth .footerBox .footer .shareCorner .onlineServiceBox {
+    margin-top: 15px;
+    padding-left: 35px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .onlineServiceBox:hover h5 {
+    color: #35b558;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .onlineServiceBox:hover p {
+    color: #35b558;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .onlineServiceBox a {
+    display: block;
+    padding: 0;
+    text-align: left;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .onlineServiceBox .serviceIcon {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
+    background: url(../Images/serviceIcon.png) no-repeat 0/80px;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .onlineServiceBox h5 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 2px;
+    line-height: 22px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+
+.wraTwelfth .footerBox .footer .shareCorner .onlineServiceBox p {
+    color: gray;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+
+/*版权区域*/
+
+.wraTwelfth .copyRightBox {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+.wraTwelfth .copyRightBox strong {
+    font-weight: 400;
+}
+
+.wraTwelfth .copyRightBox strong a {
+    color: #999;
+}
+
+.wraTwelfth .copyRightBox strong a:hover {
+    color: #35b558;
+}

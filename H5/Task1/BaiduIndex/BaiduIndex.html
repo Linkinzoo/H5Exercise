@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>百度一下，你就知道</title>
+    <style>
+    /*搜索框*/
+    
+    #inputBorder {
+        border: 1px solid #AAAAAA;
+        width: 540px;
+        height: 36px;
+        margin: 0 auto;
+        padding: 0;
+        text-indent: 5px;
+        outline: none;
+    }
+    
+    #inputBorder:focus {
+        border: 1px solid rgb(51, 133, 255);
+    }
+    /*百度一下*/
+    
+    #buttonBorder {
+        border: none;
+        background-color: rgb(51, 133, 255);
+        font-size: 15px;
+        color: white;
+        outline: none;
+        margin: 0 auto;
+        padding: 0;
+        margin-left: -15px;
+    }
+    
+    #buttonBorder:active {
+        background-color: rgb(51, 133, 133);
+    }
+    /*顶部文字*/
+    
+    #aFontSize {
+        font-size: 13px;
+        color: black;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div style="height: 45px; line-height:45px; text-align: right;">
+        <a id="aFontSize" href="https://bj.nuomi.com/ "><b>糯米</b></a> &nbsp;&nbsp;
+        <a id="aFontSize" href="http://news.baidu.com/ "><b>新闻</b></a> &nbsp;&nbsp;
+        <a id="aFontSize" href="https://www.hao123.com/?tn=97716607_hao_pg "><b>hao123</b></a> &nbsp;&nbsp;&nbsp;
+        <a id="aFontSize" href="http://v.baidu.com/ "><b>地图</b></a> &nbsp;&nbsp;&nbsp;
+        <a id="aFontSize" href="http://tieba.baidu.com/ "><b>视频</b></a> &nbsp;&nbsp;&nbsp;
+        <a id="aFontSize" href="http://tieba.baidu.com/ "><b>贴吧</b></a> &nbsp;&nbsp;&nbsp;
+        <a id="aFontSize" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F "><b>登录</b></a> &nbsp;&nbsp;&nbsp;
+        <a id="aFontSize" href="http://www.baidu.com/gaoji/preferences.html "><b>设置</b></a> &nbsp;&nbsp;
+    </div>
+    <!-- 导航栏 end-->
+    <!-- 百度LOGO -->
+    <div style="text-align:center; ">
+        <img src="baiduLogo.png" alt="百度LOGO" style="margin:30px" width="21% " height="21% ">
+    </div>
+    <!-- 百度LOGO end-->
+    <!-- 搜索栏 -->
+    <div style="text-align:center; ">
+        <form>
+            <input type="text" id="inputBorder" style=" font-size:15px;" />
+            <input type="submit" value="百度一下" id="buttonBorder" style="width:90px; height:38px" />
+        </form>
+    </div>
+    <!-- 搜索栏 end-->
+</body>
+
+</html>

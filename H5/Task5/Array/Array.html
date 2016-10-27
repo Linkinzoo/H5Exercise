@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+    <link rel="stylesheet" href="./styleSheet/Array.css">
+</head>
+
+<body>
+    <!-- 轮廓 -->
+    <div class="wrapper">
+        <!-- 显示屏 -->
+        <div class="resultBox">
+            <!-- 显示最多的字符 -->
+            <div class="theLine">
+                <!-- 文字部分 -->
+                <b class="answerLine">数组中出现频率最高的元素是：</b>
+                <!-- 文字部分 end -->
+                <!-- 计算结果 -->
+                <b id="theChar" class="answer"></b>
+                <!-- 计算结果 end-->
+            </div>
+            <!-- 显示最多的字符 end -->
+            <!-- 字符出现次数 -->
+            <div class="theLine">
+                <!-- 文字部分 -->
+                <b class="answerLine">该元素在数组中共有：</b>
+                <!-- 文字部分 end -->
+                <!-- 计算结果 -->
+                <b id="theTimes" class="answer"></b>
+                <!-- 计算结果 end-->
+            </div>
+            <!-- 字符出现次数 end -->
+            <!-- 字符出现的位置 -->
+            <div class="theLine">
+                <!-- 文字部分 -->
+                <b class="answerLine">该元素的位置：</b>
+                <!-- 文字部分 end -->
+                <!-- 计算结果 -->
+                <b id="thePlaces" class="answer"></b>
+                <!-- 计算结果 end-->
+            </div>
+            <!-- 字符出现的位置 end -->
+        </div>
+        <!-- 显示屏 end -->
+        <!-- 输入框 -->
+        <input type="text" id="arrayBox" value="[“a“，”x“，”b“，”d“，”m“，”a“，”k，“m”，“p”，“j”，“a”]">
+        <!-- 输入框 end -->
+        <!-- 按钮 -->
+        <button id="checkBtn" onclick="checkArray(arrayBox.value)"><b>检查元素</b></button>
+        <!-- 按钮 end -->
+    </div>
+    <!-- 轮廓 -->
+    <script src="./js/Array.js"></script>
+</body>
+
+</html>

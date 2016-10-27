@@ -1,0 +1,664 @@
+/*初始化*/
+body, div{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+/*背景颜色*/
+.bgColor{
+	background-color: #0aa770;
+}
+
+.mainColor{
+	background-color: #07ac72;
+}
+/*包装*/
+.wrapper{
+	position: fixed;
+	overflow: scroll;
+	text-align: center;
+	width: 100%;
+	min-width: 1000px;
+	height: 100%;
+	background-color: #fafafa;
+	z-index: 1;
+	/*min-height: 800px;*/
+	font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+}
+
+/***************************** 头部包装 *****************************/
+.headerWrapper{
+	position: relative;
+    min-height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+}
+/*头部背景*/
+.headerWrapper .headerBackground{
+	position: absolute;
+    opacity: 0.1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+    z-index: -1;
+}
+/*头部*/
+.headerWrapper .header{
+	position: relative;
+	width: 990px;
+	height: 60px;
+    margin: 0 auto;
+    /*background-color: #333;*/
+}
+
+/*logo*/
+.header .logoWrapper{
+	float: left;
+	display: block;
+	width: 168px;
+	height: 60px;
+	box-sizing: border-box;
+	margin-right: 24px;
+}
+
+.header .logoWrapper .logo{
+	width: 100%;
+	height: 100%;
+}
+
+/*设为首页*/
+.header .makeIndex{
+	position: absolute;
+    width: 25px;
+    top: 0;
+    left: 168px;
+    line-height: 1.4;
+    margin-top: 13px;
+	    margin-right: 8px;
+    display: block;
+    float: left;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+
+/***************************** 信息盒子 *****************************/
+.header .infoBox{
+	float: left;
+	height: 60px;
+}
+/* 天气模块*/
+.header .infoBox .weatherBox{
+	
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+/*地区*/
+.header .infoBox .weatherBox .location{
+	display: inline-block;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	font-size: 12px;
+	color: #999;
+	text-decoration: none;
+	padding: 0 10px 0 9px;
+}
+
+
+.header .infoBox .weatherBox .location .locationArrow{
+	display: inline-block;
+	    width: 9px;
+    height: 6px;
+    background: url(../images/images.png) no-repeat -52px -97px;
+}
+/*天气*/
+.header .infoBox .weatherBox .weather{
+	display: inline-block;
+	float: left;
+    padding-right: 10px;
+    color: #999;
+    line-height: 60px;
+    height: 60px;
+    width: 115px;
+    position: relative;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.header .infoBox .weatherBox .weather .weatherPic{
+	
+    float: left;
+	display: inline-block;
+    line-height: 60px;
+    vertical-align: middle;
+    width: 26px;
+    height: 60px;
+	background-image: url(../images/clear.png);
+    background-position: 0 14px;
+    background-repeat: no-repeat;
+}
+
+.header .infoBox .weatherBox .weather .weatherInfo{
+	margin-left: 4px;
+	float: left;
+}
+
+.header .infoBox .weatherBox .weather .temperature{
+	margin-left: 8px;
+    font-family: 'arial';
+	float: left;
+
+}
+
+/*日历盒子*/
+.header .infoBox  .calendarBox{
+	position: relative;
+    text-align: center;
+    float: left;
+    margin-left: 2px;
+    width: 150px;
+    height: 60px;
+}
+
+/*日历*/
+.header .infoBox .calendarBox .calendar{
+	display: inline-block;
+	float: left;
+    color: #999;
+    line-height: 60px;
+    height: 60px;
+    width: 150px;
+    position: relative;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.header .infoBox .calendarBox .calendar span{
+	float: left;
+	padding-left: 10px;
+}
+.header .infoBox .calendarBox .calendar span:first-child{
+
+	padding-left: 5px;
+}
+
+
+/*星座盒子*/
+.header .infoBox  .starBox{
+	position: relative;
+    text-align: center;
+    float: left;
+    margin-left: 2px;
+    width: 60px;
+    height: 60px;
+}
+/*星座运势*/
+.header .infoBox .starBox .starInfo{
+	display: inline-block;
+	float: left;
+    color: #999;
+    line-height: 60px;
+    height: 60px;
+    width: 100%;
+    position: relative;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+/***************************** 常用工具盒 *****************************/
+.commonToolBox{
+	    float: right;
+    height: 60px;
+}
+
+/*登录盒子*/
+.commonToolBox .loginBox{
+	height: 60px;
+    font-size: 12px;
+	float: left;
+}
+
+.commonToolBox a{
+	text-decoration: none;
+	font-size: 12px;
+}
+.commonToolBox .loginBox .loginLink{
+	display: inline-block;
+	    position: relative;
+    padding: 0;
+    line-height: 60px;
+    padding-left: 33px;
+    padding-right: 9px;
+    color: #999;
+    background-image: url(../images/images.png);
+    background-repeat: no-repeat;
+    background-position: -30px -110px;
+}
+
+
+/*盒子属性*/
+.commonToolBox .cellBox{
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	/*width: 38px;*/
+	padding: 0 9px;
+    color: #999;
+}
+
+/***************************** 搜索栏包装 *****************************/
+.searchWrapper{
+	position: relative;
+    min-height: 82px;
+    width: 100%;
+}
+/*搜索栏背景*/
+.searchWrapper .searchBackground{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 82px;
+    z-index: -1;
+}
+/*搜索栏*/
+.searchWrapper .searchBar {
+	position: relative;
+	width: 990px;
+	height: 68px;
+    margin: 0 auto;
+}
+
+/*搜索栏盒子*/
+.searchWrapper .searchBar .search{
+	position: relative;
+    padding: 27px 0 0 100px;
+    height: 68px;
+}
+/***************************** 搜索栏盒子内容 *****************************/
+.searchWrapper .searchBar .search .searchInner{
+	width: 890px;
+	position: relative;
+	height: 46px;
+}
+/*logo*/
+.searchWrapper .searchBar .search .searchInner .baiduLogo{
+	position: relative;
+    float: left;
+    width: 120px;
+    height: 40px;
+}
+
+.searchWrapper .searchBar .search .searchInner .baiduLogo a{
+	    position: absolute;
+	        float: left;
+    margin: 4px 30px 0 -26px;
+    left: 0;
+}
+
+
+.searchWrapper .searchBar .search .searchInner .baiduLogo a span{
+	    background: url(../images/images.png) -10px -212px no-repeat;
+	    width: 120px;
+    height: 40px;
+    display: block;
+}
+
+/*搜索框的表单包装*/
+.searchWrapper .searchBar .search .searchInner .formWrapper{
+	float: left;
+    position: relative;
+    width: 660px;
+}
+/*搜索框包装*/
+.searchWrapper .searchBar .search .searchInner .formWrapper .inputBorder{
+	border: 1px solid #666;
+	border-right: none;
+    position: relative;
+    float: left;
+
+}
+/*搜索框*/
+.searchWrapper .searchBar .search .searchInner .formWrapper .searchInput{
+	    width: 538px;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 10px 9px;
+    outline: none;
+    border: none;
+    font: 16px arial;
+}
+
+/*百度一下按钮包装*/
+.searchWrapper .searchBar .search .searchInner  .bdBtnWrapper{
+	/*border: 1px solid #333;*/
+	border-left: none;
+	float: left;
+    position: relative;
+}
+
+.searchWrapper .searchBar .search .searchInner  .bdBtnWrapper .baiduBtn{
+
+    width: 120px;
+    height: 46px;
+    background: url(../images/images.png) no-repeat -211px -180px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchWrapper .searchBar .search .searchInner  .bdBtnWrapper .baiduBtn:hover{
+
+    background-position: -211px -230px;
+}
+
+/***************************** 换肤盒子 *****************************/
+.searchWrapper .searchBar .search .searchInner .changeColorBox{
+
+    float: left;
+    position: relative;
+    width: 110px;
+    height: 46px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+/*换肤单元格*/
+.searchWrapper .searchBar .search .searchInner .changeColorBox .colorCell{
+	display: block;
+	height: 46px;
+	width: 22px;
+	float: left;
+	line-height: 46px;
+	font-size: 16px;
+	font-family: "Arial";
+	text-align: center;
+	cursor: pointer;
+	user-select:none;
+}
+/*5种颜色*/
+.changeColorBox .green{
+	color: #fff;
+	background-color: #0aa770;
+}
+.changeColorBox .green:hover{
+	background-color: #1ab780;
+}
+.changeColorBox .yellow{
+	color: #fff;
+	background-color: rgb(253, 205, 82);
+}
+.changeColorBox .yellow:hover{
+	background-color: rgb(255, 225, 98);
+}
+.changeColorBox .red{
+	color: #fff;
+	background-color: rgb(219, 84, 75);
+}
+.changeColorBox .red:hover{
+	background-color: rgb(239, 104, 95);
+}
+.changeColorBox .blue{
+	color: #fff;
+	background-color: rgb(51, 75, 217);
+}
+.changeColorBox .blue:hover{
+	background-color: rgb(71, 95, 237);
+}
+
+.changeColorBox .purple{
+	color: #fff;
+	background-color: #6A5ACD;
+}
+.changeColorBox .purple:hover{
+	background-color: #7A6ADD;
+}
+/***************************** 搜索热词 *****************************/
+.hotWordWrapper{
+	    width: 1000px;
+    margin: -9px auto -7px;
+}
+/*热词盒子*/
+.hotWordWrapper  .hotWordBox{
+	    margin: 6px 0 26px 228px;
+}
+
+/*热词列表的包装*/
+.hotWordWrapper  .hotWordBox  .hotWordListWrapper{
+	
+    width: 658px;
+    position: relative;
+}
+/*热词列表*/
+.hotWordWrapper  .hotWordBox  .hotWordListWrapper .hotWordList{
+	    width: 658px;
+	    height: 20px;
+	    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/*热词列表首项*/
+.hotWordWrapper  .hotWordBox  .hotWordListWrapper .hotWordList .hotWordTitle{
+
+    margin-right: 6px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/*热词图标*/
+.hotWordWrapper  .hotWordBox  .hotWordListWrapper .hotWordList .hotWrodIcon{
+	
+    padding-left: 15px;
+    padding-bottom: 1px;
+    background: url(../images/images.png) -159px -260px no-repeat;
+
+}
+/*热词列表中的单元*/
+.hotWordWrapper  .hotWordBox  .hotWordListWrapper .hotWordList li{
+
+    display: inline-block;
+    margin-right: 20px;
+}
+.hotWordWrapper  .hotWordBox  .hotWordListWrapper .hotWordList li a{
+
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+}
+.hotWordWrapper  .hotWordBox  .hotWordListWrapper .hotWordList li a:hover{
+	color: red;
+}
+
+/***************************** 内容部分 *****************************/
+.contenter{
+	position: relative;
+}
+
+/***************************** 导航栏 *****************************/
+.contenter .conNav{
+
+    border: 0px;
+    margin-bottom: 10px;
+    width: 990px;
+    height: 38px;
+    font-size: 14px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*导航栏列表*/
+.contenter .conNav .conNavList{
+	list-style: none;
+    height: 38px;
+    border-top: 2px solid #0aa770;
+    background-color: #fcfcfc;
+    padding: 0;
+    margin: 0;
+}
+.contenter .conNav .conNavList li{
+	position: relative;
+	float: left;
+	    width: 101px;
+}
+.contenter .conNav .conNavList li:first-child{
+	    width: 81px;
+}
+
+/*导航栏标签*/
+.contenter .conNav .conNavList li .navA{
+	text-decoration: none;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    background-color: none;
+    cursor: pointer;
+    color: #333;
+    font-family: Microsoft Yahei;
+    font-size: 16px;
+}
+
+.contenter .conNav .conNavList li .navA:hover{
+	color: #0aa770;
+}
+/*.contenter .conNav .conNavList li .active{
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    background-color: #0aa770;
+    cursor: pointer;
+    color: #fff;
+    font-family: Microsoft Yahei;
+    font-size: 16px;
+}
+.contenter .conNav .conNavList li .active:hover{
+
+    color: #fff;
+}*/
+.contenter .conNav .conNavList li #active{
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    background-color: #0aa770;
+    cursor: pointer;
+    color: #fff;
+    font-family: Microsoft Yahei;
+    font-size: 16px;
+}
+.contenter .conNav .conNavList li #active:hover{
+
+    color: #fff;
+}
+/*导航栏标签分隔线*/
+.contenter .conNav .conNavList li .navA .navLine{
+
+    display: block;
+    width: 1px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    background: url(../images/navLine.png) center left no-repeat;
+}
+
+/***************************** 推荐栏 *****************************/
+.contenter .govSiteWrapper{
+
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    overflow: hidden;
+}
+
+
+.contenter .govSiteWrapper .govSite{
+	
+	width: 990px;
+    height: 38px;
+    border: solid 1px #ade0c1;
+    line-height: 38px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+.contenter .govSiteWrapper .govSite .govSiteTitle{
+	float: left;
+
+    vertical-align: top;
+    display: inline-block;
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #118850;
+}
+.contenter .govSiteWrapper .govSite .govSiteTitleLine{
+	float: left;
+    vertical-align: top;
+    display: inline-block;
+    height: 20px;
+    width: 1px;
+    background-color: #eaeaea;
+    position: relative;
+    top: 9px;
+    margin-right: 20px;
+}
+/*推荐栏中的单元格*/
+.contenter .govSiteWrapper .govSite .govSiteCell{
+	float: left;
+	    height: 38px;
+    line-height: 38px;
+    vertical-align: top;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.contenter .govSiteWrapper .govSite .govSiteCell a{
+	
+    height: 38px;
+    line-height: 38px;
+    vertical-align: top;
+    color: #333;
+    text-decoration: none;
+}
+.contenter .govSiteWrapper .govSite .govSiteCell a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+/***************************** 网页内容 *****************************/
+.contenter .webContenter{
+    width: 990px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.contenter .webContenter .conRightPart{
+	width: 700px;
+	float: right;
+}

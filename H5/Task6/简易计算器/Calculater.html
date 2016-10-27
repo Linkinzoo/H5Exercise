@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" href="./styleSheet/Calculater.css">
+</head>
+
+<body>
+    <!-- 轮廓 -->
+    <div class="wrapper">
+        <!-- 显示屏 -->
+        <div class="resultBox">
+            <!-- 计算结果 -->
+            <b id="result">0.00</b>
+            <!-- 计算结果 end-->
+        </div>
+        <!-- 显示屏 end -->
+        <!-- 输入栏 -->
+        <div class="inputBox">
+            <!-- 包装 -->
+            <ul class="inputWra">
+                <li><a  class="button gray" onclick="sctCalculate(this)">sin</a></li>
+                <li><a  class="button gray" onclick="sctCalculate(this)">cos</a></li>
+                <li><a  class="button gray" onclick="sctCalculate(this)">tan</a></li>
+                <li><a  class="button red" onclick="backWord()">back</a></li>
+                <li><a  class="button red" onclick="clearAll()">C</a></li>
+                <li><a  class="button gray firstElement" onclick="typeValue(this)">7</a></li>
+                <li><a  class="button gray" onclick="typeValue(this)">8</a></li>
+                <li><a  class="button gray" onclick="typeValue(this)">9</a></li>
+                <li><a id="addBtn" class="button gray" onclick="typeSign(this)">+</a></li>
+                <li><a id="powerBtn" class="button gray" onclick="typeSign(this)">x^y</a></li>
+                <li><a  class="button gray firstElement" onclick="typeValue(this)">4</a></li>
+                <li><a  class="button gray" onclick="typeValue(this)">5</a></li>
+                <li><a  class="button gray" onclick="typeValue(this)">6</a></li>
+                <li><a id="minusBtn" class="button gray" onclick="typeSign(this)">-</a></li>
+                <li><a id="sqryBtn" class="button gray" onclick="typeSign(this)">sqry</a></li>
+                <li><a  class="button gray firstElement" onclick="typeValue(this)">1</a></li>
+                <li><a  class="button gray" onclick="typeValue(this)">2</a></li>
+                <li><a  class="button gray" onclick="typeValue(this)">3</a></li>
+                <li><a id="multiBtn" class="button gray" onclick="typeSign(this)">x</a></li>
+                <li><a id="calcuBtn" class="button yellow equal" onClick="calculate()">=</a></li>
+                <li><a  class="button gray zero" onclick="typeValue(this)">0</a></li>
+                <li><a  class="button gray" onclick="typeDot()">.</a></li>
+                <li><a id="diviBtn" class="button gray" onclick="typeSign(this)">÷</a></li>
+            </ul>
+            <!-- 包装 end -->
+        </div>
+        <!-- 输入栏 end-->
+        
+    </div>
+    <!-- 轮廓 end -->
+    <script src="./js/Calculater.js"></script>
+</body>
+
+</html>

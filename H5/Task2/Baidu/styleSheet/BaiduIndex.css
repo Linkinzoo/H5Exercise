@@ -1,0 +1,400 @@
+/*初始化*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*html*/
+    html{
+        height: 100%;
+    }
+    /*body*/
+    body {
+        position: relative;
+        height: 100%;
+        min-height: 510px
+        min-width:700px;
+    }
+    /*容器*/
+    .contain{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        min-height: 380px;
+        min-width:700px;
+    }
+    /**************************** 导航栏 ****************************/
+    
+    .nav {
+        float: right;
+        text-align: right;
+        height: 3rem;
+        line-height: 3rem;
+        min-width: 570px;
+    }
+
+    /*取消链接的下划线*/
+    
+    .pic a:link {
+        text-decoration: none;
+    }
+    
+    .pic a:visited {
+        text-decoration: none;
+    }
+    
+    .pic a:hover {
+        text-decoration: underline;
+    }
+    
+    .pic a:active {
+        text-decoration: none;
+    }
+    /*容器*/
+    
+    .menu {
+        float: right;
+        width: 6rem;
+        height: 540px;
+        margin-left: 1rem;
+    }
+    /*菜单*/
+    
+    .menu .more {
+        margin-right: 1rem;
+        margin-top: 0.75rem;
+        background-color: rgb(51, 133, 255);
+        font-size: 0.5rem;
+        width: 4rem;
+        float: right;
+        color: white;
+        height: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    /*鼠标划到按钮时的状态*/
+    
+    .more:hover {
+        background-color: rgb(249, 249, 249);
+        color: black;
+        margin-right: 0rem;
+        margin-top: 0;
+        width: 6rem;
+        height: 100%;
+        padding-top: 0.75rem;
+        border-left: 1px solid rgb(231, 231, 231);
+        position: absolute;
+    }
+    /*鼠标划过按钮时显示*/
+    
+    .menu .more:hover .pic {
+        display: block;
+    }
+    
+    .menu .more:hover .menu {
+        margin-left: 0;
+    }
+    
+    .menu .pic {
+        display: none;
+        height: 540px;
+    }
+    /*分割线*/
+    
+    .hr {
+        width: 80%;
+        margin-left: 10%;
+        border: 1px solid rgb(240, 240, 240);
+    }
+    /*链接容器*/
+    
+    .linkage {
+        width: 5rem
+;
+        height: 5rem;
+        display: block;
+    }
+    /*最下面贩链接容器*/
+    
+    .lastLinkage {
+        width: 5rem;
+        height: 2rem;
+        display: block;
+    }
+    /*图片属性*/
+    
+    .img {
+        width: 3rem;
+        height: 3rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    /*关键字属性*/
+    
+    .keyWord {
+        margin-top: -1rem;
+        display: block;
+        width: 6rem;
+        color: rgb(102, 102, 102);
+    }
+    /*最后一个关键字的属性*/
+    
+    .lastKeyWord {
+        margin-top: 0.5rem;
+        display: block;
+        width: 6rem;
+        color: rgb(102, 102, 102);
+        text-decoration: underline;
+    }
+    /*顶部导航栏中的文字*/
+    
+    .aFontSize {
+        font-size: 13px;
+        margin-right: 2rem;
+        color: black;
+        float: right;
+    }
+    
+    .aFontSize:hover {
+        color: blue;
+    }
+    /*最后一个关键字的属性*/
+    
+    .lastFontSize {
+        font-size: 13px;
+        color: black;
+        float: right;
+    }
+    
+    .lastFontSize:hover {
+        color: blue;
+    }
+    /*百度LOGO容器*/
+    .LogoContain{
+        margin: 0 auto;
+        clear: both;
+        width: 700px;
+    }
+    /*百度LOGO*/
+    
+    .logo {
+        width: 270px;
+        height: 129px;
+        margin: 0 auto;
+        display: block;
+    }
+    /**************************** 搜索组件容器 ****************************/
+    
+    .cigarette {
+        width: 650px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin:0 auto;
+        margin-top: 1rem;
+    }
+    /*搜索框*/
+    
+    .inputBorder {
+        border: 1px solid #AAAAAA;
+        width: 540px;
+        height: 36px;
+        text-indent: 5px;
+        outline: none;
+        font-size: 15px;
+        float: left;
+        border-right: none;
+    }
+    
+    .inputBorder:focus {
+        border: 1px solid rgb(51, 133, 255);
+        border-right: none;
+    }
+    /*百度一下*/
+    
+    .buttonBorder {
+        float: left;
+        border: none;
+        background-color: rgb(51, 133, 255);
+        font-size: 15px;
+        color: white;
+        outline: none;
+        margin: 0 auto;
+        width: 100px;
+        height: 38px;
+        cursor: pointer;
+    }
+    
+    .buttonBorder:hover {
+        background-color: rgb(31, 113, 235);
+    }
+    
+    .buttonBorder:active {
+        background-color: rgb(21, 103, 225);
+    }
+    /*图片按钮*/
+    
+    .imgBox {
+        position: relative;
+        float: left;
+        margin-left: -63px;
+        margin-top: -11px;
+    }
+    /*麦克风图片*/
+    
+    .imgs {
+        margin-top: 21px;
+        width: 13px;
+        height: 18px;
+        display: inline-block;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../Icon/microphone.png);
+    }
+    
+    .imgs:hover {
+        background-image: url(../Icon/highlight.png);
+    }
+    /*相机图片链接*/
+    
+    .imgssA {
+        margin-top: 21px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../Icon/camera.png);
+        display: inline-block;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+    }
+    
+    .imgssA:hover {
+        background-position: bottom;
+    }
+    /*相机图片*/
+    
+    .imgss {
+        width: 18px;
+        height: 36px;
+    }
+    /*纵向分割线*/
+    
+    .hrVertical {
+        width: 1px;
+        height: 15px;
+        margin-top: 22.5px;
+        margin-right: 6px;
+        margin-left: 6px;
+        border-left: 1px solid rgb(219, 219, 219);
+        display: inline-block;
+    }
+    /**************************** 底部组件容器 ****************************/
+    
+    .footer {
+        margin: 0 auto;
+        width: 670px;
+        height: 90px;
+        position: absolute;
+        left: 18%;
+        bottom: 21px;
+        font: 12px arial;
+    }
+    /*二维码 手机百度*/
+    .qrcode1 {
+        float: left;
+        text-align: center;
+    }
+    /*二维码 百度糯米*/
+    .qrcode2 {
+        float: left;
+        margin-left: 33px;
+        text-align: center;
+    }
+    /*二维码图片 手机百度*/
+    
+    .img1item {
+        float: left;
+        width: 60px;
+        height: 60px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../Icon/qrcode1.png);
+    }
+    /*二维码图片 百度糯米*/
+    .img2item {
+        float: left;
+        width: 60px;
+        height: 60px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../Icon/qrcode2.png);
+    }
+    /*二维码附属文字*/
+    .text1item {
+        float: left;
+        margin: 8px 0 0 10px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .textP1 {
+        line-height: 23px;
+        color: rgb(102, 102, 102);
+    }
+    
+    .textP2 {
+        line-height: 23px;
+        color: rgb(153, 153, 153);
+    }
+    /*底部文字段落P*/
+    .pBottom{
+        float: left;
+        margin-left: 33px;
+        height: 22px;
+        line-height: 22px;
+        width: 340px;
+        text-align: left;
+        color: rgb(153, 153, 153);
+    }
+/*关键字的颜色*/
+    .pBottom a:link {
+        color: rgb(153, 153, 153);
+    }
+    
+    .pBottom a:visited {
+        color: rgb(153, 153, 153);
+    }
+    
+    .pBottom a:hover {
+        color: rgb(153, 153, 153);
+    }
+    
+    .pBottom a:active {
+        color: rgb(153, 153, 153);
+    }
+    .linkBaidu{
+        margin-left: 60px;
+    }
+    /*灰色字体颜色*/
+    .grayText{
+        color: rgb(153, 153, 153);
+    }
+    /*图片第二段文字中的图片*/
+    .imgP2{
+        width: 21px;
+        height: 15px;
+        display: inline-block;
+        background-size: 87%;
+        background-repeat: no-repeat;
+        background-image: url(../Icon/iconP2.png);
+    }
+    /*图片第三段文字中的图片*/
+    .imgP3{
+        width: 21px;
+        height: 16px;
+        display: inline-block;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../Icon/iconP3.png);
+    }

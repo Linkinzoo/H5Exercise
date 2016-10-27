@@ -1,0 +1,60 @@
+/*初始化*/
+
+.container {
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB";
+    color: rgb(42, 31, 27);
+}
+
+h2,
+div {
+    text-align: center;
+}
+
+
+/*初始化删格控件*/
+
+[class*="col-"] {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #666;
+    /*padding: 0;*/
+}
+
+
+/*链接*/
+
+.linkage {
+    border: none;
+    border-bottom: 1px solid #666;
+    text-align: left;
+    color: #666;
+}
+
+
+/*主标题属性*/
+
+.slogan {
+    height: 60px;
+    line-height: 60px;
+    border: none;
+    padding-bottom: 21px;
+}
+
+
+/*表格容器*/
+
+.tableContainer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: 3px double #666;
+}
+
+
+/*标题行属性*/
+
+.titleDiv {
+    font-weight: bold;
+    background-color: rgb(228, 231, 220);
+    /*background-color: #8FD2FF;*/
+}

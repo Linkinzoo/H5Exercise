@@ -1,0 +1,226 @@
+/*初始化*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px arial;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 510px;
+    min-width: 810px;
+}
+
+input {
+    outline: none;
+}
+
+header {
+    overflow: hidden;
+}
+
+header nav {
+    float: right;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;
+}
+
+header nav a {
+    margin-left: 20px;
+    color: #333;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 13px;
+}
+
+header nav a:hover {
+    color: #00c;
+}
+
+
+/*更多产品*/
+
+header nav .more {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+header nav .more:hover {
+    color: #ffffff;
+}
+
+
+/*主体部分*/
+
+.content {
+    position: relative;
+    top: 38.2%;
+    text-align: center;
+}
+
+.content .search-form {
+    position: relative;
+    height: 191px;
+    margin: 0 auto;
+    top:  -191px;
+}
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+.content .search-input {
+    width: 539px;
+    height: 28px;
+    border: 1px solid #ddd;
+    padding: 3px 0 3px 7px;
+    border-right-width: 0;
+    vertical-align: middle;
+}
+
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #4791ff transparent #4791ff #4791ff;
+}
+
+.content .search-btn {
+    width: 100px;
+    height: 36px;
+    margin: -5px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.content .search-btn:hover {
+    background-color: #317ef3;
+}
+
+
+/*底部信息*/
+
+footer {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 44px;
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+    /*display: block;*/
+}
+
+.footerBox{
+    display: inline-block;
+    width: 590px;
+    /*position: relative;*/
+    text-align: center;
+
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #00c;
+}
+
+footer p a:hover {
+    color: #00c;
+}
+
+footer .copy-right a {
+    color: #666;
+}
+
+footer .copy-right a:hover {
+    color: #666;
+}
+/*二维码 手机百度*/
+
+.qrcode1 {
+    float: left;
+    text-align: center;
+}
+
+
+/*二维码 百度糯米*/
+
+.qrcode2 {
+    float: left;
+    margin-left: 33px;
+    text-align: center;
+}
+
+
+/*二维码图片 手机百度*/
+
+.img1item {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../Icon/qrcode1.png);
+}
+
+
+/*二维码图片 百度糯米*/
+
+.img2item {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../Icon/qrcode2.png);
+}
+
+
+/*二维码附属文字*/
+
+.text1item {
+    float: left;
+    margin: 8px 0 0 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.textP1 {
+    line-height: 23px;
+    color: rgb(102, 102, 102);
+}
+
+.textP2 {
+    line-height: 23px;
+    color: rgb(153, 153, 153);
+}

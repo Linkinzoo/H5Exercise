@@ -1,0 +1,307 @@
+/*reset*/
+
+.div {
+    box-sizing: border-box;
+}
+
+
+/*轮廓*/
+
+.wrapper {
+    width: 600px;
+    height: auto;
+    background-color: #333;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -220px;
+    left: 50%;
+    margin-left: -300px;
+    padding-bottom: 6px;
+    box-shadow: 0px 4px 1px #999;
+}
+
+
+/*显示屏容器*/
+
+.wrapper .resultBox {
+    position: relative;
+    top: 18px;
+    width: 540px;
+    height: 81px;
+    margin: 0 auto;
+    background-color: #999;
+    border-radius: 15px;
+    box-shadow: inset -1px 1px 5px #333;
+}
+
+
+/*显示屏*/
+
+.wrapper .resultBox #result {
+    position: relative;
+    color: black;
+    display: block;
+    text-align: right;
+    line-height: 81px;
+    font-size: 54px;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+
+/*输入框容器*/
+
+.wrapper .inputBox {
+    width: 540px;
+    height: 302px;
+    margin: 42px auto 0;
+}
+
+
+/*输入框*/
+
+.wrapper .inputBox .inputWra {
+    list-style: none;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    height: 302px;
+    /*border: 1px solid black;*/
+    width: 550px;
+}
+
+
+/************************* 按钮样式 *************************/
+
+.inputBox .inputWra a.button {
+    display: block;
+    float: left;
+    position: relative;
+    height: 42px;
+    width: 100px;
+    margin: 0 10px 18px 0;
+    overflow: hidden;
+    text-decoration: none;
+    font: 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.inputWra a.button:before,
+.inputWra a.button:after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    height: 42px;
+    width: 100px;
+    bottom: -1px;
+    -webkit-border-radius: 3px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius: 3px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-radius: 3px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* GRAY */
+
+.inputWra a.gray {
+    color: #555;
+    border-bottom: 4px solid #b2b1b1;
+    text-shadow: 0px 1px 0px #fafafa;
+    background: #eee;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#e2e2e2));
+    background: -moz-linear-gradient(top, #eee, #e2e2e2);
+    box-shadow: inset 1px 1px 0 #f5f5f5;
+}
+
+.inputWra .gray:before,
+.inputWra .gray:after {
+    border: 1px solid #cbcbcb;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.inputWra .gray:hover {
+    background: #e2e2e2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#eee));
+    background: -moz-linear-gradient(top, #e2e2e2, #eee);
+}
+
+
+/* yellow */
+
+.inputWra a.yellow {
+    color: #555;
+    border-bottom: 4px solid rgb(173, 128, 47);
+    text-shadow: 0px 1px 0px rgb(255, 227, 103);
+    background: rgb(254, 205, 81);
+    background: -webkit-gradient(linear, left top, left bottom, from( rgb(255, 207, 83)), to(rgb(254, 205, 81)));
+    background: -moz-linear-gradient(top, rgb(255, 207, 83), rgb(254, 205, 81));
+    box-shadow: inset 1px 1px 0 rgb(236, 186, 85);
+}
+
+.inputWra .yellow:before,
+.inputWra .yellow:after {
+    border: 1px solid rgb(236, 186, 85);
+    border-bottom: 1px solid rgb(226, 136, 75);
+}
+
+.inputWra .yellow:hover {
+    background: rgb(255, 207, 83);
+    background: -webkit-gradient(linear, left top, left bottom, from( rgb(254, 205, 81)), to(rgb(255, 207, 83)));
+    background: -moz-linear-gradient(top, rgb(255, 207, 83), rgb(254, 205, 81));
+}
+
+.inputBox .inputWra li .yellow:active {
+    background: rgb(255, 217, 93);
+}
+/* red */
+
+.inputWra a.red {
+    color: #555;
+    border-bottom: 4px solid rgb(201, 83, 97);
+    text-shadow: 0px 1px 0px (255, 142, 159);
+    background: rgb(245, 102, 119);
+    background: -webkit-gradient(linear, left top, left bottom, from( rgb(245, 102, 119)), to(rgb(247, 104, 121)));
+    background: -moz-linear-gradient(top, rgb(245, 102, 119), rgb(247, 104, 121));
+    box-shadow: inset 1px 1px 0 rgb(240, 111, 128);
+}
+
+.inputWra .red:before,
+.inputWra .red:after {
+    border: 1px solid rgb(240, 111, 128);
+    border-bottom: 1px solid rgb(195, 82, 99);
+}
+
+.inputWra .red:hover {
+    background: rgb(245, 102, 119);
+    background: -webkit-gradient(linear, left top, left bottom, from( rgb(247, 104, 121)), to(rgb(245, 102, 119)));
+    background: -moz-linear-gradient(top, rgb(245, 102, 119), rgb(247, 104, 121));
+}
+.inputBox .inputWra li .red:active {
+    background: rgb(255, 112, 129);
+}
+
+/* ACTIVE STATE */
+
+.inputWra a.button:active {
+    border: none;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2e2e2));
+    background: -moz-linear-gradient(top, #fff, #e2e2e2);
+    bottom: -4px;
+    margin-bottom: 22px;
+    -webkit-box-shadow: 0 1px 1px #fff;
+    -moz-box-shadow: 0 1px 1px #fff;
+    box-shadow: 1px 1px 0 #333, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.inputWra a.button:active:before,
+.inputWra a.button:active:after {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.inputWra .firstElement {
+    clear: both;
+}
+
+
+/*按钮 0 */
+
+.inputBox .inputWra li .zero {
+    clear: both;
+    width: 210px;
+}
+
+.inputBox .inputWra li .zero:before,
+.inputBox .inputWra li .zero:after {
+    width: 210px;
+}
+
+
+/*按钮 = */
+
+.inputBox .inputWra li .equal {
+    height: 106px;
+    line-height: 90px;
+    position: absolute;
+    bottom: -18px;
+    float: right;
+    right: 0px;
+    font-size: 72px;
+}
+
+.inputBox .inputWra li .equal:before,
+.inputBox .inputWra li .equal:after {
+    height: 106px;
+}
+.inputBox .inputWra li .equal:active{
+    bottom: -22px;
+}
+
+
+
+/*按钮栏*/
+
+.wrapper .buttonBox {
+    width: 540px;
+    height: 74px;
+    margin: 18px auto;
+}
+
+
+/*单选框*/
+
+.wrapper .buttonBox #selectBox {
+    width: 80%;
+    font-size: 24px;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    border-radius: 0px;
+    height: 37px;
+    float: left;
+    text-indent: 112px;
+}
+
+
+/*清除按钮*/
+
+.wrapper .buttonBox #clearBtn {
+    display: block;
+    float: left;
+    position: relative;
+    height: 25px;
+    width: 80px;
+    margin: 0 10px 18px 0;
+    text-decoration: none;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+}
+
+.wrapper .buttonBox #selectBox option {}
+
+
+/*计算按钮*/
+
+.wrapper .buttonBox #calBtn {
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    outline: none;
+    background-color: rgb(254, 205, 81);
+}

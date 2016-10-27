@@ -1,0 +1,1385 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/*html*/
+html {
+  height: 100%; }
+
+/*body*/
+body {
+  position: relative;
+  height: 100%;
+  min-height: 1000px; }
+
+div, dd, a {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+a:hover {
+  color: #35b558; }
+
+.arrowIcon {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #c1c1c1;
+  border-left: 1px solid #c1c1c1;
+  display: inline-block;
+  transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -webkit-transform-origin: 4px 4px;
+          transform-origin: 4px 4px; }
+
+/*包装*/
+.wrapper {
+  background-color: whitesmoke;
+  overflow: auto;
+  position: relative;
+  /*text-align: center;
+    width: 100%;
+    height: 100%;*/ }
+
+/******************************* 第一部分：header容器 *******************************/
+.headerWrapper {
+  padding: 0px;
+  margin: 0px;
+  min-width: 1000px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #ececec;
+  background: #fff; }
+  .headerWrapper .headerBox {
+    width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px; }
+    .headerWrapper .headerBox .logo {
+      width: 109px;
+      display: inline-block;
+      margin-right: 60px;
+      height: 60px;
+      float: left; }
+      .headerWrapper .headerBox .logo img {
+        float: left;
+        width: 109px;
+        margin-top: 10px;
+        border: 0 none; }
+    .headerWrapper .headerBox .headerNav {
+      height: 60px;
+      display: inline-block;
+      float: left; }
+  .headerWrapper .relative {
+    position: relative; }
+
+.headerWrapper .headerBox .headerNav .headerNavUl, .headerWrapper a, .headerWrapper i, .headerWrapper h3 {
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif; }
+
+.headerWrapper .headerBox .headerNav .headerNavUl li {
+  position: relative;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 50px;
+  cursor: pointer;
+  height: 60px;
+  float: left; }
+
+.headerWrapper .headerBox .headerNav .headerNavUl li:hover {
+  color: #35b558;
+  cursor: pointer; }
+
+.headerWrapper .headerBox .headerNav .headerNavUl li:hover .arrowIcon {
+  margin-bottom: -2px;
+  border-top: 1px solid #35b558;
+  border-left: 1px solid #35b558;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  animation: rotate 1s ease normal;
+  -moz-animation: rotate 1s ease normal;
+  -webkit-animation: rotate 1s ease normal; }
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg); } }
+
+/*本页面的主题标签*/
+.headerWrapper .headerBox .headerNav .headerNavUl .defaultLi {
+  color: #35b558; }
+
+.headerWrapper .headerBox .headerNav .headerNavUl li .subMenu {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: 1100;
+  top: 60px;
+  left: 0;
+  background: #fff;
+  font-size: 12px;
+  color: #666;
+  width: 280px; }
+
+.headerWrapper .headerBox .headerNav .headerNavUl li:hover .subMenu {
+  display: block;
+  opacity: 1;
+  animation: myfirst 0.8s ease normal;
+  -moz-animation: myfirst 0.8s ease normal;
+  -webkit-animation: myfirst 0.8s ease normal; }
+
+@keyframes myfirst {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes myfirst {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.headerNav .headerNavUl li:hover .subMenu h3 {
+  margin: 10px 0;
+  padding: 0 15px;
+  background: #fafafa;
+  height: 28px;
+  line-height: 28px;
+  font-weight: 300; }
+
+.headerNav .headerNavUl li .subMenu a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px; }
+
+.headerNav .headerNavUl li .subMenu a:hover {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  background: #fafafa;
+  color: #35b558; }
+
+.headerNav .headerNavUl .subMenu a i {
+  margin-left: 5px; }
+
+.headerNav .headerNavUl .schoolList i {
+  background: url("../icon/M_newIcon.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 10px !important; }
+
+.headerNav .headerNavUl .subMenu .webIcon {
+  background-position: -15px -27px; }
+
+.headerNav .headerNavUl .subMenu .pythonIcon {
+  background: url("../icon/M_tinyIcon.png") 0 0 no-repeat;
+  background-size: 16px 148px;
+  background-position: -2px -2px; }
+
+.headerNav .headerNavUl .subMenu .goIcon {
+  background: url("../icon/M_tinyIcon.png") 0 0 no-repeat;
+  background-size: 16px 148px;
+  background-position: -2px -38px; }
+
+.headerNav .headerNavUl .subMenu .iosIcon {
+  background: url("../icon/M_tinyIcon.png") 0 0 no-repeat;
+  background-size: 16px 148px;
+  background-position: -2px -82px; }
+
+.headerNav .headerNavUl .vipLesson i {
+  background: url("../icon/M_newIcon.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 10px !important; }
+
+.headerNav .headerNavUl .vipLesson a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #666; }
+
+.headerNav .headerNavUl .vipLesson a span {
+  color: #bbb;
+  float: right; }
+
+.headerNav .headerNavUl .subMenu .lessonStorageIcon {
+  background-position: 0 -13px; }
+
+.headerNav .headerNavUl .subMenu .careerIcon {
+  background-position: -45px 0; }
+
+.headerNav .headerNavUl .subMenu .knowledgeIcon {
+  background-position: -30px -13px; }
+
+.headerNav .headerNavUl .subMenu .tagForLessonIcon {
+  background-position: -15px -13px; }
+
+.headerNav .headerNavUl .subMenu .vipBuyIcon {
+  background-position: -16px 0; }
+
+.headerNav .headerNavUl .subMenu .questionIcon {
+  background-position: 0 -27px; }
+
+.headerNav .headerNavUl .subMenu .wikiIcon {
+  background-position: -29px -27px; }
+
+.headerNav .headerNavUl .subMenu .groupIcon {
+  background-position: 0 2px; }
+
+.headerNav .headerNavUl .subMenu .downloadIcon {
+  background-position: -30px 0; }
+
+.headerNav .headerNavUl .subMenu .serieIcon {
+  background: url("../icon/serieIcon.png") 0 0 no-repeat;
+  background-position: 0 0;
+  background-size: 12px 12px; }
+
+/*登录状态区域*/
+.headerWrapper .headerBox .loginBox {
+  float: right;
+  text-align: right;
+  width: 200px;
+  margin-right: 10px;
+  height: 60px; }
+
+.headerWrapper .headerBox .loginBox span {
+  height: 60px;
+  width: 17px;
+  display: inline-block;
+  margin-left: 25px;
+  cursor: pointer; }
+
+.headerWrapper .searchIcon {
+  background: url("../icon/Magnifiers.png") 0 0 no-repeat;
+  background-size: 17px 17px;
+  background-position: 0, 0;
+  height: 17px;
+  width: 17px;
+  display: inline-block; }
+
+.headerWrapper .searchIcon:hover {
+  background-image: url("../icon/Magnifiers2.png"); }
+
+.headerWrapper .appIcon {
+  background: url("../icon/appIcon.png") 0 0 no-repeat;
+  background-size: 17px;
+  background-position: 0; }
+
+.headerWrapper .appIcon:hover {
+  background: url("../icon/appIcon2.png") 0 0 no-repeat;
+  background-size: 17px;
+  background-position: 0; }
+
+.headerWrapper .loginIcon {
+  background: url("../icon/loginIcon.png") 0 0 no-repeat;
+  background-size: 17px;
+  background-position: 0; }
+
+.headerWrapper .appIcon .subMenu {
+  padding: 0;
+  right: -50px; }
+
+.loginList .subMenu {
+  display: none;
+  opacity: 0;
+  padding: 10px 0;
+  background: #fff;
+  position: absolute;
+  width: 120px;
+  z-index: 1200;
+  top: 60px;
+  right: -10px; }
+
+.loginList:hover .subMenu {
+  display: block;
+  opacity: 1;
+  animation: listshow 0.8s ease normal;
+  -moz-animation: listshow 0.8s ease normal;
+  -webkit-animation: listshow 0.8s ease normal; }
+
+@keyframes listshow {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes listshow {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.loginList:hover .subMenu .topIcon {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+  display: inline-block;
+  background: #fff; }
+
+.headerWrapper .headerBox .loginBox .appIcon .subMenu .topIcon {
+  right: 50px; }
+
+.headerWrapper .headerBox .loginBox .subMenu img {
+  width: 100%; }
+
+.loginList .subMenu dd {
+  text-align: left;
+  font-size: 12px;
+  line-height: 35px;
+  vertical-align: middle;
+  margin: 0;
+  padding-left: 10px; }
+
+.loginList .subMenu dd .logBtn {
+  width: 42%;
+  height: 35px;
+  line-height: 35px;
+  /*padding: 0 10px;*/
+  display: inline-block;
+  text-align: center; }
+
+.loginList .subMenu dd a {
+  color: #666;
+  height: 35px;
+  line-height: 35px;
+  display: block; }
+
+.loginList .subMenu dd i {
+  background: url("../icon/M_indexIcon.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  display: inline-block; }
+
+.headerWrapper .loginList .studyCenter {
+  background-position: -16px -15px; }
+
+.headerWrapper .loginList .myIndexIcon {
+  background-position: -45px -1px; }
+
+.headerWrapper .loginList .myMessageIcon {
+  background-position: -16px -30px; }
+
+.headerWrapper .loginList .myAccountIcon {
+  background-position: -30px -1px; }
+
+/**** 搜索栏 ****/
+.headerWrapper .headerBox .searchBar {
+  display: block;
+  -webkit-transform: scale(0.1, 1);
+          transform: scale(0.1, 1);
+  -moz-transform: scale(0.1, 1);
+  opacity: 0;
+  height: 59px;
+  line-height: 59px;
+  width: 850px;
+  background: #fff;
+  position: absolute;
+  z-index: 11000;
+  top: 0;
+  right: 0; }
+
+.scale {
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -moz-transform-origin: right center;
+  display: block !important;
+  -webkit-transform: scale(1, 1) !important;
+          transform: scale(1, 1) !important;
+  opacity: 1 !important;
+  animation: scalerun 0.8s ease normal;
+  -moz-animation: scalerun 0.8s ease normal;
+  -webkit-animation: scalerun 0.8s ease normal; }
+
+@keyframes scalerun {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 1);
+            transform: scale(0.1, 1); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+
+@-webkit-keyframes scalerun {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 1);
+            transform: scale(0.1, 1); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); } }
+
+.headerWrapper .headerBox .searchBar .xIcon {
+  width: 15px;
+  height: 15px;
+  margin-top: 22px;
+  cursor: pointer;
+  background: url("../icon/x.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  z-index: 1200; }
+
+.headerWrapper .headerBox .searchBar input {
+  width: 400px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  font-size: 12px;
+  vertical-align: top;
+  margin-left: 10px;
+  border: none;
+  outline: none; }
+
+.headerWrapper .headerBox .searchBar .tagBox {
+  width: 300px;
+  text-align: right;
+  display: inline;
+  margin-right: 50px;
+  float: right; }
+
+.headerWrapper .headerBox .searchBar .tagBox a {
+  font-size: 12px;
+  color: #808080;
+  background: #f5f5f5;
+  padding: 3px 5px;
+  margin-left: 10px; }
+
+/******************************* 第一部分：header容器 end *******************************/
+/******************************* 第二部分：页面主要内容容器 *******************************/
+.wrapper .pageWrapper {
+  overflow: hidden;
+  min-width: 1000px; }
+
+.wrapper .pageWrapper .pageContent {
+  margin-top: 20px !important;
+  width: 1000px;
+  margin: 0 auto;
+  clear: both; }
+
+.wrapper .pageWrapper .pageContent {
+  margin-top: 20px !important;
+  width: 1000px;
+  margin: 0 auto;
+  clear: both; }
+
+.wrapper .pageWrapper .pageContent .catalogueWrapper {
+  width: 210px; }
+
+/*分类部分*/
+.wrapper .pageWrapper .pageContent .catalogueWrapper .catalogue {
+  box-sizing: border-box;
+  position: relative;
+  width: 210px;
+  float: left;
+  border-top: 2px solid #35b558;
+  border-right: 0;
+  height: 418px;
+  /*极客字体：Verdana,"Lantinghei SC","Hiragino Sans GB"*/
+  font-family: Verdana, 'Microsoft Yahei', sans-serif;
+  margin: 0;
+  border: 1px solid #35b558;
+  background-color: #fff; }
+
+/*课程库*/
+.wrapper .pageWrapper .pageContent .catalogueWrapper .catalogue .headerDiv {
+  height: 45px;
+  padding: 0 32px;
+  border-bottom: 1px solid #eee;
+  line-height: 45px; }
+
+.catalogue .headerDiv h2 {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400; }
+
+.catalogue .headerDiv h2 a {
+  color: #35b558; }
+
+.catalogue .headerDiv h2 a i {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../icon/video.png) no-repeat 0 0/15px 15px;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 14px; }
+
+/*表格轮廓*/
+.catalogue ul {
+  box-sizing: border-box;
+  position: absolute;
+  width: 208px;
+  height: 371px;
+  background: #fff;
+  border-right: 1px solid #e4e4e4;
+  border-top: 0;
+  margin: 0;
+  padding: 0; }
+
+.catalogue ul:hover {
+  width: 209px; }
+
+/*表格中的行属性*/
+.catalogue ul li {
+  list-style: none;
+  display: list-item;
+  padding: 0; }
+
+/*表格中的行包装*/
+.catalogue ul li .wraDiv {
+  box-sizing: border-box;
+  width: 208px;
+  height: 37px;
+  line-height: 37px;
+  padding-left: 32px;
+  font-size: 12px;
+  color: #333;
+  border-bottom: 1px solid #F5F5F5;
+  background: #fff url(../icon/arrowRight.png) 186px center no-repeat;
+  background-size: 6px 10px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+  z-index: 101; }
+
+/*鼠标滑过时，小标题的变化*/
+.catalogue ul li .wraDiv:hover {
+  padding-left: 18px;
+  border-left: 2px solid transparent;
+  box-sizing: content-box;
+  z-index: 1000;
+  background-image: none;
+  height: 33px;
+  margin-bottom: 3px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1); }
+
+.catalogue ul li .lastDiv {
+  border-bottom: 0; }
+
+.catalogue ul li .lastDiv:hover {
+  border-bottom: 0;
+  height: 38px;
+  box-shadow: none; }
+
+/*鼠标滑过时，弹出菜单*/
+.catalogue ul li .wraDiv:hover .menu {
+  display: block;
+  /*border: 1px solid black;*/ }
+
+.catalogue ul li .wraDiv:hover .titleA {
+  font-size: 13px;
+  font-weight: 600; }
+
+/*鼠标没过时，小标题的变化*/
+.catalogue ul li .wraDiv:hover .titleA {
+  color: #35b558; }
+
+/*表格中行包装里的链接*/
+.catalogue ul li .wraDiv a {
+  text-decoration: none;
+  color: #828282; }
+
+.catalogue ul li .wraDiv a:hover {
+  color: #35b558; }
+
+/*弹出的菜单*/
+.catalogue .menu {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 401px;
+  min-height: 418px;
+  min-width: 401px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  position: absolute;
+  left: 209px;
+  top: -47px;
+  border-left: 0;
+  display: none;
+  padding-bottom: 30px;
+  z-index: 1000; }
+
+/*菜单内容包装*/
+.menu .menuContent {
+  width: 400px;
+  float: left; }
+
+/*菜单中的定义列表*/
+.menu .menuContent dl {
+  margin: 0 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 13px;
+  cursor: pointer; }
+
+/*菜单中的定义列表元素*/
+.menu .menuContent dl dt {
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+  height: 37px;
+  line-height: 45px; }
+
+.menu .menuContent dl dd {
+  margin-left: -6px;
+  padding: 3px 0; }
+
+.menu .menuContent dl dd a {
+  height: 14px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  padding: 0 7px;
+  color: #666;
+  display: inline-block;
+  font-size: 12px;
+  border-left: 1px solid #e0e0e0;
+  float: left;
+  white-space: nowrap;
+  font-weight: 400; }
+
+/*系统课程*/
+.catalogueWrapper .systemLesson {
+  width: 100%;
+  background-color: #fff;
+  list-style: none;
+  float: left; }
+
+.catalogueWrapper .systemLesson li {
+  height: 45px; }
+
+.catalogueWrapper .systemLesson li a {
+  display: block;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  color: #333;
+  font-size: 14px;
+  padding-left: 10px;
+  /*border-bottom: 1px solid #eee;*/ }
+
+.catalogueWrapper .systemLesson li a:hover {
+  color: #35b558;
+  background: #fafafa url(../icon/checkAll.png) no-repeat 160px center;
+  background-size: 40px 10px; }
+
+.catalogueWrapper .systemLesson li a i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: text-bottom; }
+
+.catalogueWrapper .systemLesson li a .tagForMap {
+  background: url(../icon/tagForMap.png) no-repeat left center;
+  background-size: 15px 14px; }
+
+.catalogueWrapper .systemLesson li a .knowledgeMap {
+  background: url(../icon/knowledgeMap.png) no-repeat left center;
+  background-size: 15px 12.5px; }
+
+.catalogueWrapper .systemLesson li a .serierLesson {
+  background: url(../icon/serierLesson.png) no-repeat left center;
+  background-size: 15px 12.5px; }
+
+.catalogueWrapper .systemLesson li a .tagForClass {
+  background: url(../icon/tagForClass.png) no-repeat left center;
+  background-size: 15px 12.5px; }
+
+/**** 主要内容 ****/
+.pageWrapper .pageContent .mainContent {
+  width: 776px;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.5;
+  float: right; }
+
+/** 菜单部分 **/
+.pageWrapper .pageContent .mainContent .contentMenu {
+  position: relative;
+  z-index: 500;
+  box-sizing: content-box;
+  height: 38px;
+  background: #fff;
+  color: gray;
+  line-height: 38px; }
+
+.pageWrapper .pageContent .mainContent .contentMenu .filterBox {
+  overflow: visible;
+  float: left;
+  height: 38px; }
+
+.contentMenu .filterBox h3 {
+  float: left;
+  padding: 0 21px;
+  background: #fff;
+  border-right: 1px solid #f5f5f5;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: default; }
+
+.contentMenu .filterBox dl {
+  box-sizing: content-box;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  float: left;
+  padding: 0 1px;
+  height: 36px;
+  margin: 0 1px 0 -1px;
+  white-space: nowrap; }
+
+.contentMenu .filterBox dl:hover {
+  height: auto;
+  overflow: visible;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-width: 0 1px 1px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); }
+
+.contentMenu .filterBox dl:hover dd {
+  visibility: visible;
+  opacity: 1; }
+
+.contentMenu .filterBox dl dt {
+  padding: 0 18px;
+  cursor: default; }
+
+.contentMenu .filterBox dl dt i {
+  position: relative;
+  display: inline-block;
+  margin-left: 2px; }
+
+.contentMenu .filterBox dl dt i:before {
+  display: block;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  border: 5px solid transparent;
+  border-bottom-width: 0;
+  border-top-color: gray;
+  content: " "; }
+
+.contentMenu .filterBox dl dd {
+  position: relative;
+  z-index: 12;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .1s ease .1s;
+  transition: all .1s ease .1s; }
+
+.contentMenu .filterBox dl dd a {
+  display: block;
+  padding: 0 32px 0 17px;
+  font-weight: 500;
+  color: gray; }
+
+.contentMenu .filterBox dl dd a:hover {
+  color: #35b558; }
+
+/*格式化按钮容器*/
+.contentMenu .formatBox {
+  float: right; }
+
+.contentMenu .formatBox .formatBlock {
+  position: relative;
+  float: left;
+  width: 36px;
+  height: 38px;
+  border-left: 1px solid #f5f5f5;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer; }
+
+.contentMenu .formatBox ul {
+  list-style: none; }
+
+.contentMenu .formatBox .formatBlock .blockIcon {
+  background: url(../icon/blockBtn.png) no-repeat 0 0;
+  background-size: 14px;
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle; }
+
+.contentMenu .formatBox .formatList {
+  position: relative;
+  float: left;
+  width: 36px;
+  height: 38px;
+  border-left: 1px solid #f5f5f5;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer; }
+
+.contentMenu .formatBox .formatList .listIcon {
+  width: 19px;
+  background: url(../icon/listIcon.png) no-repeat center;
+  background-size: 16px 12px;
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  vertical-align: middle; }
+
+/** 课程部分 **/
+.pageWrapper .pageContent .mainContent .lessons {
+  margin-top: 15px;
+  display: block;
+  list-style: none;
+  overflow: hidden; }
+
+.mainContent .lessons li {
+  float: left;
+  position: relative;
+  margin-right: 13px;
+  background: 0 0;
+  margin-bottom: 13px;
+  height: 220px;
+  width: 245px; }
+
+/*单元格动画控制*/
+.mainContent .lessons li:hover > .imgBox .favor {
+  /*display: block;*/
+  opacity: 1; }
+
+.mainContent .lessons li:hover > .imgBox .hudBox {
+  opacity: 1; }
+
+.mainContent .lessons li:hover > .imgBox .hudBox {
+  opacity: 1; }
+
+.mainContent .lessons li:hover > .infoBox {
+  display: block;
+  height: 175px; }
+
+.mainContent .lessons li:hover > .infoBox p {
+  /*display: block;*/
+  position: relative;
+  opacity: 1; }
+
+.mainContent .lessons li:hover > .infoBox .descriptionBox .studentCountDiv {
+  position: relative;
+  opacity: 1; }
+
+.mainContent .lessons li:hover > .infoBox .descriptionBox .difficultyDiv {
+  position: relative;
+  opacity: 1; }
+
+.mainContent .lessons li .imgBox {
+  border: 1px solid #e4e4e4;
+  border-bottom: 0;
+  width: 245px;
+  height: 135px;
+  position: relative;
+  z-index: 100; }
+
+.mainContent .lessons li .imgBox .freeIcon {
+  height: 22px;
+  width: 38px;
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  right: 8px;
+  z-index: 101;
+  background: url(../icon/iconGroup.png) -58px -43px no-repeat; }
+
+.mainContent .lessons li .imgBox .favor {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 16px;
+  height: 16px;
+  background: url(../icon/favor.png);
+  background-size: 16px 16px;
+  z-index: 101;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.mainContent .lessons li .imgBox a {
+  width: 233px; }
+
+.mainContent .lessons li .imgBox a img {
+  width: 100%;
+  height: 135px;
+  vertical-align: middle; }
+
+.mainContent .lessons li .imgBox a .hudBox {
+  background: #000;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.mainContent .lessons li .imgBox a .hudBox i {
+  position: absolute;
+  z-index: 120;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  top: 50%;
+  margin-top: -25px;
+  background: url(../icon/playIcon.png) 0 0 no-repeat;
+  cursor: pointer;
+  background-size: 50px 50px; }
+
+/*** 改变格式 ***/
+.wrapper .mainContent .lessons .class2 {
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  background-color: #fff;
+  margin-top: 13px; }
+
+.wrapper .mainContent .lessons .class2 .imgBox {
+  width: 185px;
+  height: 100px;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+  border: 1px solid #e4e4e4;
+  border-bottom: 0;
+  z-index: 100; }
+
+.wrapper .mainContent .lessons .class2 .imgBox a img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle; }
+
+.wrapper .mainContent .lessons .class2 .infoBox {
+  z-index: 9;
+  position: relative;
+  height: 100px;
+  width: 566px;
+  float: left;
+  border: none;
+  display: block;
+  padding: 0; }
+
+.wrapper .mainContent .lessons .class2 .infoBox h2 {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 21px;
+  overflow: hidden; }
+
+.wrapper .mainContent .lessons .class2 .infoBox h2 a:hover {
+  color: #35b558; }
+
+.wrapper .mainContent .lessons .class2 .infoBox p {
+  color: gray;
+  font-size: 12px;
+  opacity: 1;
+  position: relative;
+  line-height: 18px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: block;
+  height: 36px; }
+
+.wrapper .mainContent .lessons .class2 .infoBox .descriptionBox {
+  overflow: hidden; }
+
+.wrapper .mainContent .lessons .class2 .infoBox .descriptionBox .studentCountDiv {
+  position: relative;
+  opacity: 1; }
+
+.wrapper .mainContent .lessons .class2 .infoBox .descriptionBox .difficultyDiv {
+  position: relative;
+  opacity: 1; }
+
+/*** 改变格式 end ***/
+/*信息容器*/
+.mainContent .lessons li .infoBox {
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+  background: #fff;
+  height: 88px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1000;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s; }
+
+.mainContent .lessons li .infoBox h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 12px;
+  height: 36px;
+  overflow: hidden; }
+
+.mainContent .lessons li .infoBox h2 a {
+  color: #333; }
+
+.mainContent .lessons li .infoBox p {
+  color: gray;
+  font-size: 12px;
+  line-height: 18px;
+  height: 52px;
+  overflow: hidden;
+  text-align: left;
+  opacity: 0;
+  margin-bottom: 10px;
+  /*display: none;*/
+  position: absolute;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.mainContent .lessons li .infoBox .descriptionBox {
+  font-size: 12px;
+  color: gray;
+  position: relative; }
+
+/*时间容器*/
+.mainContent .lessons li .infoBox .descriptionBox .timeDiv {
+  width: 120px;
+  float: left;
+  text-align: left;
+  white-space: nowrap;
+  margin-bottom: 8px; }
+
+.mainContent .lessons li .infoBox .descriptionBox .timeDiv .timeIcon {
+  background: url(../icon/time.png) 0 0 no-repeat;
+  width: 14px;
+  height: 14px;
+  display: block;
+  float: left;
+  margin-right: 8px;
+  background-size: 14px 14px; }
+
+.mainContent .lessons li .infoBox .descriptionBox .studentCountDiv {
+  float: right;
+  text-align: right;
+  margin-bottom: 8px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.mainContent .lessons li .infoBox .descriptionBox .difficultyDiv {
+  float: left;
+  text-align: left;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s; }
+
+.mainContent .lessons li .infoBox .descriptionBox .difficultyDiv .signal1 {
+  background: url(../icon/signal1.png) 0 0 no-repeat;
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  float: left;
+  margin-right: 8px; }
+
+.mainContent .lessons li .infoBox .descriptionBox .difficultyDiv .signal2 {
+  background: url(../icon/signal2.png) 0 0 no-repeat;
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  float: left;
+  margin-right: 8px; }
+
+.mainContent .lessons li .infoBox .descriptionBox .difficultyDiv .signal3 {
+  background: url(../icon/signal3.png) 0 0 no-repeat;
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  float: left;
+  margin-right: 8px; }
+
+.mainContent .lessons li .infoBox .descriptionBox .iconBox {
+  float: right;
+  text-align: right; }
+
+.mainContent .lessons li .infoBox .descriptionBox .iconBox a {
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+.mainContent .lessons li .infoBox .descriptionBox .iconBox img {
+  display: block;
+  width: 16px;
+  height: 16px; }
+
+/*底部占位*/
+.pageWrapper .pageContent .mainContent .lessons .placeHolderForMainContent {
+  height: 72px; }
+
+/******************************* 第二部分：页面主要内容容器 end *******************************/
+/******************************* 第三部分：底部容器 *******************************/
+.wrapper .footerWrapper {
+  min-width: 1000px;
+  border-top: 1px solid #e4e4e4;
+  background: #fff; }
+
+.footerWrapper .footerBox {
+  height: auto;
+  background: #fafafa;
+  /*border-top: 1px solid #E4E4E4;*/
+  border-bottom: 1px solid #e4e4e4; }
+
+/*模块内容*/
+.footerWrapper .footerBox .footer {
+  width: 1000px;
+  border-bottom: 1px solid #f5f5f5;
+  margin: 0 auto;
+  height: auto;
+  min-height: 230px; }
+
+.footerWrapper .footerBox .footer dl {
+  box-sizing: border-box;
+  width: 185px;
+  padding-left: 30px;
+  color: gray;
+  margin: 25px 0;
+  float: left;
+  border-left: 1px solid #E4E4E4;
+  text-align: left;
+  min-height: 175px; }
+
+.footerWrapper .footerBox .footer dl dt {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500; }
+
+.footerWrapper .footerBox .footer dl dd {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px; }
+
+.footerWrapper .footerBox .footer dl a {
+  color: gray;
+  padding-left: 5px; }
+
+.footerWrapper .footerBox .footer dl a:hover {
+  color: #35b558; }
+
+/*分享区域*/
+.footerWrapper .footerBox .footer .shareCorner {
+  box-sizing: border-box;
+  width: 260px;
+  float: left;
+  height: auto;
+  min-height: 200px;
+  border-left: 1px solid #E4E4E4;
+  padding: 20px 0 0 40px; }
+
+.footerWrapper .footerBox .footer .shareCorner .jkWord {
+  font-size: 15px;
+  color: #35b558;
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-align: left; }
+
+/*下载模块*/
+.footerWrapper .footerBox .footer .shareCorner .appDownLoadBox img {
+  display: block;
+  float: left;
+  margin-right: 15px;
+  width: 21px; }
+
+.footerWrapper .footerBox .footer .shareCorner .appDownLoadBox div {
+  text-align: left; }
+
+.footerWrapper .footerBox .footer .shareCorner .appDownLoadBox strong {
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 8px;
+  text-align: left; }
+
+.footerWrapper .footerBox .footer .shareCorner .appDownLoadBox strong:hover {
+  color: #35b558; }
+
+.footerWrapper .footerBox .footer .shareCorner .appDownLoadBox p {
+  text-align: left;
+  font-size: 14px;
+  color: gray;
+  background: url(../icon/arrowRightForFooter.png) 160px center no-repeat;
+  background-size: 7px 13px; }
+
+.footerWrapper .footerBox .footer .shareCorner .appDownLoadBox p:hover {
+  color: #35b558; }
+
+/*转发模块*/
+.footerWrapper .footerBox .footer .shareCorner .shareBox {
+  height: 32px;
+  margin-top: 15px; }
+
+.footerWrapper .footerBox .footer .shareCorner .shareBox .sinaIcon {
+  background: url(../icon/logoImages.png) -23px 0 no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: relative; }
+
+.footerWrapper .footerBox .footer .shareCorner .shareBox .sinaIcon:hover {
+  background-position: -23px -40px; }
+
+.footerWrapper .footerBox .footer .shareCorner .shareBox .tieBaIcon {
+  background: url(../icon/logoImages.png) -145px 0 no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: relative; }
+
+.footerWrapper .footerBox .footer .shareCorner .shareBox .tieBaIcon:hover {
+  background-position: -145px -40px; }
+
+.footerWrapper .footerBox .footer .shareCorner .shareBox .weChatIcon {
+  background: url(../icon/logoImages.png) -23px -82px no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  position: relative; }
+
+.footerWrapper .footerBox .footer .shareCorner .shareBox .weChatIcon:hover {
+  background-position: -23px -122px; }
+
+.footerWrapper .footerBox .footer .shareCorner .shareBox .weChatIcon .weChatPop {
+  position: absolute;
+  bottom: 32px;
+  left: -48px;
+  display: none; }
+
+.footerWrapper .footerBox .footer .shareCorner .shareBox .weChatIcon:hover .weChatPop {
+  display: block; }
+
+/*客服模块*/
+.footerWrapper .footerBox .footer .shareCorner .onlineServiceBox {
+  margin-top: 15px;
+  padding-left: 35px; }
+
+.footerWrapper .footerBox .footer .shareCorner .onlineServiceBox:hover h5 {
+  color: #35b558; }
+
+.footerWrapper .footerBox .footer .shareCorner .onlineServiceBox:hover p {
+  color: #35b558; }
+
+.footerWrapper .footerBox .footer .shareCorner .onlineServiceBox a {
+  display: block;
+  padding: 0;
+  text-align: left; }
+
+.footerWrapper .footerBox .footer .shareCorner .onlineServiceBox .serviceIcon {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-left: -40px;
+  background: url(../icon/serviceIcon.png) no-repeat 0/80px; }
+
+.footerWrapper .footerBox .footer .shareCorner .onlineServiceBox h5 {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 2px;
+  line-height: 22px;
+  padding-left: 5px;
+  font-weight: 400; }
+
+.footerWrapper .footerBox .footer .shareCorner .onlineServiceBox p {
+  color: gray;
+  font-size: 12px;
+  padding-left: 5px; }
+
+/*版权区域*/
+.footerWrapper .copyRightBox {
+  font-size: 12px;
+  color: #999;
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+  padding: 20px; }
+
+.footerWrapper .copyRightBox strong {
+  font-weight: 400; }
+
+.footerWrapper .copyRightBox strong a {
+  color: #999; }
+
+.footerWrapper .copyRightBox strong a:hover {
+  color: #35b558; }
+
+.footerWrapper .copyRightBox .credit {
+  display: block;
+  margin: 15px auto 0; }
+
+.footerWrapper .copyRightBox .credit img {
+  width: 60px; }
+
+/******************************* 第三部分：底部容器 end *******************************/

@@ -1,0 +1,104 @@
+/*reset*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*轮廓*/
+
+.wrapper {
+    width: 420px;
+    height: 267px;
+    background-color: #333;
+    border-radius: 21px;
+    position: absolute;
+    top: 50%;
+    margin-top: -135px;
+    left: 50%;
+    margin-left: -210px;
+    box-shadow: 2px 2px 3px;
+}
+
+
+/*显示屏*/
+
+.wrapper .resultBox {
+    position: relative;
+    top: 18px;
+    width: 360px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #999;
+    border-radius: 3px;
+}
+
+
+/*显示屏*/
+.wrapper .resultBox  .theLine{
+    padding: 0 12px;
+    height: 30px;
+}
+
+/*描述文字*/
+.wrapper .resultBox .answerLine {
+    float: left;
+    position: relative;
+    color: black;
+    display: block;
+    text-align: right;
+    line-height: 21px;
+    font-size: 15px;
+    margin-right: 6px;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+}
+/*计算结果*/
+.wrapper .resultBox .answer{
+    float: right;
+    position: relative;
+    color: black;
+    display: block;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+/*次序的答案位置*/
+.wrapper .resultBox #thePlaces{
+    max-width: 215px;
+}
+/*输入框*/
+.wrapper #arrayBox{
+    height: 45px;
+    color: orange;
+    font-size: 12px;
+    width: 360px;
+    position: relative;
+    margin: 36px auto 18px;
+    display: block;
+    border-radius: 6px;
+}
+.wrapper button{
+
+    width: 360px;
+    height: 60px;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: block;
+    font-size: 24px;
+    outline: none;
+    background-color: rgb(254, 205, 81);
+}
+.wrapper button:active{
+
+    background-color: rgb(255, 215, 91);
+}
+.wrapper button:active > b{
+    display: block;
+    margin-left: 2px;
+    margin-top: 2px;
+}

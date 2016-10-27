@@ -1,0 +1,174 @@
+.theLineOfArrow {
+  float: left;
+  width: 32px;
+  height: 15px;
+  border-bottom: 3px solid #005f3c; }
+
+.theArrowOfArrow {
+  float: left;
+  width: 0;
+  height: 0px;
+  border: 8px solid #005f3c;
+  margin-top: 10px;
+  border-top: none;
+  border-left: none;
+  border-right-color: transparent;
+  border-right-width: 18px; }
+
+body {
+  background-color: #999; }
+
+.wrapper {
+  background-color: #fff;
+  width: 600px;
+  position: relative;
+  height: 390px;
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+  -webkit-box-shadow: 2px 2px 5px 5px #777070;
+  -moz-box-shadow: 2px 2px 5px 5px #777070;
+  box-shadow: 2px 2px 5px 5px #777070; }
+  .wrapper .header {
+    width: 100%;
+    height: 170px;
+    /*position: relative;*/
+    /*background-color: black;*/
+    /*padding-top: 21px;*/ }
+    .wrapper .header .headerLeft {
+      position: absolute;
+      /*float: left;*/
+      top: 24px;
+      width: 200px;
+      height: 146px;
+      /*background-color: blue;*/ }
+      .wrapper .header .headerLeft .lineBox {
+        /*margin-top: 21px;*/
+        background-color: #ff0000;
+        width: 200px;
+        height: 110px; }
+        .wrapper .header .headerLeft .lineBox .lineNum {
+          display: block;
+          margin: -21px auto;
+          width: 100%;
+          position: absolute;
+          /*vertical-align: middle;*/
+          text-align: center;
+          font-size: 120px;
+          color: #fafafa; }
+      .wrapper .header .headerLeft .timeBox {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 8px;
+        color: #333;
+        text-align: center; }
+    .wrapper .header .headerRight {
+      position: absolute;
+      /*float: left;*/
+      right: 0;
+      top: 24px;
+      width: 400px;
+      height: 146px; }
+      .wrapper .header .headerRight .centerArrowBox {
+        /*background-color: black;*/
+        position: absolute;
+        left: 175px;
+        top: 30px;
+        display: block;
+        width: 50px;
+        height: 30px;
+        /*margin: 30px auto;*/ }
+        .wrapper .header .headerRight .centerArrowBox .startPoint {
+          margin-top: -10px;
+          margin-left: -147px; }
+        .wrapper .header .headerRight .centerArrowBox .terminalPoint {
+          margin-top: -51px;
+          margin-left: 74px; }
+        .wrapper .header .headerRight .centerArrowBox .station {
+          position: relative;
+          width: 123px;
+          height: 51px;
+          /*background-color: green;*/ }
+          .wrapper .header .headerRight .centerArrowBox .station .stationText {
+            position: absolute;
+            top: 6px;
+            width: 100%;
+            /*vertical-align: middle;*/
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            color: #005f3c; }
+          .wrapper .header .headerRight .centerArrowBox .station .pinyin {
+            position: absolute;
+            top: 53px;
+            width: 100%;
+            /*vertical-align: middle;*/
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: #005f3c; }
+        .wrapper .header .headerRight .centerArrowBox .thisStation {
+          margin-top: 24px;
+          margin-left: -36px; }
+          .wrapper .header .headerRight .centerArrowBox .thisStation .thisStationText {
+            position: absolute;
+            top: 6px;
+            width: 100%;
+            /*vertical-align: middle;*/
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ff0000; }
+  .wrapper .contentWrapper {
+    width: 100%;
+    height: 168px;
+    background-color: #005f3c; }
+    .wrapper .contentWrapper .borderCell {
+      float: left;
+      width: 27px;
+      height: 100%;
+      /*background-color: black;*/ }
+    .wrapper .contentWrapper .contentCell {
+      float: left;
+      width: 21px;
+      height: 100%;
+      /*background-color: black;*/ }
+      .wrapper .contentWrapper .contentCell .contentCellText {
+        width: 21px;
+        margin-top: 14px;
+        font-size: 13px;
+        text-align: center;
+        color: #fafafa; }
+      .wrapper .contentWrapper .contentCell .arrowUp {
+        width: 0;
+        height: 0;
+        margin: 6px auto 0;
+        border: 7.5px solid #fafafa;
+        border-top: none;
+        border-left-color: transparent;
+        border-right-color: transparent; }
+      .wrapper .contentWrapper .contentCell .arrowStick {
+        width: 8px;
+        height: 5px;
+        background-color: #fafafa;
+        margin: 0 auto; }
+  .wrapper .footer {
+    position: relative; }
+    .wrapper .footer .footerText {
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+      margin-top: 6px; }
+    .wrapper .footer .footerArrow {
+      position: absolute;
+      top: 3px;
+      left: 23%;
+      display: inline-block; }
+      .wrapper .footer .footerArrow .footerArrowLine {
+        width: 308px;
+        border-bottom-color: #ff0000; }
+      .wrapper .footer .footerArrow .footerArrowRight {
+        border-right-width: 30px;
+        border-bottom-color: #ff0000; }
+
+/*# sourceMappingURL=test.css.map */

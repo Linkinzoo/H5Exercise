@@ -1,0 +1,2955 @@
+/*初始化*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*html*/
+
+html {
+    height: 100%;
+}
+
+
+/*body*/
+
+body {
+    position: relative;
+    height: 100%;
+    min-height: 510px;
+}
+
+
+/*容器*/
+
+.contain {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 380px;
+    min-width: 312px;
+}
+
+/*背景图片*/
+.contain .bgPic{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+.mainColor{
+    color: #fff;
+}
+.bgPic img{
+    width: 100%;
+    height: 100%;
+    /*transition-duration: 5s;*/
+}
+/*换肤菜单*/
+.contain .changeBgWrapper{
+    position: fixed;
+    opacity: 0;
+    top: -500px;
+    transition-duration: 0.9s;
+    -webkit-transition-duration: 0.9s;
+    -moz-transition-duration: 0.9s;
+    left: 0;
+    height: 288px;
+    width: 100%;
+    background-color: white;
+    z-index: 999999;
+}
+.contain .changeBgWrapper .borderForChangeBG{
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    z-index: -1;
+    border-top: 1px #e3e3e3 solid;
+    border-bottom: 1px #e3e3e3 solid;
+}
+.contain .changeBgWrapper .changeBgContent{
+    width: 911px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+/*背景菜单*/
+.contain .changeBgWrapper .changeBgContent .bgMenu {
+    height: 46px;
+}
+.contain .changeBgWrapper .changeBgContent .bgMenu ul{
+    height: 46px;
+    float: left;
+}
+.contain .changeBgWrapper .changeBgContent .bgMenu ul li{
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 8px;
+    font-size: 13px;
+    float: left;    
+    color: #666;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+}
+.contain .changeBgWrapper .changeBgContent .bgMenu ul li:hover{
+    color: #fff;
+    background-color: #389cff;
+}
+.contain .changeBgWrapper .changeBgContent .bgMenu .takeBack{
+    float: right;
+    display: inline-block;
+    margin-top: 19px;
+    cursor: pointer;
+    width: 40px;
+    color: #0079f5;
+    font: 13px arial;
+}
+.contain .changeBgWrapper .changeBgContent .bgMenu .takeBack span{
+    margin-right: 2px;
+    float: left;
+    background: url('../Icon/settingPic.png') no-repeat -44px -175px;
+    width: 11px;
+    height: 15px;
+}
+
+.contain .changeBgWrapper .changeBgContent .bgMenu .bgCancel{
+    float: right;
+    display: inline-block;
+    margin-top: 19px;
+    cursor: pointer;
+    margin-right: 30px;
+    width: 87px;
+    color: #555;
+    font: 13px arial;
+}
+.contain .changeBgWrapper .changeBgContent .bgMenu .bgCancel:hover{
+    color: #0079f5;
+}
+
+.contain .changeBgWrapper .changeBgContent .bgMenu .bgCancel:hover span{
+    background-position: -24px -192px;
+}
+.contain .changeBgWrapper .changeBgContent .bgMenu .bgCancel span{
+    margin-right: 5px;
+    margin-top: 1px;
+    float: left;
+    background: url('../Icon/settingPic.png') no-repeat -24px -176px;
+    width: 11px;
+    height: 15px;
+}
+/*背景容器*/
+.contain .changeBgWrapper .changeBgContent .bgBoxWrapper{
+    padding-top: 25px;
+    height: 215px;
+    position: relative;
+}
+.contain .changeBgWrapper .changeBgContent .bgBoxWrapper .bgBox {
+    float: left;
+    width: 587px;
+    height: 179px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent{
+    position: relative;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li{
+    height: 186px;
+    overflow: hidden;
+}
+.bgBoxWrapper .bgBox .bgBoxContent .bgBlock{
+    display: none;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul {
+    float: left;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .bgCell{
+    position: absolute;
+    cursor: pointer;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .bigBg{
+    width: 195px;
+    height: 119px;
+}
+
+.bgBoxWrapper .bgBox .bgBoxContent li ul .smallBg{
+    height: 59px;
+    width: 97px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .bigShadow{
+    position: absolute;
+    width: 195px;
+    height: 119px;
+    line-height: 119px;
+    top: 0;
+    left: 0;
+    background: #3c3c3c;
+    opacity: 0;    
+    transition: opacity 1000ms;
+    -moz-transition: opacity 1000ms;
+    -o-transition: opacity 1000ms;
+    -webkit-transition: opacity 1000ms;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .bigBg:hover .bigShadow{
+    opacity: 0.6;    
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .smallShadow{
+    position: absolute;
+    height: 59px;
+    width: 97px;
+    line-height: 59px;
+    top: 0;
+    left: 0;
+    background: #3c3c3c;
+    opacity: 0;    
+    transition: opacity 1000ms;
+    -moz-transition: opacity 1000ms;
+    -o-transition: opacity 1000ms;
+    -webkit-transition: opacity 1000ms;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .smallBg:hover .smallShadow{
+    opacity: 0.6;    
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .bigBg p{
+    font: 12px arial;
+    position: absolute;    
+    width: 195px;
+    height: 119px;
+    line-height: 119px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    outline: none;
+    opacity: 0;
+    color: #fff;
+    transition: opacity 1000ms;
+    -moz-transition: opacity 1000ms;
+    -o-transition: opacity 1000ms;
+    -webkit-transition: opacity 1000ms;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .bigBg:hover p{
+    opacity: 1;    
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .smallBg p{
+    font: 12px arial;
+    position: absolute;    
+    height: 59px;
+    width: 97px;
+    line-height: 59px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    outline: none;
+    opacity: 0;
+    color: #fff;
+    transition: opacity 1000ms;
+    -moz-transition: opacity 1000ms;
+    -o-transition: opacity 1000ms;
+    -webkit-transition: opacity 1000ms;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .smallBg:hover p{
+    opacity: 1;    
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul li .choose{
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 18px;
+    height: 18px;
+    background: url('../Icon/changeBgIcon.png') no-repeat;
+    background-position: -180px 0;
+    display: none;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position2{
+    top: 120px;
+    left: 0;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position3{
+    top: 120px;
+    left: 98px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position4{
+    top: 0;
+    left: 196px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position5{
+    top: 60px;
+    left: 196px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position6{
+    top: 120px;
+    left: 196px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position7{
+    top: 0;
+    left: 294px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position8{
+    top: 0;
+    left: 392px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position9{
+    top: 60px;
+    left: 294px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position10{
+    top: 0;
+    left: 490px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position11{
+    top: 60px;
+    left: 490px;
+}
+.bgBoxWrapper .bgBox .bgBoxContent li ul .position12{
+    top: 120px;
+    left: 490px;
+}
+/*预览界面*/
+.bgBoxWrapper .previewBox{
+    float: right;
+    width: 294px;
+}
+.bgBoxWrapper .previewBox .previewContent{
+    position: relative;
+    float: right;
+    width: 264px;
+    height: 180px;
+    overflow: hidden;
+}
+.bgBoxWrapper .previewBox .previewContent .previewPic{
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    width: 260px;
+    height: 163px;
+    overflow: hidden;
+}
+.bgBoxWrapper .previewBox .previewContent .previewPic .previewImg{
+    width: 260px;
+    height: 163px;
+}
+.bgBoxWrapper .previewBox .previewContent .pageUI{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 264px;
+    height: 180px;
+    background: url('../Icon/pageUI.png') no-repeat 0 0;
+}
+.bgBoxWrapper .previewBox p{
+    float: right;
+    margin-right: 0;
+    margin-top: 7px;
+    text-align: center;
+    width: 262px;
+    font-size: 12px;
+    color: #666;
+}
+/*************************** PC端 ***************************/
+
+@media only screen and (min-width: 810px) {
+    /*手机顶部工具栏*/
+    .navM {
+        display: none;
+    }
+    /*百度LOGO*/
+    .LogoContain{
+        min-height: 249px;
+        /*height: 38.2%;*/
+        width: 1000px;
+    }
+    .LogoContain .logo {
+        display: block;
+    }
+    /*手机百度LOGO*/
+    .LogoContain .mLogo {
+        display: none;
+    }
+    /*麦克风与相机的容器*/
+    .imgBox {
+        display: block;
+    }
+    /*搜索组件容器*/
+    .cigarette {
+        width: 654px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    /*返回顶部按钮*/
+    .backToTopWrapper{
+        position: fixed;
+        width: 40px;
+        height: 28px;
+        padding-top: 12px;
+        background-color: rgba(0,0,0,0.3);
+        left: 51%;
+        bottom: 15%;
+        margin-left: 447px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .backToTopWrapper .text{
+        display: none;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 40px;
+        height: 40px;
+        color:white;
+    }
+    .backToTopWrapper:hover{
+        background-color: rgba(0,0,0,0.5);
+    }
+    .backToTopWrapper:hover .upArrowForBTT{
+        display: none;
+    } 
+
+    .backToTopWrapper:hover .text{
+        display: block;
+    } 
+    .backToTopWrapper .upArrowForBTT{
+        display: block;
+        height: 17px;
+        width: 34px;
+        margin: 0 auto;
+        background: url(../Icon/arrowUp.png) no-repeat -39px -9px;
+    }
+    /*搜索框*/
+    .inputBorder {
+        display: inline-block;
+        /*border: 1px solid #AAAAAA;*/
+        /*border-right: none;*/
+        border: none;
+        outline: none;
+        float: left;
+        width: 540px;
+        height: 34px;
+        font-size: 15px;
+        padding: 3px 0 3px 7px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    /*百度按钮*/
+    .buttonBorder {
+        float: left;
+        border: none;
+        background-color: rgb(51, 133, 255);
+        font-size: 15px;
+        color: #000;
+        outline: none;
+        margin: 0 auto;
+        width: 104px;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        background-image: url('../Icon/loginImg_button.png');
+        background-position: -206px 0;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    .buttonBorder:active{
+        background: none;
+        /*background-position: -136px -43px;*/
+        background-color: #e6e6e6;
+    }
+    /***************************** 百度首页推荐内容 *****************************/
+    .mainContentWrapper{
+        width: 100%;
+        min-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .mainContentWrapper .clearFixed{
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 895px;
+        background-color: rgba(255, 255, 255, .8);
+    }
+    .mainContentWrapper .clearFixed .mainContent{
+        position: relative;
+        font: 12px arial;
+        border:1px solid rgba(192, 192, 192, .9);
+    }
+    /***************************** 菜单部分 *****************************/
+    .mainContentWrapper .clearFixed .mainContent .contentMenu{
+        height: 39px;
+        border-bottom: 1px solid #666;
+        border-color: rgba(192, 192, 192, .9);
+    }
+    /*菜单栏标签格式*/
+    .contentMenu .cellInMenu{
+
+        font-size: 14px;
+        line-height: 39px;
+        text-align: center;
+        color: #333;
+        width: 80px;
+        height: 39px;
+        cursor: pointer;
+        float: left;
+    }
+    .contentMenu .cellInMenu:hover{
+        color: #333 !important;
+        background-color: rgba(147,152,162,1);
+    }
+    /*我的关注*/
+    .contentMenu .myFocus{
+        /*padding-top: 1px;*/
+        text-align: left;
+        width: 124px;
+    }
+    .contentMenu .myFocus:hover{
+        color: #333 !important;
+        background-color: rgba(147,152,162,0.6);
+    }
+    .contentMenu .myFocus .iconForMyFocus{
+        margin: 11px 0 0 20px;
+        float: left;
+        width: 20px;
+        height: 18px;
+        background: url(../Icon/loginLogo.png) no-repeat -15px 0;
+    }
+    .contentMenu .myFocus .myFocusText{
+        display: inline-block;
+        margin-left: 3px;
+    }
+    /*设置*/
+    .contentMenu .settingInMenu{
+        float: right;
+        line-height: 39px;
+        width: 39px;
+        height: 39px;
+        cursor: pointer;
+    }
+    .contentMenu .settingInMenu:hover .settingIcon{
+        background-position: -121px -73px;
+    }
+    .settingIcon{
+        float: right;
+        width: 18px;
+        height: 18px;
+        margin: 10px 20px;
+        background: url(../Icon/loginLogo.png) no-repeat -121px -49px;
+    }
+    
+    /***************************** 内容部分 *****************************/
+    .mainContentWrapper .clearFixed .mainContent .contentTable{
+        height: auto;
+        border: 1px solid transparent;
+    }
+    /************** 内容部分，各主题包装的公共属性 **************/
+    .contentTable .contentCell{
+        display: none;
+        height: auto;
+    }
+    /************** 我的关注部分 **************/
+    .contentTable .myFocusContent{
+        padding-bottom: 21px;
+    }
+    
+    .contentTable .myFocusContent .myNavBar{
+        padding-top: 13px;
+        padding-bottom: 10px;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+    }
+    .contentTable .myFocusContent .myNavBar .myNavBarContainer{
+        width: 844px;
+        overflow: hidden;
+        margin:0 auto;
+        height: auto;
+    }
+    /******** 我的关注 标题部分 ********/
+    .myNavBarContainer .myNavBarTitle{
+        position: relative;
+        height: 30px;
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #f9f9f9;
+    }
+    .myNavBarContainer .myNavBarTitle .titleForMyNavBar{
+
+        line-height: 30px;
+        cursor: pointer;
+    }
+    .myNavBarContainer .myNavBarTitle .titleForMyNavBar .myNavBarIcon{
+        position: relative;
+        height: 10px;
+        width: 10px;
+        /*margin-right: 6px;*/
+        display: inline-block;
+    }
+    .myNavBarContainer .myNavBarTitle .titleForMyNavBar .myNavBarIcon em{
+        position: absolute;
+        top: 0;
+        left: 3px;
+        border: 5px dashed transparent;
+        border-left: 5px solid #666;
+    }
+    .myNavBarContainer .myNavBarTitle .titleForMyNavBar .myNavBarText{
+        display: inline-block;
+        line-height: 30px;
+        height: 30px;
+        font-weight: bold;
+        /*margin-right: 4px;*/
+    }
+    .myNavBarContainer .myNavBarTitle .titleForMyNavBar .titleNum{
+        height: 30px;
+        color: #666;
+        display: inline-block;
+    }
+    
+    /******** 我的关注 内容部分 ********/
+    .myNavBarContainer .myNavBarContent{
+        text-align: left;
+        position: relative;
+        width: 850px;
+        font-size: 14px;
+    }
+    .myNavBarContainer .myNavBarContent .myNavBarContentCell{
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid #f9f9f9;
+        height: 46px;
+        /*margin-top: -1px;*/
+    }
+    .myNavBarContainer .myNavBarContent .myNavBarContentCell .cellName{
+        display: inline-block;
+        width: 60px;
+        height: 46px;
+        line-height: 46px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 10px;
+    }
+    .myNavBarContainer .myNavBarContent .myNavBarContentCell .cellContent{
+        position: relative;
+        display: inline-block;
+        width: 775px;
+        min-height: 44px;
+    }
+    .myNavBarContainer .myNavBarContent .myNavBarContentCell .cellContentBlock{
+        float: left;
+        height: 42px;
+        line-height: 42px;
+        width: 155px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .cellContentBlock .aForContentBlock{
+        display: block;
+        height: 42px;
+        width: 143px;
+        text-decoration: none;
+        color: #333;
+    }
+    .cellContentBlock .aForContentBlock:hover{
+        background-color: rgba(248,248,248,1);
+    }
+    .cellContentBlock .aForContentBlock img{
+        display: inline-block;
+        float: left;
+        margin-left: 15px;
+        margin-top: 12px;
+    }
+    .cellContentBlock .aForContentBlock span{
+        display: inline-block;
+        margin-left: 5px;
+        float: left;
+    }
+    /*返利图标容器*/
+    .discountBlock{
+
+    height: 16px;
+    width: 16px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 5px;
+    background: url(../Icon/discount.png) no-repeat;
+    }
+    /*自定义按钮*/
+    .myFocusContent{
+        min-height: 339px;
+    }
+    .myFocusContent .customize{
+        position: relative;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        margin-top: 13px;
+    }
+    .myFocusContent .customize .customBtn{
+        height: 30px;
+        line-height: 30px;
+        margin-left: 25px;
+        width: 60px;
+        cursor: pointer;
+    }
+    .myFocusContent .customize .customBtn .customBtnIcon{
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        float: left;
+        margin-top: 9px;
+        font-size: 0;
+        background: url(../Icon/loginIcon.png) no-repeat 0 0;
+    }
+    .myFocusContent .customize .customBtn .customBtnText{
+        display: inline-block;
+        float: left;
+        color: #333;
+        margin-top: 7px;
+        font: 14px arial;
+        padding-left: 6px;
+    }
+
+    /************** 推荐部分 **************/
+    .contentTable .recommend{
+        font: 12px arial;
+    }
+    .contentTable .recommend .recommendWrapper{
+        position: relative;
+        width: 843px;
+        padding: 0 25px 0 25px;
+    }
+    /**** 实时热点 ****/
+    .contentTable .recommend .recommendWrapper .recommendContent{
+        overflow: hidden;
+    }
+    .contentTable .recommend .recommendWrapper .recommendContent .hotPoint{
+        position: absolute;
+        width: 300px;
+        margin-top: 20px;
+        top: 0px;
+        right: 5px;
+        font-size: 14px;
+    }
+    .recommendContent .hotPoint .hotPointTitle{
+        height: 30px;
+        width: 270px;
+    }
+    .recommendContent .hotPoint .hotPointTitle .titleText{
+        display: inline-block;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding-top: 3px;
+    }
+    .recommendContent .hotPoint .refresh{
+        display: block;
+        float: right;
+        height: 22px;
+        padding-top: 3px;
+        width: 65px;
+        cursor: pointer;
+    }
+    .recommendContent .hotPoint .refresh:hover .refreshIcon{
+        background-position: -23px -42px;
+    } 
+    .recommendContent .hotPoint .refresh:hover .refreshText{
+        color: #07f;
+    }
+    .recommendContent .hotPoint .refresh .refreshIcon{
+        display: inline-block;
+        width: 20px;
+        height: 16px;
+        background: url(../Icon/textOperationIcon.png) -23px -25px no-repeat;
+    }
+    .recommendContent .hotPoint .refresh .refreshText{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 13px;
+        width: 40px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .recommendContent .hotPoint .hotPointContent li{       
+        width: 145px;    
+        height: 34px;
+        line-height: 34px;
+        margin-right: 3px;
+        display: inline-block;
+    }
+    .recommendContent .hotPoint .hotPointContent li a{
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #333;
+    }
+    .recommendContent .hotPoint .hotPointContent li a:hover{
+        color: #0079f4;
+        text-decoration: underline;
+    }
+    /**** 标题栏 ****/
+    .recommendContent .recommendTitle{
+        width: 100%;
+        height: 38px;
+        text-align: left;
+    }
+    .recommendContent .recommendTitle .titleLine{
+        display: inline-block;
+        height: 0;
+        width: 172px;
+        margin-bottom: 2px;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .recommendContent .recommendTitle .recommendTitleText{
+        display: inline-block;
+        /*vertical-align: middle;*/
+        width: 187px;
+        padding-top: 21px;
+    }
+    .recommendContent .recommendTitle .recommendTitleText .icon{
+        display: inline-block;
+        vertical-align: middle;
+        height: 14px;
+        width: 12px;
+        margin: 0 6px 0 6px;
+        background: url(../Icon/textOperationIcon.png) no-repeat -45px -1px;
+    }
+    .recommendContent .recommendTitle .recommendTitleText .text{
+        vertical-align: middle;    
+        font-size: 13px;
+        /*color: #999;*/
+        color: rgba(0, 0, 0, .4);
+
+    }
+    /**** 内容 ****/
+    .recommendContent .newsContent{    
+        float: left;
+        text-align: left;
+        width: 538px;
+    }
+    .recommendContent .newsContent .newsBox{
+        min-height: auto;
+        border-top: 1px solid #e2e2e2;
+    }
+    .recommendContent .newsContent .newsBox:first-child{
+        border: none;
+    }
+    /*内容标题*/
+    .recommendContent .newsContent .newsBox h2{
+        display: inline-block;
+        height: 20px;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 2px;
+    }
+    .recommendContent .newsContent .newsBox h2 a{
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-family: arial, 'Microsoft Yahei', '微软雅黑';
+    }
+    .recommendContent .newsContent .newsBox h2 a:hover{
+        text-decoration:underline;
+        color: #07f;
+    }
+    /*内容图片*/
+    .recommendContent .newsContent .newsBox .picBox{
+        display: table-cell;
+        vertical-align: middle;
+        zoom: 1;
+        padding: 20px 0;
+        height: auto;
+    }
+    .recommendContent .newsContent .newsBox .picBox ul li{
+        display: inline-block;
+        float: left;
+        height: 119px;
+        width: 179px;
+        overflow: hidden;
+    }
+    .recommendContent .newsContent .newsBox .picBox ul li a{
+        text-decoration: none;
+    }
+    .recommendContent .newsContent .newsBox .picBox ul li a img{
+        height: 119px;
+        width: 178px;
+    }
+    /*内容来源*/
+    .recommendContent .newsContent .newsBox .viaBox{    
+        padding-top: 11px;
+        padding-bottom: 19px;
+    }
+    .recommendContent .newsContent .newsBox .viaBox .srcNet{
+        color: rgba(0,0,0,0.4);
+        text-decoration: none;
+        height: 15px;
+        line-height: 15px;
+        font-size: 13px;
+        margin-right: 6px;
+    }
+    .recommendContent .newsContent .newsBox .viaBox .srcTime{
+        margin-right: 6px;
+        color: rgba(0,0,0,0.4);
+        height: 15px;
+        line-height: 15px;
+        font-size: 13px;
+    }
+    .recommendContent .newsContent .newsBox .viaBox .hotPointLogo{
+        color: #f13f40;
+        border: 1px solid #efb9b9;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 0 2px;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+    /*** 内容特殊格式包装 ***/
+    .recommendContent .newsContent .newsBox .newsContainer{
+        vertical-align: middle;
+        display: table-cell;
+        padding-left: 21px;
+    }
+    .recommendContent .newsContent .newsBox .paddingBottomNone{
+        padding-bottom:0;
+    }
+    /************** 导航部分 **************/
+    .contentTable .navigation{
+        font: 12px arial;
+    }
+    .contentTable .navigation .navigationWrapper{
+        position: relative;
+        padding: 10px 0 13px 25px;
+    }
+    .contentTable .navigation .navigationWrapper .navigationContent{
+        overflow: hidden;
+    }
+    /* 导航部分中的公共盒子模型*/
+    .navigationContent .navigationBox{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+    }
+    .navigationContent .navigationBox h1{
+        margin: 8px 0 4px;
+        padding: 0;
+        font-size: 14px;
+    }
+    .navigationContent .navigationBox .flagBox{
+        display: inline-block;
+        float: left;
+        position: relative;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    .navigationContent .navigationBox .flagBox a{
+        height: 58px;
+        line-height: 58px;
+        width: 126px;
+        display: block;
+        position: relative;
+        background-color: #fcfcfc;
+        border: 1px solid #fcfcfc;
+    }
+    .navigationContent .navigationBox .flagBox a:hover{
+        border-color: #f1f1f1;
+    }
+    .navigationContent .navigationBox .flagBox a img{
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        margin-top: -8px;
+        height: 16px;
+        width: 16px;
+    }
+    /*旗帜格子*/
+    .navigationContent .navigationBox .flagBox .flagA{
+        height: 65px;
+        line-height: 65px;
+        width: 126px;
+        display: block;
+        position: relative;
+        background-color: #fcfcfc;
+        border: 1px solid #fcfcfc;
+    }
+    .navigationContent .navigationBox .flagBox .flagA .flagImg{
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        height: 70px;
+        width: 115px;
+    }
+    .navigationContent .navigationBox .flagBox a span{
+        position: absolute;
+        text-align: left;
+        left: 44px;
+        color: #333;
+        font-size: 14px;
+        padding: 0;
+        max-width: 71px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+    /* 模块2：资讯信息*/
+    .navigationContent .navigationBox .h1ForModel2{
+        padding-top: 25px;
+        margin: 0 0 5px 11px;
+    }
+    /************** 视频部分 **************/
+    .contentTable .video{
+        font: 12px arial;
+    }
+    .contentTable .video .videoWrapper{
+        position: relative;
+        padding: 0 0 0 5px;
+    }
+    .contentTable .video .videoWrapper .videoContent{
+        overflow: hidden;
+    }
+    /*视频部分的公共属性*/
+    .contentTable .video .videoWrapper .videoContent .videoBox{
+        float: left;
+        margin-left: 20px;
+        width: 195px;
+        height: 320px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        overflow: hidden;
+    }
+    .videoContent .videoBox .videoItem{
+        position: relative;
+        width: 195px;
+        text-align: left;
+    }
+    .videoContent .videoBox .videoItem .wrapperForA{
+        display: block;
+        position: relative;
+        width: 195px;
+        height: 270px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .videoContent .videoBox .videoItem .wrapperForA img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 195px;
+        height: 270px;
+    }
+    .videoContent .videoBox .videoItem .wrapperForA span{
+        font-size: 12px;
+        color: #fff;
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+    }
+    .videoContent .videoBox .videoItem .wrapperForA i{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        height: 42px;
+        width: 42px;
+        cursor: pointer;
+        display: block;
+    }
+    /* 一列两格版本*/
+    .videoContent .videoBox .tinyVideoItem {
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .videoContent .videoBox .videoItem .tinyWrapperForA{
+        height: 100px;
+    }
+    .videoContent .videoBox .videoItem .tinyWrapperForA .tinyImg{
+        height: 100px;
+    }
+    .videoContent .videoBox .videoItem .dustbin {
+        position: absolute;
+        cursor: pointer;
+        right: 5px;
+        top: 5px;
+        background: url(../Icon/videoBtn.png) no-repeat;
+        background-position: -48px -2px;
+        width: 18px;
+        height: 18px;
+        z-index: 3;
+        display: none;
+    }
+    .videoContent .videoBox .videoItem .favor {
+        position: absolute;
+        cursor: pointer;
+        right: 28px;
+        top: 5px;
+        background: url(../Icon/videoBtn.png) no-repeat;
+        background-position: -26px -2px;
+        width: 18px;
+        height: 18px;
+        z-index: 3;
+        display: none;
+    }
+    .videoContent .videoBox .videoItem:hover i{
+        display: none;
+    }
+    .videoContent .videoBox .videoItem:hover .dustbin{
+        display: block;
+    }
+    .videoContent .videoBox .videoItem:hover .favor{
+        display: block;
+    }
+    .videoContent .videoBox .videoItem .wrapperForA .iForCartoon{
+        background-image: url(../Icon/videoCorner.png);
+        background-position: 0 0;
+    }
+    .videoContent .videoBox .videoItem .wrapperForA .iForMovie{
+        background-image: url(../Icon/videoCorner.png);
+        background-position: -126px 0;
+    }
+    .videoContent .videoBox .videoItem .wrapperForA .iForvariety{
+        background-image: url(../Icon/videoCorner.png);
+        background-position: -42px 0;
+    }
+    /*文本部分*/
+    .videoContent .videoBox .videoItem .videoText{
+        height: 44px;
+        width: 181px;
+        overflow: hidden;
+        padding: 5px 7px 0;
+        background-color: #fcfcfc;
+    }
+    .videoContent .videoBox .videoItem .videoText a{
+        text-decoration: none;
+        color: #333;
+    }
+    .videoContent .videoBox .videoItem .videoText a:hover{
+        text-decoration: underline;
+        color: #0079f4;
+    }
+    .videoContent .videoBox .videoItem .videoText .text1{
+        box-sizing: border-box;
+        display: block;
+        height: auto;
+        font-size: 13px;
+        margin-top: 1px;
+        margin-left: 3px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .videoContent .videoBox .videoItem .videoText .text2{
+        box-sizing: border-box;
+        display: block;
+        height: auto;
+        margin-left: 3px;
+        margin-top: -2px;
+        white-space: normal;
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .videoContent .videoBox .videoItem .videoText .score{
+        font-size: 13px;
+        color: #999;
+        margin-top: 6px;
+    }
+    .videoContent .videoBox .videoItem .videoText .score .scoreStar{
+        display: inline-block;
+        background-repeat: repeat-x;
+        height: 13px;
+        width: 65px;
+        background-image: url(../Icon/videoStar.png);
+        background-repeat: repeat-x;
+        vertical-align: middle;
+        margin:0 5px 4px 3px;
+        position: relative;
+    }
+    .videoContent .videoBox .videoItem .videoText .score .scoreStar .activeStar{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        height: 13px;
+        background-image: url(../Icon/videoStar.png);
+        background-repeat: repeat-x;
+        background-position: 0 -13px;
+        vertical-align: middle;
+        margin-bottom: 4px;
+    }
+    .videoContent .boundary {
+        width: 840px;
+        height: 0;
+        border-top: 1px solid #F0F0F0;
+        float: left;
+        margin-left: 20px;
+        border-top-color: rgba(255, 255, 255, .9);
+    }
+
+    /************** 购物部分 **************/
+    .contentTable .shopping{
+        font: 12px arial;
+    }
+    .contentTable .shopping .shoppingWrapper{
+        position: relative;
+        padding: 4px 0 14px 14px;
+    }
+    .contentTable .shopping .shoppingWrapper .shoppingContent{
+        overflow: hidden;
+    }
+    /**** 购物部分首部 ****/
+    .shoppingContent .shoppingHeader{
+        height: 286px;
+    }
+    /* 首部公共格子*/
+    .shoppingContent .shoppingHeader .shoppingHeaderCell{
+        float: left;
+        width: 195px;
+        height: 265px;
+        overflow: hidden;
+        margin-left: 20px;
+        margin-top: 21px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell:first-child{
+        margin-left: 11px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForShopping{
+        position: relative;
+        width: 195px;
+        height: 265px;    
+        display: inline-block;
+        text-decoration: none;
+        width: 195px;
+        height: 265px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForShopping img{
+        width: 195px;
+        height: 265px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForShopping .mask{
+        display: block;
+        position: absolute;
+        bottom: 11px;
+        left: 10px;
+        height: 30px;
+        overflow: hidden;
+        width: 175px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #000;
+        text-align: center;
+        background-color: rgba(255, 255, 255, .95);
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForShopping .mask span{
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForShopping .mask .percent{
+        color: #fe673d;
+        margin-left: 5px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForShopping .top{
+        bottom: 42px;
+        height: 34px;
+        line-height: 34px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForShopping .cover{
+        position: absolute;
+        width: 4px;
+        height: 1px;
+        bottom: 41px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, .95);
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForShopping .right{
+        left: 181px;
+    }
+    /*特殊格式*/
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForMoreShop {
+        height: 82px;
+        border-bottom: 1px solid rgba(201, 201, 201, .9);
+        text-align: left;
+        text-decoration: none;
+        display: block;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForMoreShop p{
+        font-size: 14px;
+        color: #000;
+        font-weight: bold;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForMoreShop span{
+        display: inline-block;
+        font-size: 14px;
+        color: #808080;
+        margin: 6px 0 11px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForMoreShop .hoverBtn{
+        font-size: 12px;
+        color: #0771fb;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .aForMoreShop:hover .hoverBtn{
+        text-decoration: underline;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .shoppingMall a{
+        text-decoration: none;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .shoppingMall a p{
+        font-size: 14px;
+        color: #000;
+        margin: 15px 0 0;
+        font-weight: bold;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .shoppingMall ul li{
+        display: inline-block;
+        margin: 14px 0 0;
+        color: #666;
+        width: 95.5px;
+        font-size: 14px;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .shoppingMall ul li .last{
+        font-size: 12px;
+        color: #0771fb;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .shoppingMall ul li a{
+        text-decoration: none;
+        color: #666;
+    }
+    .shoppingContent .shoppingHeader .shoppingHeaderCell .shoppingMall ul li a:hover{
+        text-decoration: underline;
+        /*color: #666;*/
+    }
+
+    /**** 购物部分菜单 ****/
+    .shoppingContent .shoppingMenu{
+        list-style: none;
+        text-align: left;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 25px 0 28px 14px;
+    }
+    .shoppingContent .shoppingMenu .menuBtn{
+        margin-right: 4px;
+        display: inline-block;
+        width: 68px;
+        position: absolute;
+        z-index: 1;
+        padding: 10px 20px 0 13px;
+        left: 26px;
+        margin-top: -10px;
+    }
+    .shoppingContent .shoppingMenu .menuBtn .superBack{
+        color: #ff4800;
+        font-weight: bold;
+    }
+    .shoppingContent .shoppingMenu .menuBtn .arrow{
+        background: url(../Icon/arrow_down.png);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        left: 68px;
+        margin-top: -16px;
+    }
+    .shoppingContent .shoppingMenu .menuBtn:hover .arrow{
+        background-image: url(../Icon/arrow_up.png);
+    }
+    .shoppingContent .shoppingMenu .menuBtn:hover{
+        background-color: #fff;
+        border: 1px solid #e9e9e9;
+        padding: 9px 20px 0 13px;
+        margin-left: -1px;
+    }
+    .shoppingContent .shoppingMenu .menuBtn .menuList {
+        margin-bottom: 6px;
+        display: none;
+    }
+    .shoppingContent .shoppingMenu .menuBtn:hover .menuList{
+        display: block;
+    }
+    .shoppingContent .shoppingMenu .menuBtn .menuList a{
+        color: #808080;
+        font-weight: normal;    
+        line-height: 24px;
+        width: 68px;
+        display: block;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .shoppingContent .shoppingMenu .menuBtn .menuList a:hover{
+        color: #ff4800;
+    }
+    .shoppingContent .shoppingMenu .shoppingName{
+        font-size: 14px;
+        left: 125px;
+        text-align: center;
+        border-left: 1px solid #d1d1d1;
+        position: absolute;
+        border-right: 0;
+        line-height: 14px;
+        padding: 0 25px;
+        margin-top: 6px;
+    }
+    .shoppingContent .shoppingMenu .shoppingName a{
+        color: #333;
+        text-decoration: none;
+    }
+
+    /**** 购物部分内容 ****/
+    .shoppingContent .shoppingBox{
+        margin-left: 12px;
+        overflow: hidden;
+    }
+    /*公共格子*/
+    .shoppingContent .shoppingBox .shoppingCell{
+        float: left;
+        width: 195px;
+        height: 312px;
+        overflow: hidden;
+        margin-top: 21px;
+        margin-right: 20px;
+    }
+    .shoppingBox .shoppingCell .shopPic{
+        display: inline-block;
+        text-decoration: none;
+        width: 193px;
+        height: 193px;
+        border: 1px solid #f0f0f0;
+    }
+    .shoppingBox .shoppingCell .shopPic img{
+        width: 193px;
+        height: 193px;
+    }
+    .shoppingBox .shoppingCell .shopText{
+        cursor: pointer;
+        margin-top: 7px;
+    }
+    .shoppingBox .shoppingCell .shopText a{
+        text-decoration: none;
+    }
+    .shoppingBox .shoppingCell .shopText a .textForShop{
+        font-size: 14px;
+        margin-top: 10.5px;
+        color: rgb(51, 51, 51);
+        text-align: left;
+        text-decoration: none;
+        font-family: Arial;
+        line-height: 21px;
+        height: 42px;
+    }
+    .shoppingBox .shoppingCell:hover .shopText a .textForShop{
+        text-decoration: underline;
+        color: #0771fb;
+    }
+    .shoppingBox .shoppingCell .shopText .priceTag{
+        display: block;
+        margin-top: 9px;
+        padding-bottom: 6px;
+        overflow: hidden;
+        color: #666;
+        cursor: pointer;
+    }
+    .shoppingBox .shoppingCell .shopText .priceTag .sTag{
+        /*padding-right: 3px;*/
+        font-size: 16px;
+    }
+    .shoppingBox .shoppingCell .shopText .priceTag .xTag{
+        margin-right: 5px;
+        font-size: 20px;
+        font-family: Arial;
+    }
+    .shoppingBox .shoppingCell .shopText .priceTag .tTag{
+        text-decoration: line-through;
+        font-size: 14px;
+        color: #999;
+    }
+    .shoppingBox .shoppingCell .shopText .discountTag{
+        cursor: pointer;
+        overflow:hidden;
+        display: block;
+    }
+    .shoppingBox .shoppingCell .shopText .discountTag .discountPrice{
+        float: left;
+    }
+    .shoppingBox .shoppingCell .shopText .discountTag .discountPrice .minus{
+        font-family: Arial;
+        color: #ff4800;
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .shoppingBox .shoppingCell .shopText .discountTag .discountPrice .discount{
+        margin-right: 8px;
+        font-family: Arial;
+        color: #ff4800;
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .shoppingBox .shoppingCell .shopText .discountTag .cashBack{
+        float: left;
+        font-family: Arial;
+        border: 1px solid #ff4800;
+        color: #ff4800;
+        padding: 1px 3px;
+        font-size: 12px;
+        border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        margin-top: 0;
+    }
+    .shoppingBox .shoppingCell .shopText .discountTag .mall{
+        float: right;
+        font-size: 12px;
+        font-family: Arial;
+        color: #999;
+        border: 1px solid #a4a4a4;
+        padding: 0 2px;
+        padding-top: 1px\9;
+        border-radius: 2px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        margin-top: 1px;
+    }
+    /*结尾*/
+    .shoppingContent .shoppingEnd{
+        height: 42px;
+        width: 95%;
+        padding-top: 11px;
+        margin: 0 auto;
+        font-size: 14px;
+        text-align: center;
+    }
+    .shoppingContent .shoppingEnd .shoppingEndWrapper{
+        margin:0 auto;
+        height: 30px;
+        width: 126px;
+    }
+    .shoppingContent .shoppingEnd .tinyLogo{
+        display: inline-block;
+        float: left;
+        height: 22px;
+        width: 22px;
+        margin-top: 10px;
+        background: url(../Icon/tinyLogo.png) no-repeat 0 -72px;
+    }
+    .shoppingContent .shoppingEnd .noMoreText{
+        display: inline-block;
+        float: left;
+        margin-left: 6px;
+        color: #999;
+        margin-top: 14px;
+    }
+    /******************* 底部 *******************/
+    .footer {
+        display: block;
+    }
+    /******************* 手机导航栏 *******************/
+    .navBar {
+        display: none;
+    }
+
+    /******************* 手机端主要内容 *******************/
+    .contentM {
+        display: none;
+    }
+}
+
+
+/*************************** 移动端 ***************************/
+
+@media only screen and (max-width: 810px) {
+    /*包装*/
+    .contain {
+        background-color: #EDECEB;
+        height: auto;
+    }
+    /*导航栏*/
+    .nav {
+        display: none;
+    }
+    /*底部*/
+    .footer {
+        display: none;
+    }
+    /*手机顶部工具栏*/
+    .navM {
+        display: block;
+    }
+    /*百度首页推荐内容*/
+    .mainContentWrapper{
+        display: none;
+    }
+    /*百度LOGO*/
+    .LogoContain{
+        height: auto;
+        width: 100%;
+    }
+    .LogoContain .logo {
+        display: none;
+    }
+    /*手机百度LOGO*/
+    .LogoContain .mLogo {
+        display: block;
+    }
+    /*麦克风与相机的容器*/
+    .imgBox {
+        display: none;
+    }
+    /*搜索组件容器*/
+    .cigarette {
+        position: relative;
+        /*width: 100%;*/
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin: 0 10px;
+        margin-top: 16px;
+    }
+    /*搜索框*/
+    .inputBorder {
+        position: relative;
+        border: 1px solid #AAAAAA;
+        margin: 0;
+        height: 36px;
+        outline: none;
+        font-size: 15px;
+        float: left;
+        width: 78%;
+        border-right: none;
+        padding: 3px 0 3px 7px;
+    }
+    /*百度按钮*/
+    .buttonBorder {
+        position: relative;
+        float: left;
+        border: none;
+        background-color: rgb(51, 133, 255);
+        font-size: 15px;
+        color: white;
+        outline: none;
+        width: 82px;
+        height: 44px;
+        line-height: 44px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        vertical-align: middle;
+    }
+    .searchWrapper {
+        display: -webkit-box;
+    }
+    /*手机导航栏*/
+    .navBar {
+        display: block;
+    }
+    /*手机端主要内容*/
+    .contentM {
+        display: block;
+    }
+}
+
+
+/**************************** 移动端css ****************************/
+
+
+
+
+/*手机顶部工具栏*/
+
+.navM {
+    position: relative;
+    float: right;
+    text-align: right;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    /*min-width: 200px;*/
+    overflow: hidden;
+}
+
+
+/*手机导航栏*/
+
+.navBar {
+    margin: 0 0 14px;
+    overflow: hidden;
+}
+
+.navBar a {
+    float: left;
+    width: 16%;
+    font-size: 12px;
+    color: #666;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navBar a:first-child {
+    margin-left: 2%;
+}
+
+.navBar a img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 4px;
+    height: 24px;
+}
+
+.navM .loginIcon {
+    margin-top: 6px;
+    margin-right: 9px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../Icon/header1.png) 5px 3px no-repeat;
+    float: right;
+}
+
+.navM .skinIcon {
+    margin-top: 6px;
+    margin-right: 9px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../Icon/header2.png) 3px 3px no-repeat;
+    float: right;
+}
+
+.contentM {
+    position: relative;
+    padding: 0 8px 10px;
+}
+
+
+/*手机：第一部分：我的导航栏*/
+
+.contentM .myNav {
+    margin-top: 8px;
+    height: 135px;
+    background: #fff;
+}
+
+.contentM .myNav .navTitleBox {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentM .myNav .navTitleBox .navTitle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentM .myNav .navTitleBox .navTitle h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.contentM .myNav .navTitleBox .navTitle a {
+    text-decoration: none;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentM .myNav .navTitleBox .navTitle a img {
+    width: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.contentM .myNav .navTitleBox .myNavContent {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+.contentM .myNav .myNavContent a {
+    float: left;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contentM .myNav .myNavContent a span {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px 0 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+}
+
+.contentM .myNav .myNavContent a img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    display: inline;
+    margin-top: 10px;
+}
+
+
+/*********************** 手机：第二部分：实时热点 ***********************/
+
+.contentM .hotWordBox {
+    margin-top: 8px;
+    background: #fff;
+    height: 205px;
+}
+
+
+/*标题栏*/
+
+.contentM .hotWordBox .hotWordTitleBox {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle a {
+    text-decoration: none;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle a img {
+    width: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle span {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    width: 82px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    color: #262626;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle span img {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    width: 15px;
+    height: 15px;
+}
+
+
+/*模块内容*/
+
+.contentM .hotWordBox .hotWordContentBox {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+    padding: 0 14px;
+    text-align: left;
+    display: block;
+}
+
+.contentM .hotWordBox .hotWordContentBox li {
+    display: inline-block;
+    width: 48%;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.contentM .hotWordBox .hotWordContentBox li a {
+    display: inline-block;
+    position: relative;
+    padding-right: 17px;
+    max-width: 86%;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    text-decoration: none;
+}
+
+.contentM .hotWordBox .hotWordContentBox li a img {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 18px;
+    height: 14px;
+}
+
+
+/*热搜榜*/
+
+.contentM .hotWordBox .hotSearch {
+    line-height: 42px;
+    text-align: right;
+    border-top: 1px solid #f4f5f6;
+}
+
+.contentM .hotWordBox .hotSearch a {
+    display: inline-block;
+    padding-right: 14px;
+    font-size: 14px;
+    color: #0058d2;
+    text-decoration: none;
+}
+
+
+/*********************** 手机：第三部分：百度推荐 ***********************/
+
+.contentM .bdRecommend {
+    margin-top: 8px;
+    background: #fff;
+    height: 270px;
+}
+
+
+/*标题栏*/
+
+.contentM .bdRecommend .bdRecommendTitleBox {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle a {
+    text-decoration: none;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle a img {
+    width: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle span {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    width: 82px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    color: #262626;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle span img {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    width: 15px;
+    height: 15px;
+}
+
+.contentM .bdRecommend .bdRecommendContent {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul {
+    padding: 13px 12px 0 12px;
+    text-align: left;
+    font-size: 14px;
+    overflow: hidden;
+    margin-top: -5px;
+    list-style: none;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul .liFirst {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f7f6f6;
+    display: table;
+    white-space: normal;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li:first-child .time {
+    position: absolute;
+    bottom: -9px;
+    left: 94px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li {
+    line-height: 41px;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 2px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a {
+    position: relative;
+    display: block;
+    height: 41px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    text-decoration: none;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a img {
+    width: 83px;
+    height: 50px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a .outer {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a .imgTitle {
+    left: 83px;
+    padding-left: 10px;
+    font-size: 15px;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 17px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a .time {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a .newsTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 85%;
+    display: inline-block;
+}
+
+
+/*更多推荐*/
+
+.contentM .bdRecommend .moreNews {
+    line-height: 42px;
+    text-align: right;
+    border-top: 1px solid #f4f5f6;
+}
+
+.contentM .bdRecommend .moreNews a {
+    display: inline-block;
+    padding-right: 14px;
+    font-size: 14px;
+    color: #0058d2;
+    text-decoration: none;
+}
+
+
+/*********************** 手机：第四部分：生活服务 ***********************/
+
+.contentM .lifeStyle {
+    margin-top: 8px;
+    background: #fff;
+    height: 270px;
+}
+
+
+/*标题栏*/
+
+.contentM .lifeStyle .lifeTitleBox {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentM .lifeStyle .lifeTitleBox .lifeStyleTitle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentM .lifeStyle .lifeTitleBox .lifeStyleTitle h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.contentM .lifeStyle .lifeTitleBox .lifeStyleTitle a {
+    text-decoration: none;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentM .lifeStyle .lifeTitleBox .lifeStyleTitle a img {
+    width: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+
+/*模块内容*/
+
+.contentM .lifeStyle .lifeContentBox {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+
+/*GPRS*/
+
+.contentM .lifeStyle .lifeContentBox .gprsBox {
+    position: relative;
+    margin: 8px 14px 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #262626;
+}
+
+.contentM .lifeStyle .lifeContentBox .gprsBox .gpsInfo {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 32px;
+    overflow: hidden;
+}
+
+.contentM .lifeStyle .lifeContentBox .gprsBox .gpsInfo p {
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -moz-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    padding-right: 70px;
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+.contentM .lifeStyle .lifeContentBox .gprsBox button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #d2d6dd;
+    border-radius: 2px;
+    text-indent: 20px;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+    ;
+}
+
+.contentM .lifeStyle .lifeContentBox .gprsBox img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 8px;
+    top: 5px;
+}
+
+
+/*生活服务类型*/
+
+.contentM .lifeStyle .lifeContentBox ul {
+    margin-top: -15px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li {
+    width: 24%;
+    height: 90px;
+    text-align: center;
+    display: inline-block;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li a {
+    text-decoration: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li a div {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li a img {
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li a p {
+    color: #666;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    margin: 3px 0 8px;
+}
+
+/*********************** 手机：底部 ***********************/
+.bottomPart .bottomContent{
+        margin: 10px 28px 0;
+}
+/*用户反馈部分*/
+.bottomPart .bottomContent div{
+
+    overflow: hidden;
+    text-align: center;
+}
+.bottomPart .bottomContent div a{
+
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 95px;
+    line-height: 34px;
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+}
+.bottomPart .bottomContent div a i{
+        position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../Icon/downLoad.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+/*版权*/
+.bottomPart .bottomContent .copyRight{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 0;
+    color: #999;
+}
+.bottomPart .bottomContent .inFile{
+    
+    height: 12px;
+    line-height: 12px;
+    padding: 6px 0 3px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    color: #999;
+}
+
+.bottomPart .bottomContent .inFile i{
+        display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../Icon/inFile.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5px;
+    vertical-align: top;
+}
+/**************************** PC端css ****************************/
+
+
+/**************************** 导航栏 ****************************/
+
+.nav {
+    float: right;
+    text-align: right;
+    height: 32px;
+    line-height: 32px;
+    min-width: 540px;
+    width: 100%;
+    border-bottom: 1px solid rgba(192, 192, 192, .9);
+}
+.navColor{
+    background-color: rgba(15,25,50,.3);
+    height: 33px;
+    border: none;
+}
+/*左上角导航栏*/
+.nav .navLeft{
+    float: left;
+    width: 
+}
+/*天气盒子*/
+.nav .navLeft .weatherBox{
+    margin: 7px 0 0 15px;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.nav .navLeft .weatherBox a{
+    display: block;
+    text-decoration: none;
+}
+.nav .navLeft .weatherBox a span{
+    float: left;
+    margin-top: 2px;
+    /*color: #555;*/
+    font: 12px arial;
+}
+.nav .navLeft .weatherBox a .weatherIcon{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0px;
+    margin-right: 5px;
+    background-image:url(../Icon/weather1.png);
+}
+.nav .navLeft .weatherBox a .pollution{
+    margin-left: 9px;
+    margin-right: 9px;
+    color: #badc00;
+    font-weight: bold;
+}
+.nav .navLeft .weatherBox a .depart{
+    padding-left: 11px;
+    margin-right: 11px;
+}
+/*常用工具盒*/
+.nav .navLeft .commonBox{
+    float: left;
+    height: 32px;
+    /*line-height: 20px;*/
+    font-size: 12px;
+}
+.nav .navLeft .commonBox a{
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 18px;
+    /*color: #555;*/
+    text-decoration: underline;
+    outline: none;
+    display: inline-block;
+    cursor: pointer;
+}
+/*搜索栏包装*/
+.searchWrapper {
+    width: auto;
+    height: 42px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+/*取消链接的下划线*/
+
+.pic a:link {
+    text-decoration: none;
+}
+
+.pic a:visited {
+    text-decoration: none;
+}
+
+.pic a:hover {
+    text-decoration: underline;
+}
+
+.pic a:active {
+    text-decoration: none;
+}
+
+/*更多产品按钮*/
+.moreIndex{
+    position: relative;
+    float: right;
+    margin-left: 21px;
+    background-color: rgb(51, 133, 255);    
+    border-bottom: 1px solid rgb(51, 133, 255);
+    font-size: 13px;
+    width: 86px;
+    color: white;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    z-index: 1000;
+}
+
+/*容器*/
+
+.menu {
+    display: none;
+    position: absolute;
+    height: 100%;
+    z-index: 9999;
+    /*float: right;*/
+    right: 0;
+    top: 0;
+    width: 96px;
+}
+
+
+/*菜单*/
+
+/*.menu .more {
+    position: relative;
+    margin-left: 16px;
+    background-color: rgb(51, 133, 255);
+    font-size: 13px;
+    width: 86px;
+    color: white;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    z-index: 1000;
+}*/
+
+
+/*鼠标划到按钮时的状态*/
+
+.more {
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    background-color: rgb(249, 249, 249);
+    color: black;
+    width: 86px;
+    height: 100%;
+    border-left: 1px solid rgb(231, 231, 231);
+    /*position: absolute;*/
+}
+
+
+/*更多产品中的内容容器*/
+.menu .more .picWrapper {
+    overflow: hidden;
+    position: relative;
+}
+.menu .more .picWrapper .pic {
+    min-height: 100px;
+    margin-top: 9px;
+    display: block;
+    overflow:hidden;
+    overflow-y:visible; 
+}
+
+.menu .more .menu {
+    margin-left: 0;
+}
+/*
+.menu .pic {
+    display: none;
+    height: 540px;
+}*/
+
+
+/*分割线*/
+
+.hr {
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+
+/*链接容器*/
+
+.linkage {
+    width: 80px;
+    height: 67px;
+    display: block;
+}
+
+
+/*最下面贩链接容器*/
+
+.lastLinkage {
+    width: 160px;
+    height: 32px;
+    display: block;
+}
+
+
+/*图片属性*/
+
+.img {
+    /*width: 48px;
+    height: 48px;
+    padding-top: 11px;
+    padding-left: 11px;*/
+    display: block;
+    height: 42px;
+    width: auto;
+    margin: 10px auto 5px;
+    border: none;
+}
+
+
+/*关键字属性*/
+
+.keyWord {
+    font-size: 12px;
+    margin-top: -9px;
+    display: block;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    margin-top: -3px\9;
+    *margin-top: -3px;
+}
+
+
+/*最后一个关键字的属性*/
+
+.lastKeyWord {
+    font-size: 12px;
+    margin-top: 8px;
+    display: block;
+    width: 86px;
+    color: rgb(102, 102, 102);
+    text-decoration: underline;
+}
+
+
+/*顶部导航栏中的文字*/
+
+.aFontSize {
+    font-size: 13px;
+    margin-right: 21px;
+    /*color: white;*/
+    float: right;
+}
+
+/*用户hover列表*/
+.userListBox{
+    position: absolute;
+    display: none;
+    width: 70px;
+    padding-top: 6px;
+    right: 135px;
+    top: 26px;
+}
+
+.arrowForList{
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    text-align: center;
+}
+.arrowForList .arrow{
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border: 6px solid white;
+    border-top: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+.userListBox .userList{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height:auto;
+    border: 1px solid #E3E3E3;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    -moz-box-shadow: 1px 1px 5px #d1d1d1;
+    -webkit-box-shadow: 1px 1px 5px #d1d1d1;
+}
+
+.userListBox .userList a{
+    text-decoration: none;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 8px;
+    background-color: #fff;
+    -moz-user-select: none;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+    color: #333;
+    margin: 0;
+    font-size: 12px;
+}
+
+.userListBox .userList a:hover{
+    color: #fff;
+    background-color: #38f;
+}
+
+/*设置hover列表*/
+.settingListBox{
+    position: absolute;
+    display: none;
+    width: 70px;
+    padding-top: 6px;
+    right: 85px;
+    top: 26px;
+}
+
+.settingListBox .settingList{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height:auto;
+    border: 1px solid #E3E3E3;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    -moz-box-shadow: 1px 1px 5px #d1d1d1;
+    -webkit-box-shadow: 1px 1px 5px #d1d1d1;
+}
+
+.settingListBox .settingList a{
+    text-decoration: none;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 8px;
+    background-color: #fff;
+    -moz-user-select: none;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+    color: #333;
+    margin: 0;
+    font-size: 12px;
+}
+.settingListBox .settingList a:hover{
+    color: #fff;
+    background-color: #38f;
+}
+/*更多产品占位方块*/
+.placeHolder{
+    display: inline-block;
+    width: 112px;
+    height: 40px;
+    float: right;
+}
+
+
+/*最后一个关键字的属性*/
+
+.lastFontSize {
+    font-size: 13px;
+    /*color: white;*/
+    float: right;
+}
+
+
+/*百度LOGO容器*/
+
+.LogoContain {
+    /*position: relative;*/
+    margin: 0 auto;
+    clear: both;
+    /*width: 100%;*/
+}
+
+
+/*百度LOGO*/
+
+.LogoContain .logo {
+    width: 270px;
+    height: 129px;
+    margin: 0 auto;
+}
+
+
+/*手机百度LOGO*/
+
+.LogoContain .mLogo {
+    width: 175px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+
+/**************************** 搜索组件容器 ****************************/
+
+
+/*.cigarette {
+    width: 650px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 16px;
+}*/
+
+
+/*图片按钮*/
+
+.cigarette form {
+    position: relative;
+}
+
+
+/*麦克风与相机的容器*/
+
+.imgBox {
+    /*position: relative;
+    float: left;
+    margin-left: -63px;
+    margin-top: -11px;*/
+    position: absolute;
+    width: 63px;
+    height: 30px;
+    right: 114px;
+    top: -10px;
+}
+
+
+/*麦克风图片*/
+
+.imgs {
+    /*margin-top: 21px;*/
+    width: 13px;
+    height: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../Icon/microphone.png);
+}
+
+.imgs:hover {
+    background-image: url(../Icon/highlight.png);
+}
+
+
+/*相机图片链接*/
+
+.imgssA {
+    /*margin-top: 21px;*/
+    width: 18px;
+    height: 18px;
+    background-image: url(../Icon/camera.png);
+    display: inline-block;
+    background-size: 100%;
+    _background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+}
+
+.imgssA:hover {
+    background-position: bottom;
+}
+
+
+/*相机图片*/
+
+.imgss {
+    width: 18px;
+    height: 36px;
+}
+
+
+/*纵向分割线*/
+
+.hrVertical {
+    width: 1px;
+    height: 15px;
+    margin-top: 22.5px;
+    margin-right: 6px;
+    margin-left: 6px;
+    border-left: 1px solid rgb(219, 219, 219);
+    display: inline-block;
+}
+
+
+/**************************** 底部组件容器 ****************************/
+
+.footer {
+    height: 51px;
+    position: static;
+    margin-top: 21px;
+    bottom: 21px;
+    font: 12px arial;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*底部容器*/
+
+.footerBox {
+    display: inline-block;
+    width: 400px;
+    /*position: relative;*/
+    text-align: center;
+}
+
+
+/*底部文字段落P*/
+
+.pBottom {
+    text-decoration: none;
+    float: left;
+    /*margin-left: 33px;*/
+    height: 22px;
+    line-height: 22px;
+    width: 400px;
+    text-align: center;
+    /*color: #fff;*/
+    font: 12px arial;
+    /*color: rgb(153, 153, 153);*/
+}
+.pBottom .setHome{
+    margin-right: 9px;
+}
+.aBottom {
+    text-decoration: none;
+    float: left;
+    /*margin-left: 33px;*/
+    height: 22px;
+    line-height: 22px;
+    width: 400px;
+    text-align: center;
+    /*color: #fff;*/
+    font: 12px arial;
+    /*color: rgb(153, 153, 153);*/
+}
+.aBottom:hover{
+    text-decoration: underline;
+}
+
+
+/*关键字的颜色*/
+.pBottom a {
+    /*color: #fff;*/
+}
+/*.pBottom a:link {
+    color: #fff;
+}
+
+.pBottom a:visited {
+    color: #fff;
+}
+
+.pBottom a:hover {
+    color: #fff;
+}
+
+.pBottom a:active {
+    color: #fff;
+}*/
+/*
+.linkBaidu {
+    margin-left: 63px;
+}*/
+
+
+/*灰色字体颜色*/
+
+.grayText {
+    color: rgb(153, 153, 153);
+}
+
+
+/*图片第二段文字中的图片*/
+
+.imgP2 {
+    width: 13px;
+    height: 16px;
+    position: relative;
+    margin: 0 0 -2px 0;
+}
+
+
+/*图片第三段文字中的图片*/
+
+.imgP3 {
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    margin-right: 6px;
+    background: url(../Icon/icon-police.png) 0 0 no-repeat;
+    vertical-align: middle;
+    margin-top: -4px;
+}

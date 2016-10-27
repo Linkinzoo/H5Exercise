@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>hao123</title>
+    <link rel="stylesheet" href="./styleSheet/hao123.css">
+</head>
+
+<body onload="checkColor()">
+    <!-- 包装 -->
+    <div class="wrapper">
+        <!-- header包装 -->
+        <div class="headerWrapper">
+            <!-- header -->
+            <div class="header">
+                <!-- 设为首页 -->
+                <a href="http://www.hao123.com/sethome" class="makeIndex mainColor">
+                    <span>设为首页</span>
+                </a>
+                <!-- 设为首页 end -->
+                <!-- logo包装 -->
+                <a href="https://www.hao123.com/link/https/?key=http%3A%2F%2Fwww.hao123.com%2Fsethome&&c=DA32945A13032B8AD4B54B2F257F47E0" class="logoWrapper">
+                    <!-- logo -->
+                    <img src="./images/logo.png" alt="上网从hao123开始">
+                    <!-- logo end -->
+                </a>
+                <!-- logo包装 end -->
+                <!-- 信息盒子 -->
+                <div class="infoBox">
+                    <!-- 天气盒子 -->
+                    <div class="weatherBox">
+                        <!-- 地区 -->
+                        <a href="#" class="location">
+                            <span>北京</span>
+                            <span class="locationArrow"></span>
+                        </a>
+                        <!-- 地区 end -->
+                        <!-- 天气信息 -->
+                        <a href="http://www.baidu.com/s?word=%E5%8C%97%E4%BA%AC%E5%A4%A9%E6%B0%94&tn=50000030_hao_pg&ie=utf-8" class="weather">
+                            <span class="weatherPic"></span>
+                            <span class="weatherInfo">晴</span>
+                            <span class="temperature">33 ~ 25℃</span>
+                        </a>
+                        <!-- 天气信息 end -->
+                    </div>
+                    <!-- 天气盒子 end -->
+                    <!-- 日历盒子 -->
+                    <div class="calendarBox">
+                        <!-- 日历 -->
+                        <a href="https://www.baidu.com/s?word=2016%E5%B9%B48%E6%9C%8804%E6%97%A5&tn=sitehao123_11_pg&ie=utf-8" class="calendar">
+                            <span>8月04日</span>
+                            <span>周四</span>
+                            <span>七月初二</span>
+                        </a>
+                        <!-- 日历 end-->
+                    </div>
+                    <!-- 日历盒子 end -->
+                    <!-- 星座盒子 -->
+                    <div class="starBox">
+                        <a href="https://www.hao123.com/link/https/?key=http%3A%2F%2Fwww.hao123.com%2Fxingzuonew.html&&c=DA32945A13032B8AD4B54B2F257F47E0" class="starInfo">
+                    		星座运势
+                    	</a>
+                    </div>
+                    <!-- 星座盒子 end -->
+                </div>
+                <!-- 信息盒子 end-->
+                <!-- 常用工具盒 -->
+                <div class="commonToolBox">
+                    <!-- 登录盒子 -->
+                    <div class="loginBox">
+                        <a href="#" class="loginLink">登录</a>
+                    </div>
+                    <!-- 登录盒子 end -->
+                    <!-- 云盘盒子 -->
+                    <a href="https://pan.baidu.com/" class="cellBox">
+                		云盘
+                	</a>
+                    <!-- 云盘盒子 end -->
+                    <!-- 邮箱盒子 -->
+                    <a href="https://pan.baidu.com/" class="cellBox">
+                		邮箱
+                	</a>
+                    <!-- 邮箱盒子 end -->
+                    <!-- 浏览器盒子 -->
+                    <a href="https://pan.baidu.com/" class="cellBox">
+                		浏览器
+                	</a>
+                    <!-- 浏览器盒子 end -->
+                    <!-- 换肤盒子 -->
+                    <a href="https://pan.baidu.com/" class="cellBox">
+                		换肤
+                	</a>
+                    <!-- 换肤盒子 end -->
+                </div>
+                <!-- 常用工具盒 end-->
+            </div>
+            <!-- header end -->
+            <!-- 背景颜色 -->
+            <div class="headerBackground bgColor"></div>
+            <!-- 背景颜色 end -->
+        </div>
+        <!-- header包装 end -->
+        <!-- 搜索栏包装 -->
+        <div class="searchWrapper">
+            <!-- 搜索栏 -->
+            <div class="searchBar">
+                <!-- 搜索控件的包装 -->
+                <div class="search">
+                    <!-- 搜索控件的内容 -->
+                    <div class="searchInner">
+                        <!-- 百度LOGO -->
+                        <div class="baiduLogo">
+                            <a href="http://www.baidu.com/?tn=sitehao123" title="百度首页">
+                                <span></span>
+                            </a>
+                        </div>
+                        <!-- 百度LOGO end -->
+                        <!-- 搜索框包装 -->
+                        <div class="formWrapper">
+                            <!-- 表单提交 -->
+                            <form action="https://www.baidu.com/s" target="_blank">
+                                <!-- 搜索框边框 -->
+                                <div class="inputBorder">
+                                    <!-- 搜索框 -->
+                                    <input name="wd" class="searchInput" type="text" maxlength="100">
+                                    <!-- 搜索框 end -->
+                                </div>
+                                <!-- 搜索框边框 end -->
+                                <!-- 百度一下按钮包装 -->
+                                <div class="bdBtnWrapper">
+                                    <!-- 百度一下 -->
+                                    <input class="baiduBtn" type="submit" value="">
+                                    <!-- 百度一下 end -->
+                                </div>
+                                <!-- 百度一下按钮包装 end -->
+                            </form>
+                            <!-- 表单提交 end -->
+                        </div>
+                        <!-- 搜索框包装 end -->
+                        <!-- 换肤盒子 -->
+                        <div class="changeColorBox">
+                            <!-- 页面主题色:縁 -->
+                            <b class="colorCell green" onclick="changeColor(this)">页</b>
+                            <!-- 页面主题色:縁 end -->
+                            <!-- 页面主题色:縁 -->
+                            <b class="colorCell yellow" onclick="changeColor(this)">面</b>
+                            <!-- 页面主题色:縁 end -->
+                            <!-- 页面主题色:縁 -->
+                            <b class="colorCell red" onclick="changeColor(this)">主</b>
+                            <!-- 页面主题色:縁 end -->
+                            <!-- 页面主题色:縁 -->
+                            <b class="colorCell blue" onclick="changeColor(this)">题</b>
+                            <!-- 页面主题色:縁 end -->
+                            <!-- 页面主题色:縁 -->
+                            <b class="colorCell purple" onclick="changeColor(this)">色</b>
+                            <!-- 页面主题色:縁 end -->
+                        </div>
+                        <!-- 换肤盒子 end -->
+                    </div>
+                    <!-- 搜索控件的内容 end -->
+                </div>
+                <!-- 搜索控件的包装 end -->
+            </div>
+            <!-- 搜索栏 end -->
+            <!-- 背景颜色 -->
+            <div class="searchBackground"></div>
+            <!-- 背景颜色 end -->
+        </div>
+        <!-- 搜索栏包装 end -->
+        <!-- 搜索热词 -->
+        <div class="hotWordWrapper">
+            <!-- 热词盒子 -->
+            <div class="hotWordBox">
+                <!-- 热词列表的包装 -->
+                <div class="hotWordListWrapper">
+                    <!-- 热词列表 -->
+                    <ul class="hotWordList">
+                        <li class="hotWordTitle">
+                            <a href="http://www.hao123.com/top" class="hotWrodIcon"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com/s?word=%E5%8C%97%E4%BA%AC%E5%A4%A9%E6%B0%94&tn=sitehao123_10_pg&ie=utf-8">
+        						北京天气
+        					</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com/s?word=%E5%A5%A5%E8%BF%90%E4%BC%9A&tn=sitehao123_10_pg&ie=utf-8">
+        						奥运会
+        					</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com/s?word=%E7%A6%8F%E5%8E%9F%E7%88%B1%E4%BF%AE%E9%A9%AC%E6%A1%B6&tn=sitehao123_10_pg&ie=utf-8">
+        						福原爱修马桶
+        					</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com/s?word=%E7%94%B0%E4%BA%AE%E8%B1%AA%E5%AE%85%E6%9B%9D%E5%85%89&tn=sitehao123_10_pg&ie=utf-8">
+        						田亮豪宅曝光
+        					</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com/s?word=%E5%91%A8%E6%B8%9D%E6%B0%91%E5%BD%93%E7%88%B8&tn=sitehao123_10_pg&ie=utf-8">
+        						周渝民当爸
+        					</a>
+                        </li>
+                        <li>
+                            <a href="http://www.baidu.com/s?word=%E5%BC%A0%E7%A2%A7%E6%99%A8%E6%84%9F%E6%83%85%E5%8D%B1%E6%9C%BA&tn=sitehao123_10_pg&ie=utf-8">
+        						张碧晨感情危机
+        					</a>
+                        </li>
+                        <li>
+                            <a onclick="checkColor()" href="http://www.baidu.com/s?word=%E9%9C%8D%E5%BB%BA%E5%8D%8E%E8%BF%99%E6%A0%B7%E6%B1%82%E5%A9%9A&tn=sitehao123_10_pg&ie=utf-8">
+        						霍建华这样求婚
+        					</a>
+                        </li>
+                    </ul>
+                    <!-- 热词列表 end -->
+                </div>
+                <!-- 热词列表的包装 end -->
+            </div>
+            <!-- 热词盒子 end -->
+        </div>
+        <!-- 搜索热词 end -->
+        <!-- 内容部分 -->
+        <div class="contenter">
+            <!-- 导航栏 -->
+            <div class="conNav">
+                <!-- 导航栏列表 -->
+                <ul class="conNavList">
+                    <!-- 首页 -->
+                    <li>
+                        <a id="active" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					首页
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 首页 end -->
+                    <!-- 电视剧 -->
+                    <li>
+                        <a id="nav2" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					电视剧
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 电视剧 end -->
+                    <!-- 最新电影 -->
+                    <li>
+                        <a id="nav3" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					最新电影
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 最新电影 end -->
+                    <!-- 新闻头条 -->
+                    <li>
+                        <a id="nav4" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					新闻头条
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 新闻头条 end -->
+                    <!-- 八卦娱乐 -->
+                    <li>
+                        <a id="nav5" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					八卦娱乐
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 八卦娱乐 end -->
+                    <!-- 军事热点 -->
+                    <li>
+                        <a id="nav6" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					军事热点
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 军事热点 end -->
+                    <!-- 热门游戏 -->
+                    <li>
+                        <a id="nav7" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					热门游戏
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 热门游戏 end -->
+                    <!-- 小 游 戏 -->
+                    <li>
+                        <a id="nav8" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					小 游 戏
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 小 游 戏 end -->
+                    <!-- 今日特价 -->
+                    <li>
+                        <a id="nav9" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					今日特价
+        					<span class="navLine"></span>
+        				</a>
+                    </li>
+                    <!-- 今日特价 end -->
+                    <!-- 特价旅游 -->
+                    <li>
+                        <a id="nav10" class="navA" onclick="navColor(this)" onmouseover="hoverColor(this)" onmouseout="unhoverColor(this)">
+        					特价旅游
+        				</a>
+                    </li>
+                    <!-- 特价旅游 end -->
+                </ul>
+                <!-- 导航栏列表 -->
+            </div>
+            <!-- 导航栏 end -->
+            <!-- 推荐栏 -->
+            <div class="govSiteWrapper">
+            	<div class="govSite">
+            		<span class="govSiteTitle">权威推荐</span>
+            		<span class="govSiteTitleLine"></span>
+            		<!-- 人民网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.people.com.cn/">人民网</a>
+            		</div>
+            		<!-- 人民网 end -->
+            		<!-- 新华网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.xinhuanet.com.cn/">新华网</a>
+            		</div>
+            		<!-- 新华网 end -->
+            		<!-- 央视网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.cctv.com.cn/">央视网</a>
+            		</div>
+            		<!-- 央视网 end -->
+            		<!-- 国际在线 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.cri.cn/">国际在线</a>
+            		</div>
+            		<!-- 国际在线 end -->
+            		<!-- 中国日报网 -->
+            		<div class="govSiteCell">
+            			<a href="http://cn.chinadaily.com.cn/">中国日报网</a>
+            		</div>
+            		<!-- 中国日报网 end -->
+            		<!-- 中国网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.china.com.cn/">中国网</a>
+            		</div>
+            		<!-- 中国网 end -->
+            		<!-- 中国经济网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.ce.cn/">中国经济网</a>
+            		</div>
+            		<!-- 中国经济网 end -->
+            		<!-- 光明网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.gmw.cn/">光明网</a>
+            		</div>
+            		<!-- 光明网 end -->
+            		<!-- 央广网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.cnr.cn/">央广网</a>
+            		</div>
+            		<!-- 央广网 end -->
+            		<!-- 求是网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.qstheory.cn/">求是网</a>
+            		</div>
+            		<!-- 求是网 end -->
+            		<!-- 中国青年网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.youth.cn/">中国青年网</a>
+            		</div>
+            		<!-- 中国青年网 end -->
+            		<!-- 中国网信网 -->
+            		<div class="govSiteCell">
+            			<a href="http://www.cac.gov.cn/">中国网信网</a>
+            		</div>
+            		<!-- 中国网信网 end -->
+            	</div>
+            </div>
+            <!-- 推荐栏 end -->
+            <!-- 主页内容 -->
+            <div class="webContenter">
+            	<!-- 右边栏 -->
+            	<div class="conRightPart">
+            		
+            	</div>
+            	<!-- 右边栏 end -->
+            </div>
+            <!-- 主页内容 end -->
+        </div>
+        <!-- 内容部分 end -->
+    </div>
+    <!-- 包装 end -->
+    <script src="./js/hao123.js"></script>
+</body>
+
+</html>

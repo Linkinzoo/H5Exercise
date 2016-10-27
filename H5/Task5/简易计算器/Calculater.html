@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简易计算器</title>
+    <link rel="stylesheet" href="./styleSheet/Calculater.css">
+</head>
+
+<body>
+    <!-- 轮廓 -->
+    <div class="wrapper">
+        <!-- 显示屏 -->
+        <div class="resultBox">
+            <!-- 计算结果 -->
+            <b id="result">0.00</b>
+            <!-- 计算结果 end-->
+        </div>
+        <!-- 显示屏 end -->
+        <!-- 输入栏 -->
+        <div class="inputBox">
+            <!-- 数值1 -->
+            <input type="text" id="v1" class="valueBox" placeholder="数值1">
+            <!-- 数值1 end-->
+            <!-- 数值2 -->
+            <input type="text" id="v2" class="valueBox" placeholder="数值2">
+            <!-- 数值2 end -->
+        </div>
+        <!-- 输入栏 -->
+        <!-- 按钮栏 -->
+        <div class="buttonBox">
+        	<!-- 单选框 -->
+            <select id="selectBox">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        	<!-- 单选框 end -->
+            <!-- 清除按钮 -->
+            <button id="clearBtn" onClick="clearAll()">
+            C
+            </button>
+            <!-- 清除按钮 end -->
+        	<!-- 计算按钮 -->
+        	<button id="calBtn" onClick="calculate(v1.value, v2.value, selectBox.value)">
+        	=
+        	</button>
+        	<!-- 计算按钮 end -->
+        </div>
+        <!-- 按钮栏 end -->
+    </div>
+    <!-- 轮廓 end -->
+    <script src="./js/Calculater.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="./styleSheet/bootstrap.min.css">
+    <link rel="stylesheet" href="./styleSheet/news.css">
+    <title>学生A的信息</title>
+</head>
+
+<body>
+    <!-- 包装 -->
+    <div class="container">
+        <!-- 链接 -->
+        <div class="col-md-12 linkage">
+            <a href="./BGIndex.html">首页</a>&nbsp;>&nbsp;新闻管理&nbsp;>&nbsp;查询数据
+        </div>
+        <!-- 链接 end -->
+        <!-- 标题 -->
+        <h2 class="col-md-12 slogan">添加新闻数据</h2>
+        <!-- 标题 end -->
+        <!-- 表格 -->
+        <div class="col-md-12 col-xs-12 tableContainer">
+            <form action="http://localhost/newsbd/mysql.php">
+                <!-- 文件在网络中的索引 -->
+                <textarea type="text" class="col-md-3 col-xs-3 fileType" name="fileType">newsSearch</textarea>
+                <!-- 文件在网络中的索引 end -->
+                <div class="col-md-3 col-xs-3 titleDiv" id="phpBtn">新闻标题</div>
+                <input type="text" class="col-md-9 col-xs-9" name="newsTitle">
+                <div class="col-md-3 col-xs-3 titleDiv">新闻时间</div>
+                <input type="date" class="col-md-9 col-xs-9" name="addTime">
+                <div class="col-md-3 col-xs-3 titleDiv">图片地址</div>
+                <input type="text" class="col-md-9 col-xs-9" name="newsImg">
+                <div class="col-md-12 col-xs-12 titleDiv">新闻内容</div>
+                <textarea name="newsContent" id="newsContent" class="col-md-12 col-xs-12"></textarea>
+                <div class="col-md-12 col-xs-12 btnLine">
+                    <input type="submit" id="submitBtn" value="提交" class="submitBtn">
+                    <input type="reset" value="重置" class="resetBtn">
+
+                </div>
+            </form>
+        </div>
+        <!-- 表格 end -->        
+        <div id="subbtn"></div>
+    </div>
+    <!-- 包装 end -->
+    <!-- script -->
+    <script src="./js/jquery-3.1.0.js"></script>
+    <script src="./js/newsSearch.js"></script>
+</body>
+
+</html>

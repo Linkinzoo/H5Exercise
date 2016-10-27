@@ -1,0 +1,187 @@
+/*取消链接的下划线*/
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+/*单元格公共属性*/
+
+td {
+    height: 22px;
+    line-height: 1rem;
+}
+
+
+/*背景*/
+
+.background {
+    background-color: rgb(13, 119, 146);
+}
+
+
+/*轮廓*/
+
+.outline {
+    width: 710px;
+    height: 2540px;
+    position: absolute;
+    left: 50%;
+    margin-left: -355px;
+    margin-top: 3px;
+    margin-bottom: 21px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+/*LOGO*/
+
+.logo {
+    margin-left: 30px;
+    margin-top: 3px;
+}
+
+
+/*导航栏标题*/
+
+.nav {
+    float: right;
+    margin-top: 60px;
+}
+
+
+/*粉色字体*/
+
+.pink {
+    font-size: 0.5rem;
+    color: rgb(255, 0, 153);
+}
+
+
+/*正文*/
+
+.normal {
+    font-size: 0.5rem;
+}
+
+
+/*红色字体*/
+
+.red {
+    font-size: 0.5rem;
+    color: rgb(255, 0, 0);
+}
+
+
+/*蓝色字体*/
+
+.blue {
+    font-size: 0.5rem;
+    color: rgb(0, 0, 255);
+}
+
+
+/*标题*/
+
+.h3 {
+    left: 0;
+    width: 710px;
+    text-align: center;
+}
+
+
+/*主表*/
+
+.mainTabel {
+    width: 640px;
+    margin-left: 35px;
+    border-collapse: collapse;
+    border: solid 1px rgb(200, 200, 200);
+}
+
+
+/*主表左边列*/
+
+.leftColumn {
+    width: 138px;
+    text-align: right;
+}
+
+
+/*需要居中的单元格*/
+
+.center {
+    text-align: center;
+}
+
+
+/*需要带下划线的链接*/
+
+.underLine {
+    text-decoration: underline;
+    color: rgb(0, 0, 255);
+}
+
+.underLine:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+
+/*标题单元格*/
+
+.titleCell {
+    background: rgb(238, 238, 238);
+    color: rgb(0, 49, 147);
+    font-size: 0.8rem;
+    text-indent: 0.2rem;
+}
+
+
+/*复选单元标题*/
+
+.titleOne {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+
+/*边距*/
+
+.br {
+    height: 0.4rem;
+}
+
+
+/*提交按钮所在的单元格*/
+
+.submitCell {
+    height: 80px;
+    text-align: center;
+}
+
+
+/*h5的一种属性*/
+
+.h5 {
+    text-align: center;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: 0.5rem;
+    color: rgb(99, 99, 99);
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>后台系统</title>
+    <link rel="stylesheet" href="./styleSheet/bootstrap.min.css">
+    <link rel="stylesheet" href="./styleSheet/BGSystem.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 容器 -->
+    <div class="container">
+        <!-- 位置1：LOGO位置 -->
+        <div class="col-md-2 col-xs-12">
+            <!-- 标题包装 -->
+            <div class="logoBox">
+                后台管理系统
+            </div>
+            <!-- 标题包装 end -->
+        </div>
+        <!-- 位置1：LOGO位置 end -->
+        <!-- 位置2：用户信息位置 -->
+        <div class="col-md-10 col-xs-12">
+            <!-- 右上角的标题 -->
+            <div class="slogan">
+                <a href="">用户A</a> 您好，欢迎登陆后台管理系统！<a href="./Login.html">[注销]</a>&nbsp;
+                <div id="popMenu" class="popMenu">
+                    <i class="glyphicon glyphicon-list" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- 右上角的标题 -->
+        </div>
+        <!-- 位置2：用户信息位置 end -->
+        <!-- 位置3：菜单位置 -->
+        <div class="col-md-2 col-xs-12" id="menuContainer">
+            <!-- 菜单栏第一个标题：首页 -->
+            <div id="firstTitle" class="col-md-12 col-xs-12 titleDiv">
+                <div class="emojiBox">
+                    <i class="glyphicon glyphicon-home" aria-hidden="true"></i>
+                </div>首页
+            </div>
+            <!-- 菜单栏第一个标题：首页 end -->
+            <!-- 菜单栏第二个标题：学员管理 -->
+            <div id="secondTitle" class="col-md-12 col-xs-12 titleDiv">
+                <div class="emojiBox">
+                    <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
+                </div>学员管理
+            </div>
+            <!-- 菜单栏第二个标题：学员管理 end -->
+            <!-- 学员管理菜单 -->
+            <ul id="studentMenu" class="col-md-12 col-xs-12">
+                <!-- 数据 -->
+                <li id="studentA" class="col-md-12 col-xs-3 subTitleDiv">
+                    学生A
+                </li>
+                <li id="studentB" class="col-md-12 col-xs-3 subTitleDiv">
+                    学生B
+                </li>
+                <li id="studentC" class="col-md-12 col-xs-3 subTitleDiv">
+                    学生C
+                </li>
+                <!-- 数据 end -->
+            </ul>
+            <!-- 学员管理菜单 end -->
+            <!-- 菜单栏第三个标题：作业列表 -->
+            <div id="thirdTitle" class="col-md-12 col-xs-12 titleDiv">
+                <div class="emojiBox">
+                    <i class="glyphicon glyphicon-list" aria-hidden="true"></i>
+                </div>作业列表
+            </div>
+            <!-- 菜单栏第三个标题：作业列表 end -->
+            <!-- 作业列表菜单 -->
+            <ul id="taskList" class="col-md-12 col-xs-12">
+                <!-- 数据 -->
+                <li id="taskA" class="col-md-12 col-xs-3 subTitleDiv">
+                    盒子模型
+                </li>
+                <li id="taskB" class="col-md-12 col-xs-3 subTitleDiv">
+                    3D魔方
+                </li>
+                <li id="taskC" class="col-md-12 col-xs-3 subTitleDiv">
+                    动画
+                </li>
+                <li id="taskD" class="col-md-12 col-xs-3 subTitleDiv">
+                    双飞翼布局
+                </li>
+                <!-- 数据 end -->
+            </ul>
+            <!-- 作业列表菜单 end -->
+            <!-- 菜单栏第四个标题：新闻管理 -->
+            <div id="fourthTitle" class="col-md-12 col-xs-12 titleDiv">
+                <div class="emojiBox">
+                    <i class="glyphicon glyphicon-list" aria-hidden="true"></i>
+                </div>新闻管理
+            </div>
+            <!-- 菜单栏第四个标题：新闻管理 end -->
+            <!-- 新闻管理菜单 -->
+            <ul id="newsList" class="col-md-12 col-xs-12">
+                <!-- 数据 -->
+                <li id="newsCenter" class="col-md-12 col-xs-6 subTitleDiv">
+                    新闻数据
+                </li>
+                <li id="newsAdd" class="col-md-12 col-xs-6 subTitleDiv">
+                    添加数据
+                </li>
+                <!-- <li id="taskC" class="col-md-12 col-xs-3 subTitleDiv">
+                    修改数据
+                </li>
+                <li id="newsSearch" class="col-md-12 col-xs-3 subTitleDiv">
+                    查询数据
+                </li> -->
+                <!-- 数据 end -->
+            </ul>
+            <!-- 新闻管理菜单 end -->
+        </div>
+        <!-- 位置3：菜单位置 end-->
+        <!-- 位置4：内容位置 -->
+        <iframe src="./BGIndex.html" frameborder="0" id="content" class="col-md-10 col-xs-12">
+        </iframe>
+        <!-- 位置4：内容位置 end -->
+    </div>
+    <!-- 容器 end -->
+    <!-- script -->
+    <script src="./js/BGSystem.js"></script>
+    
+</body>
+
+</html>

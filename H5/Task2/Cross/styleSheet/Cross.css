@@ -1,0 +1,57 @@
+/*中间的div*/
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    background-color: rgb(0, 0, 0);
+    margin-left: -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .6);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .6);
+}
+
+
+/*上边的div*/
+
+.top {
+    position: relative;
+    background-color: rgb(239, 58, 33);
+    margin-top: -120px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(239, 58, 33, .6);
+    box-shadow: 0px 0px 5px 5px rgba(239, 58, 33, .6);
+}
+
+
+/*右边的div*/
+
+.right {
+    position: relative;
+    background-color: rgb(73, 164, 73);
+    margin-left: 120px;
+    margin-top: 20px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(73, 164, 73, .6);
+    box-shadow: 0px 0px 5px 5px rgba(73, 164, 73, .6);
+}
+
+
+/*下边的div*/
+
+.bottom {
+    position: relative;
+    background-color: rgb(255, 206, 16);
+    margin-top: 20px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 206, 16, .6);
+    box-shadow: 0px 0px 5px 5px rgba(255, 206, 16, .6);
+}
+
+
+/*左边的div*/
+
+.left {
+    position: relative;
+    background-color: rgb(99, 115, 181);
+    margin-left: -120px;
+    margin-top: -220px;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(99, 115, 181, .6);
+    box-shadow: 0px 0px 5px 5px rgba(99, 115, 181, .6);
+}

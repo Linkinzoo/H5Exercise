@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="./styleSheet/bootstrap.min.css">
+    <link rel="stylesheet" href="./styleSheet/news.css">
+    <title>添加新闻数据</title>
+</head>
+
+<body>
+    <!-- 包装 -->
+    <div class="container">
+        <!-- 链接 -->
+        <div class="col-md-12 linkage">
+            <a href="./BGIndex.html">首页</a>&nbsp;>&nbsp;新闻管理&nbsp;>&nbsp;添加数据
+        </div>
+        <!-- 链接 end -->
+        <!-- 标题 -->
+        <h2 class="col-md-12 slogan">添加新闻数据</h2>
+        <!-- 标题 end -->
+        <!-- 表格 -->
+        <div class="col-md-12 col-xs-12 tableContainer">
+            <form action="http://localhost/newsbd/mysql.php" id="theForm"  onsubmit="return doNotJump()">
+                <!-- 类型参数 -->
+                <input type="hidden" name="type" value="newsAdd"/>
+                <!-- 类型参数 end -->
+                <div class="col-md-3 col-xs-3 titleDiv">新闻标题</div>
+                <input type="text" class="col-md-9 col-xs-9" name="newsTitle" id="newsTitle">
+                <div class="col-md-3 col-xs-3 titleDiv">新闻类型</div>
+                <select name="newsType" id="newsType" class="col-md-3 col-xs-9">
+                    <option value="" selected="selected ">请选择</option>
+                    <option value="社会">社会</option>
+                    <option value="百家">百家</option>
+                    <option value="本地">本地</option>
+                    <option value="国际">国际</option>
+                    <option value="科技">科技</option>
+                </select>
+                <div class="col-md-3 col-xs-3 titleDiv">新闻时间</div>
+                <input type="date" class="col-md-3 col-xs-9" name="addTime">
+                <div class="col-md-3 col-xs-3 titleDiv">图片地址</div>
+                <input type="text" class="col-md-9 col-xs-9" name="newsImg">
+                <div class="col-md-12 col-xs-12 btnLine">
+                    <input type="submit" value="提交" class="submitBtn">
+                    <input type="reset" value="重置" class="resetBtn">
+                </div>
+            </form>
+        </div>
+        <!-- 表格 end -->
+    </div>
+    <!-- 包装 end -->
+    <!-- script -->
+    <script src="./js/jquery-3.1.0.js"></script>
+    <script src="./js/newsAdd.js"></script>
+</body>
+
+</html>

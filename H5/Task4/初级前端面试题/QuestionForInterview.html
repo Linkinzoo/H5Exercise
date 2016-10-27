@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>面试题</title>
+    <link rel="stylesheet" href="./styleSheet/bootstrap.min.css">
+    <link rel="stylesheet" href="./styleSheet/QuestionForInterview.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 背景 -->
+    <div class="wrapper">
+        <!-- 包装 -->
+        <div class="container">
+            <!-- 主标题 -->
+            <h2 class="col-md-12">初级前端面试题</h2>
+            <!-- 主标题 end -->
+            <!-- 问题1 -->
+            <div class="col-md-6 col-xs-12 question">
+                1. Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?
+                <!-- 答案1 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1） &lt;!DOCTYPE&gt; 声明位于文档中的最前面，处于 &lt;html&gt; 标签之前。告知浏览器的解析器，用什么文档类型 规范来解析这个文档。
+                    <br> （2）严格模式的排版和 JS 运作模式是 以该浏览器支持的最高标准运行。
+                    <br> （3）在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。
+                    <br> （4）DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。
+                </div>
+                <!-- 答案1 end -->
+            </div>
+            <!-- 问题1 end -->
+            <!-- 问题2 -->
+            <div class="col-md-6 col-xs-12 question">
+                2. 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
+                <!-- 答案2 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1）CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，比如div默认display属性值为“block”，成为“块级”元素；span默认display属性值为“inline”，是“行内”元素。
+                    <br> （2）行内元素有：a b span img input select strong（强调的语气） 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+                    <br> （3）知名的空元素： &lt;br&gt;&lt;hr&gt;&lt;img&gt;&lt;input&gt;&lt;link&gt;&lt;meta&gt;
+                    <br> 鲜为人知的是： &lt;area&gt;&lt;base&gt;&lt;col&gt;&lt;command&gt;&lt;embed&gt;&lt;keygen&gt;&lt;param&gt;&lt;source&gt;&lt;track&gt;&lt;wbr&gt;
+                </div>
+                <!-- 答案2 end -->
+            </div>
+            <!-- 问题2 end -->
+            <!-- 问题3 -->
+            <div class="col-md-6 col-xs-12 question">
+                3. link 和@import 的区别是？
+                <!-- 答案3 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1）link属于XHTML标签，而@import是CSS提供的;
+                    <br> （2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+                    <br> （3）import只在IE5以上才能识别，而link是XHTML标签，无兼容问题;
+                    <br> （4）link方式的样式的权重 高于@import的权重.
+                </div>
+                <!-- 答案3 end -->
+            </div>
+            <!-- 问题3 end -->
+            <!-- 问题4 -->
+            <div class="col-md-6 col-xs-12 question">
+                4. 浏览器的内核分别是什么？
+                <!-- 答案4 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    IE浏览器的内核Trident;
+                    <br>Mozilla的Gecko;
+                    <br>Chrome的Blink（WebKit的分支）
+                    <br>Opera内核原为Presto，现为Blink。
+                </div>
+                <!-- 答案4 end -->
+            </div>
+            <!-- 问题4 end -->
+            <!-- 问题5 -->
+            <div class="col-md-6 col-xs-12 question">
+                5. 如何让老IE6、7、8支持HTML5新标签？
+                <!-- 答案5 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    IE8/IE7/IE6支持通过document.createElement方法产生的标签，可以利用这一特性让这些浏览器支持HTML5新标签，浏览器支持新标签后，还需要添加标签默认的样式：
+                    <br>当然最好的方式是直接使用成熟的框架、使用最多的是html5shim框架
+                    <br> &lt;!--[if lt IE 9]&gt;
+                    <br> &lt;script&gt; src="http://html5shim.googlecode.com/svn/trunk/html5.js"&lt;/script&gt;
+                    <br> &lt;![endif]--&gt;
+                </div>
+                <!-- 答案5 end -->
+            </div>
+            <!-- 问题5 end -->
+            <!-- 问题6 -->
+            <div class="col-md-6 col-xs-12 question">
+                6. iframe有那些缺点？
+                <!-- 答案6 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    iframe会阻塞主页面的Onload事件；
+                    <br> iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。
+                    <br> 使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript;
+                    <br> 动态给iframe添加src属性值，这样可以可以绕开以上两个问题。
+                </div>
+                <!-- 答案6 end -->
+            </div>
+            <!-- 问题6 end -->
+            <!-- 问题7 -->
+            <div class="col-md-6 col-xs-12 question">
+                7. 介绍一下CSS的盒子模型。
+                <!-- 答案7 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;
+                    <br> （2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)。
+                </div>
+                <!-- 答案7 end -->
+            </div>
+            <!-- 问题7 end -->
+            <!-- 问题8 -->
+            <div class="col-md-6 col-xs-12 question">
+                8. CSS中的优先级算法如何计算？
+                <!-- 答案8 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    优先级有就近原则，同权重情况下样式定义最近者为准;
+                    <br> 载入样式以最后载入的定位为准;
+                    <br> 优先级为: !important > id > class > tag
+                </div>
+                <!-- 答案8 end -->
+            </div>
+            <!-- 问题8 end -->
+            <!-- 问题9 -->
+            <div class="col-md-6 col-xs-12 question">
+                9. 列出display的值，说明他们的作用。
+                <!-- 答案9 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    block 象块类型元素一样显示。
+                    <br> none 缺省值。象行内元素类型一样显示。
+                    <br> inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。
+                    <br> list-item 象块类型元素一样显示，并添加样式列表标记。
+                </div>
+                <!-- 答案9 end -->
+            </div>
+            <!-- 问题9 end -->
+            <!-- 问题10 -->
+            <div class="col-md-6 col-xs-12 question">
+                10. 列出position的值，relative和absolute定位原点是？
+                <!-- 答案10 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    absolute 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+                    <br> fixed （老IE不支持）生成绝对定位的元素，相对于浏览器窗口进行定位。
+                    <br> relative生成相对定位的元素，相对于其正常位置进行定位。
+                    <br> static 默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right z-index 声明）
+                    <br> inherit 规定从父元素继承 position 属性的值。
+                </div>
+                <!-- 答案10 end -->
+            </div>
+            <!-- 问题10 end -->
+            <!-- 问题11 -->
+            <div class="col-md-6 col-xs-12 question">
+                11. css定义的权重。
+                <!-- 答案11 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    以下是权重的规则：
+                    <br>标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：
+                    <br>/*权重为1*/ div{}
+                    <br> /*权重为10*/ .class1{}
+                    <br> /*权重为100*/ #id1{}
+                    <br> /*权重为100+1=101*/ #id1 div{}
+                    <br> /*权重为10+1=11*/ .class1 div{}
+                    <br> /*权重为10+10+1=21*/ .class1 .class2 div{}
+                    <br> 如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现
+                </div>
+                <!-- 答案11 end -->
+            </div>
+            <!-- 问题11 end -->
+            <!-- 问题12 -->
+            <div class="col-md-6 col-xs-12 question">
+                12.  如果需要手动写动画，你认为最小时间间隔是多久，为什么？
+                <!-- 答案12 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms。
+                </div>
+                <!-- 答案12 end -->
+            </div>
+            <!-- 问题12 end -->
+            <!-- 问题13 -->
+            <div class="col-md-12 col-xs-12 question">
+                13.  display:inline-block 何时会显示间隙？
+                <!-- 答案13 -->
+                <div id="lastAnswer" class="col-md-11 col-xs-11 answer">
+                    移除空格;<br>使用margin负值;<br>使用font-size:0;<br>letter-spacing;<br>word-spacing
+                </div>
+                <!-- 答案13 end -->
+            </div>
+            <!-- 问题13 end -->
+        </div>
+        <!-- 包装 end -->
+    </div>
+    <!-- 背景 end -->
+    <!-- script -->
+    <script src="./js/QuestionForInterview.js"></script>
+</body>
+
+</html>

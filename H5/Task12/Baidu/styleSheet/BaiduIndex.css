@@ -1,0 +1,1377 @@
+/*初始化*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*html*/
+
+html {
+    height: 100%;
+}
+
+
+/*body*/
+
+body {
+    position: relative;
+    height: 100%;
+    min-height: 510px;
+}
+
+
+/*容器*/
+
+.contain {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    min-width: 312px;
+}
+
+/*************************** PC端 ***************************/
+
+@media only screen and (min-width: 810px) {
+    /*手机顶部工具栏*/
+    .navM {
+        display: none;
+    }
+    /*百度LOGO*/
+    .LogoContain .logo {
+        display: block;
+    }
+    /*手机百度LOGO*/
+    .LogoContain .mLogo {
+        display: none;
+    }
+    /*麦克风与相机的容器*/
+    .imgBox {
+        display: block;
+    }
+    /*搜索组件容器*/
+    .cigarette {
+        width: 650px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    /*搜索框*/
+    .inputBorder {
+        border: 1px solid #AAAAAA;
+        width: 540px;
+        height: 30px;
+        outline: none;
+        font-size: 15px;
+        float: left;
+        border-right: none;
+        padding: 3px 0 3px 7px;
+    }
+    /*百度按钮*/
+    .buttonBorder {
+        float: left;
+        border: none;
+        background-color: rgb(51, 133, 255);
+        font-size: 15px;
+        color: white;
+        outline: none;
+        margin: 0 auto;
+        width: 100px;
+        height: 38px;
+        line-height: 38px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        vertical-align: middle;
+    }
+    /*底部*/
+    .footer {
+        display: block;
+    }
+    /*手机导航栏*/
+    .navBar {
+        display: none;
+    }
+
+    /*手机端主要内容*/
+    .contentM {
+        display: none;
+    }
+}
+
+
+/*************************** 移动端 ***************************/
+
+@media only screen and (max-width: 810px) {
+    /*包装*/
+    .contain {
+        background-color: #EDECEB;
+        height: auto;
+    }
+    /*导航栏*/
+    .nav {
+        display: none;
+    }
+    /*底部*/
+    .footer {
+        display: none;
+    }
+    /*手机顶部工具栏*/
+    .navM {
+        display: block;
+    }
+    /*百度LOGO*/
+    .LogoContain .logo {
+        display: none;
+    }
+    /*手机百度LOGO*/
+    .LogoContain .mLogo {
+        display: block;
+    }
+    /*麦克风与相机的容器*/
+    .imgBox {
+        display: none;
+    }
+    /*搜索组件容器*/
+    .cigarette {
+        position: relative;
+        /*width: 100%;*/
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        margin: 0 10px;
+        margin-top: 16px;
+    }
+    /*搜索框*/
+    .inputBorder {
+        position: relative;
+        border: 1px solid #AAAAAA;
+        margin: 0;
+        height: 36px;
+        outline: none;
+        font-size: 15px;
+        float: left;
+        width: 78%;
+        border-right: none;
+        padding: 3px 0 3px 7px;
+    }
+    /*百度按钮*/
+    .buttonBorder {
+        position: relative;
+        float: left;
+        border: none;
+        background-color: rgb(51, 133, 255);
+        font-size: 15px;
+        color: white;
+        outline: none;
+        width: 82px;
+        height: 44px;
+        line-height: 44px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        vertical-align: middle;
+    }
+    .searchWrapper {
+        display: -webkit-box;
+    }
+    /*手机导航栏*/
+    .navBar {
+        display: block;
+    }
+    /*手机端主要内容*/
+    .contentM {
+        display: block;
+    }
+}
+
+
+/**************************** 移动端css ****************************/
+
+
+
+
+/*手机顶部工具栏*/
+
+.navM {
+    position: relative;
+    float: right;
+    text-align: right;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    /*min-width: 200px;*/
+    overflow: hidden;
+}
+
+
+/*手机导航栏*/
+
+.navBar {
+    margin: 0 0 14px;
+    overflow: hidden;
+}
+
+.navBar a {
+    float: left;
+    width: 16%;
+    font-size: 12px;
+    color: #666;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navBar a:first-child {
+    margin-left: 2%;
+}
+
+.navBar a img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 4px;
+    height: 24px;
+}
+
+.navM .loginIcon {
+    margin-top: 6px;
+    margin-right: 9px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../Icon/header1.png) 5px 3px no-repeat;
+    float: right;
+}
+
+.navM .skinIcon {
+    margin-top: 6px;
+    margin-right: 9px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../Icon/header2.png) 3px 3px no-repeat;
+    float: right;
+}
+
+.contentM {
+    position: relative;
+    padding: 0 8px 10px;
+}
+
+
+/*手机：第一部分：我的导航栏*/
+
+.contentM .myNav {
+    margin-top: 8px;
+    height: 135px;
+    background: #fff;
+}
+
+.contentM .myNav .navTitleBox {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentM .myNav .navTitleBox .navTitle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentM .myNav .navTitleBox .navTitle h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.contentM .myNav .navTitleBox .navTitle a {
+    text-decoration: none;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentM .myNav .navTitleBox .navTitle a img {
+    width: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.contentM .myNav .navTitleBox .myNavContent {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+.contentM .myNav .myNavContent a {
+    float: left;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contentM .myNav .myNavContent a span {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px 0 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666;
+}
+
+.contentM .myNav .myNavContent a img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    display: inline;
+    margin-top: 10px;
+}
+
+
+/*********************** 手机：第二部分：实时热点 ***********************/
+
+.contentM .hotWordBox {
+    margin-top: 8px;
+    background: #fff;
+    height: 205px;
+}
+
+
+/*标题栏*/
+
+.contentM .hotWordBox .hotWordTitleBox {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle a {
+    text-decoration: none;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle a img {
+    width: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle span {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    width: 82px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    color: #262626;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contentM .hotWordBox .hotWordTitleBox .hotWordTitle span img {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    width: 15px;
+    height: 15px;
+}
+
+
+/*模块内容*/
+
+.contentM .hotWordBox .hotWordContentBox {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+    padding: 0 14px;
+    text-align: left;
+    display: block;
+}
+
+.contentM .hotWordBox .hotWordContentBox li {
+    display: inline-block;
+    width: 48%;
+    height: 42px;
+    line-height: 42px;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.contentM .hotWordBox .hotWordContentBox li a {
+    display: inline-block;
+    position: relative;
+    padding-right: 17px;
+    max-width: 86%;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    text-decoration: none;
+}
+
+.contentM .hotWordBox .hotWordContentBox li a img {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 18px;
+    height: 14px;
+}
+
+
+/*热搜榜*/
+
+.contentM .hotWordBox .hotSearch {
+    line-height: 42px;
+    text-align: right;
+    border-top: 1px solid #f4f5f6;
+}
+
+.contentM .hotWordBox .hotSearch a {
+    display: inline-block;
+    padding-right: 14px;
+    font-size: 14px;
+    color: #0058d2;
+    text-decoration: none;
+}
+
+
+/*********************** 手机：第三部分：百度推荐 ***********************/
+
+.contentM .bdRecommend {
+    margin-top: 8px;
+    background: #fff;
+    height: 270px;
+}
+
+
+/*标题栏*/
+
+.contentM .bdRecommend .bdRecommendTitleBox {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle a {
+    text-decoration: none;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle a img {
+    width: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle span {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    width: 82px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    color: #262626;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contentM .bdRecommend .bdRecommendTitleBox .bdRecommendTitle span img {
+    position: absolute;
+    top: 12px;
+    left: 9px;
+    width: 15px;
+    height: 15px;
+}
+
+.contentM .bdRecommend .bdRecommendContent {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul {
+    padding: 13px 12px 0 12px;
+    text-align: left;
+    font-size: 14px;
+    overflow: hidden;
+    margin-top: -5px;
+    list-style: none;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul .liFirst {
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f7f6f6;
+    display: table;
+    white-space: normal;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li:first-child .time {
+    position: absolute;
+    bottom: -9px;
+    left: 94px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li {
+    line-height: 41px;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 2px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a {
+    position: relative;
+    display: block;
+    height: 41px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    text-decoration: none;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a img {
+    width: 83px;
+    height: 50px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a .outer {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a .imgTitle {
+    left: 83px;
+    padding-left: 10px;
+    font-size: 15px;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 17px;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a .time {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+.contentM .bdRecommend .bdRecommendContent ul li a .newsTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 85%;
+    display: inline-block;
+}
+
+
+/*更多推荐*/
+
+.contentM .bdRecommend .moreNews {
+    line-height: 42px;
+    text-align: right;
+    border-top: 1px solid #f4f5f6;
+}
+
+.contentM .bdRecommend .moreNews a {
+    display: inline-block;
+    padding-right: 14px;
+    font-size: 14px;
+    color: #0058d2;
+    text-decoration: none;
+}
+
+
+/*********************** 手机：第四部分：生活服务 ***********************/
+
+.contentM .lifeStyle {
+    margin-top: 8px;
+    background: #fff;
+    height: 270px;
+}
+
+
+/*标题栏*/
+
+.contentM .lifeStyle .lifeTitleBox {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.contentM .lifeStyle .lifeTitleBox .lifeStyleTitle {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.contentM .lifeStyle .lifeTitleBox .lifeStyleTitle h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.contentM .lifeStyle .lifeTitleBox .lifeStyleTitle a {
+    text-decoration: none;
+    position: absolute;
+    right: -12px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contentM .lifeStyle .lifeTitleBox .lifeStyleTitle a img {
+    width: 10px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+
+/*模块内容*/
+
+.contentM .lifeStyle .lifeContentBox {
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+
+
+/*GPRS*/
+
+.contentM .lifeStyle .lifeContentBox .gprsBox {
+    position: relative;
+    margin: 8px 14px 14px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #262626;
+}
+
+.contentM .lifeStyle .lifeContentBox .gprsBox .gpsInfo {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 32px;
+    overflow: hidden;
+}
+
+.contentM .lifeStyle .lifeContentBox .gprsBox .gpsInfo p {
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    -moz-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    padding-right: 70px;
+    line-height: 16px;
+    margin-top: 8px;
+}
+
+.contentM .lifeStyle .lifeContentBox .gprsBox button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #d2d6dd;
+    border-radius: 2px;
+    text-indent: 20px;
+    font-size: 14px;
+    outline: none;
+    background: transparent;
+    ;
+}
+
+.contentM .lifeStyle .lifeContentBox .gprsBox img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 8px;
+    top: 5px;
+}
+
+
+/*生活服务类型*/
+
+.contentM .lifeStyle .lifeContentBox ul {
+    margin-top: -15px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li {
+    width: 24%;
+    height: 90px;
+    text-align: center;
+    display: inline-block;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li a {
+    text-decoration: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li a div {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    margin: 0 auto;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li a img {
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+.contentM .lifeStyle .lifeContentBox ul li a p {
+    color: #666;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    margin: 3px 0 8px;
+}
+
+/*********************** 手机：底部 ***********************/
+.bottomPart .bottomContent{
+        margin: 10px 28px 0;
+}
+/*用户反馈部分*/
+.bottomPart .bottomContent div{
+
+    overflow: hidden;
+    text-align: center;
+}
+.bottomPart .bottomContent div a{
+
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 95px;
+    line-height: 34px;
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+}
+.bottomPart .bottomContent div a i{
+        position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../Icon/downLoad.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+/*版权*/
+.bottomPart .bottomContent .copyRight{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 0;
+    color: #999;
+}
+.bottomPart .bottomContent .inFile{
+    
+    height: 12px;
+    line-height: 12px;
+    padding: 6px 0 3px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    color: #999;
+}
+
+.bottomPart .bottomContent .inFile i{
+        display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../Icon/inFile.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5px;
+    vertical-align: top;
+}
+/**************************** PC端css ****************************/
+
+
+/**************************** 导航栏 ****************************/
+
+.nav {
+    float: right;
+    text-align: right;
+    height: 48px;
+    line-height: 48px;
+    min-width: 540px;
+}
+
+.searchWrapper {
+    width: auto;
+    height: 42px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+/*取消链接的下划线*/
+
+.pic a:link {
+    text-decoration: none;
+}
+
+.pic a:visited {
+    text-decoration: none;
+}
+
+.pic a:hover {
+    text-decoration: underline;
+}
+
+.pic a:active {
+    text-decoration: none;
+}
+
+
+/*容器*/
+
+.menu {
+    float: right;
+    width: 96px;
+    margin-left: 16px;
+}
+
+
+/*菜单*/
+
+.menu .more {
+    position: fixed;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 12px;
+    background-color: rgb(51, 133, 255);
+    font-size: 13px;
+    width: 64px;
+    color: white;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/*鼠标划到按钮时的状态*/
+
+.more:hover {
+    background-color: rgb(249, 249, 249);
+    color: black;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 96px;
+    height: 100%;
+    padding-top: 12px;
+    border-left: 1px solid rgb(231, 231, 231);
+    /*position: absolute;*/
+}
+
+
+/*鼠标划过按钮时显示*/
+
+.menu .more:hover .pic {
+    display: block;
+}
+
+.menu .more:hover .menu {
+    margin-left: 0;
+}
+
+.menu .pic {
+    display: none;
+    height: 540px;
+}
+
+
+/*分割线*/
+
+.hr {
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid rgb(240, 240, 240);
+}
+
+
+/*链接容器*/
+
+.linkage {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+
+/*最下面贩链接容器*/
+
+.lastLinkage {
+    width: 160px;
+    height: 32px;
+    display: block;
+}
+
+
+/*图片属性*/
+
+.img {
+    width: 48px;
+    height: 48px;
+    padding-top: 16px;
+    padding-left: 16px;
+    border: none;
+}
+
+
+/*关键字属性*/
+
+.keyWord {
+    margin-top: -16px;
+    display: block;
+    width: 96px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    margin-top: -3px\9;
+    *margin-top: -3px;
+}
+
+
+/*最后一个关键字的属性*/
+
+.lastKeyWord {
+    margin-top: 8px;
+    display: block;
+    width: 96px;
+    color: rgb(102, 102, 102);
+    text-decoration: underline;
+}
+
+
+/*顶部导航栏中的文字*/
+
+.aFontSize {
+    font-size: 13px;
+    margin-right: 32px;
+    color: black;
+    float: right;
+}
+/*更多产品占位方块*/
+.placeHolder{
+    display: inline-block;
+    width: 112px;
+    height: 40px;
+    float: right;
+}
+.aFontSize:hover {
+    color: blue;
+}
+
+
+/*最后一个关键字的属性*/
+
+.lastFontSize {
+    font-size: 13px;
+    color: black;
+    float: right;
+}
+
+.lastFontSize:hover {
+    color: blue;
+}
+
+
+/*百度LOGO容器*/
+
+.LogoContain {
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+}
+
+
+/*百度LOGO*/
+
+.LogoContain .logo {
+    width: 270px;
+    height: 129px;
+    margin: 0 auto;
+}
+
+
+/*手机百度LOGO*/
+
+.LogoContain .mLogo {
+    width: 175px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+
+/**************************** 搜索组件容器 ****************************/
+
+
+/*.cigarette {
+    width: 650px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 16px;
+}*/
+
+
+/*搜索框*/
+
+
+/*.inputBorder {
+    border: 1px solid #AAAAAA;
+    width: 540px;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+    float: left;
+    border-right: none;
+    padding: 3px 0 3px 7px;
+}*/
+
+.inputBorder:focus {
+    border: 1px solid rgb(51, 133, 255);
+    border-right: none;
+}
+
+
+/*百度一下*/
+
+
+/*.buttonBorder {
+    float: left;
+    border: none;
+    background-color: rgb(51, 133, 255);
+    font-size: 15px;
+    color: white;
+    outline: none;
+    margin: 0 auto;
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}*/
+
+.buttonBorder:hover {
+    background-color: rgb(31, 113, 235);
+}
+
+.buttonBorder:active {
+    background-color: rgb(21, 103, 225);
+}
+
+
+/*图片按钮*/
+
+.cigarette form {
+    position: relative;
+}
+
+
+/*麦克风与相机的容器*/
+
+.imgBox {
+    /*position: relative;
+    float: left;
+    margin-left: -63px;
+    margin-top: -11px;*/
+    position: absolute;
+    width: 63px;
+    height: 30px;
+    right: 114px;
+    top: -10px;
+}
+
+
+/*麦克风图片*/
+
+.imgs {
+    /*margin-top: 21px;*/
+    width: 13px;
+    height: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../Icon/microphone.png);
+}
+
+.imgs:hover {
+    background-image: url(../Icon/highlight.png);
+}
+
+
+/*相机图片链接*/
+
+.imgssA {
+    /*margin-top: 21px;*/
+    width: 18px;
+    height: 18px;
+    background-image: url(../Icon/camera.png);
+    display: inline-block;
+    background-size: 100%;
+    _background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+}
+
+.imgssA:hover {
+    background-position: bottom;
+}
+
+
+/*相机图片*/
+
+.imgss {
+    width: 18px;
+    height: 36px;
+}
+
+
+/*纵向分割线*/
+
+.hrVertical {
+    width: 1px;
+    height: 15px;
+    margin-top: 22.5px;
+    margin-right: 6px;
+    margin-left: 6px;
+    border-left: 1px solid rgb(219, 219, 219);
+    display: inline-block;
+}
+
+
+/**************************** 底部组件容器 ****************************/
+
+.footer {
+    height: 90px;
+    position: absolute;
+    bottom: 21px;
+    font: 12px arial;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*底部容器*/
+
+.footerBox {
+    display: inline-block;
+    width: 680px;
+    /*position: relative;*/
+    text-align: center;
+}
+
+
+/*二维码 手机百度*/
+
+.qrcode1 {
+    float: left;
+    text-align: center;
+}
+
+
+/*二维码 百度糯米*/
+
+.qrcode2 {
+    float: left;
+    margin-left: 33px;
+    text-align: center;
+}
+
+
+/*二维码图片 手机百度*/
+
+.img1item {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../Icon/qrcode1.png);
+}
+
+
+/*二维码图片 百度糯米*/
+
+.img2item {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../Icon/qrcode2.png);
+}
+
+
+/*二维码附属文字*/
+
+.text1item {
+    float: left;
+    margin: 8px 0 0 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.textP1 {
+    line-height: 23px;
+    color: rgb(102, 102, 102);
+}
+
+.textP2 {
+    line-height: 23px;
+    color: rgb(153, 153, 153);
+}
+
+
+/*底部文字段落P*/
+
+.pBottom {
+    float: left;
+    margin-left: 33px;
+    height: 22px;
+    line-height: 22px;
+    width: 345px;
+    text-align: left;
+    color: rgb(153, 153, 153);
+}
+
+
+/*关键字的颜色*/
+
+.pBottom a:link {
+    color: rgb(153, 153, 153);
+}
+
+.pBottom a:visited {
+    color: rgb(153, 153, 153);
+}
+
+.pBottom a:hover {
+    color: rgb(153, 153, 153);
+}
+
+.pBottom a:active {
+    color: rgb(153, 153, 153);
+}
+
+.linkBaidu {
+    margin-left: 63px;
+}
+
+
+/*灰色字体颜色*/
+
+.grayText {
+    color: rgb(153, 153, 153);
+}
+
+
+/*图片第二段文字中的图片*/
+
+.imgP2 {
+    width: 21px;
+    height: 15px;
+    display: inline-block;
+    background-size: 87%;
+    background-repeat: no-repeat;
+    background-image: url(../Icon/iconP2.png);
+}
+
+
+/*图片第三段文字中的图片*/
+
+.imgP3 {
+    width: 21px;
+    height: 16px;
+    display: inline-block;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../Icon/iconP3.png);
+}
