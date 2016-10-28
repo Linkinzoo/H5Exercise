@@ -1,0 +1,217 @@
+/*背景*/
+
+.wrapper {
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    position: fixed;
+    /*background-color: rgb(254, 205, 82);*/
+    /*background-color: #35b558;*/
+    /*background-color: rgb(100, 136, 186);*/
+    overflow: auto;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB";
+    color: rgb(42, 31, 27);
+}
+
+
+/*初始化*/
+
+
+h2,
+div {
+    text-align: center;
+}
+/*头部*/
+.header{
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    color: rgb(254, 205, 82);
+    background-color: #000;
+
+}
+.header .headerTitle{
+    margin-top: 15px;
+}
+/*导航栏*/
+.nav{
+    position: fixed;
+    top:58px;
+    height: 51px;
+    z-index: 9999;
+    padding: 0;
+    /*background-color: white;*/
+}
+.nav .edgeRight{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 9px solid #000;
+    /*border-color: #000;*/
+    /*border-top-width: 100%;*/
+    /*border: 30px solid rgb(39, 162, 100);*/
+    border-bottom: none;
+    border-right: none;
+    padding: 0;
+    border-left-width:2700px; 
+    border-left-color: transparent;
+}
+.nav .edgeLeft{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 13px solid #000;
+    border-bottom: none;
+    border-left: none;
+    padding: 0;
+    border-right-width:45px; 
+    border-right-color: transparent;
+}
+.nav .btnBox{
+    /*position: relative;*/
+    margin: 0 auto;
+    list-style: none;
+    margin-left: 3%;
+    height: 51px;
+    padding: 0;
+    /*background-color: #fff;*/
+}
+.nav .btnBox li{
+    /*position: relative;*/
+    margin: 0 auto;
+    padding:0;
+    height: 51px;
+    cursor: pointer;
+    /*transform: rotateX(-6deg) rotateY(11deg) rotateZ(1deg);*/
+}
+.nav .btnBox li:hover b{
+    color: #fff;
+    font-size: 21px;
+}
+.nav .btnBox li:hover .textBox{
+    background-color: rgb(251,70,93);
+    transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+}
+.nav .btnBox li:hover .edgeTop{
+    border-top-color: rgb(251,70,93);
+    transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+}
+.nav .btnBox li b{
+    margin-top: 9px;
+    font-size: 14px;
+    display: inline-block;
+    transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+}
+.nav .btnBox li .textWrapper{
+    position: absolute;
+    text-align: center;
+    height: 32px;
+    z-index: 9;
+}
+.nav .btnBox li .textBox{
+    height: 32px;
+    padding: 0;
+    /*background-color: #fff;*/
+}
+.nav .btnBox li .edgeBox{
+    position: relative;
+    padding: 0;
+}
+.nav .btnBox li .edgeTop{
+    position: absolute;
+    /*top: 32px;*/
+    width: 0;
+    height: 0;
+    border: 15px solid #fff;
+    border-bottom: none;
+    /*border-left: none;*/
+    padding: 0;
+    /*border-right-width:45px; */
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+/*标签样式设置*/
+.nav .btnBox li .junior{
+    background-color: #eee;
+}
+.nav .btnBox li .juniorEdge{
+    border-top-color: #eee;
+}
+.nav .btnBox li .html{
+    background-color: #35b558;
+}
+.nav .btnBox li .htmlEdge{
+    border-top-color: #35b558;
+}
+.nav .btnBox li .css{
+    background-color: rgb(100, 136, 186);
+}
+.nav .btnBox li .cssEdge{
+    border-top-color: rgb(100, 136, 186);
+}
+
+.nav .btnBox li .js{
+    background-color: rgb(254, 205, 82);
+}
+.nav .btnBox li .jsEdge{
+    border-top-color: rgb(254, 205, 82);
+}
+/*内容容器*/
+.container {
+    display: none;
+    margin-top: 120px;
+}
+/*问题容器*/
+
+.question {
+    margin-top: 21px;
+    height: auto;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 3px solid #666;
+    text-align: left;
+    /*width: auto;*/
+}
+
+
+/*答案容器*/
+
+.answer {
+    display: none;
+    text-align: left;
+    background-color: black;
+    color: #EEE;
+    font-weight: normal;
+    font-family: "微软雅黑";
+    padding: 0 15px;
+    margin: 0 -15px;
+    height: auto;
+}
+
+
+/*问题事件设置*/
+
+.question:hover .answer {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    overflow: auto;
+}
+
+/*最后一个问题的答案*/
+.lastAnswer{
+    margin-top: -180px;
+}
+/*占位元素*/
+.lastDiv{
+    height: 60px;
+}

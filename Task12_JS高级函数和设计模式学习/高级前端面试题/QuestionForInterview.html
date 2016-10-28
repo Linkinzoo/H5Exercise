@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>面试题</title>
+    <link rel="stylesheet" href="./styleSheet/bootstrap.min.css">
+    <link rel="stylesheet" href="./styleSheet/QuestionForInterview.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 背景 -->
+    <div class="wrapper">
+        <!-- 主标题 -->
+        <div class="col-md-12 header">
+            <h2 class="col-md-12 headerTitle">高级前端面试题</h2>
+        </div>
+        <!-- 主标题 end -->
+        <!-- 导航栏 -->
+        <div class="col-md-12 col-xs-12 nav">
+            <ul class="col-md-11 col-xs-11 btnBox">
+                <li id="juniorBtn" class="col-md-3 col-xs-3">
+                    <div class="col-md-12 col-xs-12 textWrapper">
+                        <b>网 络</b>
+                    </div>
+                    <div class="col-md-12 col-xs-12 textBox junior">
+                    </div>
+                    <div class="col-md-3 col-xs-3 edgeBox">
+                        <div class="edgeTop juniorEdge"></div>
+                    </div>
+                </li>
+                <li id="htmlBtn" class="col-md-3 col-xs-3">
+                    <div class="col-md-12 col-xs-12 textBox html">
+                        <b>HTML</b>
+                    </div>
+                    <div class="col-md-3 col-xs-3 edgeBox">
+                        <div class="edgeTop htmlEdge"></div>
+                    </div>
+                </li>
+                <li id="cssBtn" class="col-md-3 col-xs-3">
+                    <div class="col-md-12 col-xs-12 textBox css">
+                        <b>CSS</b>
+                    </div>
+                    <div class="col-md-3 col-xs-3 edgeBox">
+                        <div class="edgeTop cssEdge"></div>
+                    </div>
+                </li>
+                <li id="jsBtn" class="col-md-3 col-xs-3">
+                    <div class="col-md-12 col-xs-12 textBox js">
+                        <b>JavaScript</b>
+                    </div>
+                    <div class="col-md-3 col-xs-3 edgeBox">
+                        <div class="edgeTop jsEdge"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="col-md-12 edgeRight"></div>
+            <div class="col-md-12 edgeLeft"></div>
+        </div>
+        <!-- 导航栏 end -->
+        <!-- 包装.网络 -->
+        <div class="container">
+            <!-- 问题1 -->
+            <div class="col-md-6 col-xs-12 question">
+                1. Socket是什么?
+                <!-- 答案1 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    建立网络通信连接至少要一对端口号(socket)。socket本质是编程接口(API)，对TCP/IP的封装，TCP/IP也要提供可供程序员做网络开发所用的接口，这就是Socket编程接口；HTTP是轿车，提供了封装或者显示数据的具体形式;Socket是发动机，提供了网络通信的能力。
+                    （Socket的英文原义是“孔”或“插座”。通常也称作"套接字"，用于描述IP地址和端口，是一个通信链的句柄，可以用来实现不同虚拟机或不同计算机之间的通信。在Internet上的主机一般运行了多个服务软件，同时提供几种服务。每种服务都打开一个Socket，并绑定到一个端口上，不同的端口对应于不同的服务。Socket正如其英文原意那样，像一个多孔插座。一台主机犹如布满各种插座的房间，每个插座有一个编号，有的插座提供220伏交流电，有的提供110伏交流电，有的则提供有线电视节目。客户软件将插头插到不同编号的插座，就可以得到不同的服务。
+                </div>
+                <!-- 答案1 end -->
+            </div>
+            <!-- 问题1 end -->
+            <!-- 问题2 -->
+            <div class="col-md-6 col-xs-12 question">
+                2. 简述Socket是什么?
+                <!-- 答案2 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    Socket 接口是TCP/IP网络的API，Socket接口定义了许多函数或例程，用以开发TCP/IP网络上的应用程序。
+                </div>
+                <!-- 答案2 end -->
+            </div>
+            <!-- 问题2 end -->
+            <!-- 问题3 -->
+            <div class="col-md-6 col-xs-12 question">
+                3. 网络七层指什么？
+                <!-- 答案3 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    OSI是一个开放性的通信系统互连参考模型，他是一个定义得非常好的协议规范，模型共有7层结构：
+                    <br> （1）应用层：负责通讯服务，常用协议：HTTP，FTP，NFS，SMTP等；
+                    <br> （2）表示层：定义数据格式及加密，例：ASCII；
+                    <br> （3）会话层：定义了如何开始、控制和结束一个会话，包括对多个双向消息的控制和管理，以便在只完成连续消息的一部分时可以通知应用，从而使表示层看到的数据是连续的，在某些情况下，如果表示层收到了所有的数据，则用数据代表表示层。例：SQL；
+                    <br> （4）传输层：功能包括是否选择差错恢复协议还是无差错恢复协议，及在同一主机上对不同应用的数据流的输入进行复用，还包括对收到的顺序不对的数据包的重新排序功能。示例：TCP，UDP；
+                    <br> （5）网络层：这层对端到端的包传输进行定义，它定义了能够标识所有结点的逻辑地址，还定义了路由实现的方式和学习的方式。为了适应最大传输单元长度小于包长度的传输介质，网络层还定义了如何将一个包分解成更小的包的分段方法。例：IP，IPX等。例：
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internet协议(IP);
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Internet控制信息协议(ICMP);
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;地址解析协议(ARP);
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反向地址解析协议(RARP)。
+                    <br> （6）数据链路层：定义了在单个链路上如何传输数据。这些协议与被讨论的各种介质有关。例：ATM，FDDI等。
+                    <br> （7）物理层：物理层规范是有关传输介质的特性标准，这些规范通常也参考了其他组织制定的标准。连接头、帧、帧的使用、电流、编码及光调制等都属于各种物理层规范中的内容。物理层常用多个规范完成对所有细节的定义。示例：Rj45，802.3等。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案3 end -->
+            </div>
+            <!-- 问题3 end -->
+            <!-- 问题4 -->
+            <div class="col-md-6 col-xs-12 question">
+                4. 应用层包含哪些常用的协议？
+                <!-- 答案4 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1）超文本传输协议(HTTP):万维网的基本协议；
+                    <br>（2）文件传输(TFTP简单文件传输协议)；
+                    <br>（3）远程登录(Telnet),提供远程访问其它主机功能,它允许用户登录；
+                    <br>（4）internet主机,并在这台主机上执行命令；
+                    <br>（5）网络管理(SNMP简单网络管理协议),该协议提供了监控网络设备的方法,以及配置管理,统计信息收集,性能管理及安全管理等；
+                    <br>（6）域名系统(DNS),该系统用于在internet中将域名及其公共广播的网络节点转换成IP地址。
+                </div>
+                <!-- 答案4 end -->
+            </div>
+            <!-- 问题4 end -->
+            <!-- 问题5 -->
+            <div class="col-md-6 col-xs-12 question">
+                5. TCP与UDP有什么异同？
+                <!-- 答案5 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    TCP和UDP都处于传输层，负责数据传输，其区别：
+                    <br> (1) TCP(传输控制协议)是面向连接的协议;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UDP(用户数据报协议)是一个非连接的协议，传输数据之前源端和终端不建立连接;
+                    <br> (2) 一个TCP连接必须要经过三次“对话”才能建立起来，其中的过程非常复杂;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UDP使用尽最大努力交付，即不保证可靠交付，因此主机不需要维持复杂的链接状态表（这里面有许多参数）;
+                    <br> (3) UDP由于传输数据不建立连接，因此也就不需要维护连接状态，包括收发状态等，因此一台服务机可同时向多个客户机传输相同的消息;
+                    <br> (4) UDP信息包的仅8个字节，相对于TCP的20个字节信息包的额外开销很小;
+                    <br> (5) UDP是面向报文的。发送方的UDP对应用程序交下来的报文，在添加首部后就向下交付给IP层。既不拆分，也不合并，而是保留这些报文的边界，因此，应用程序需要选择合适的报文大小;
+                    <br> (6) UDP是面向报文的。发送方的UDP对应用程序交下来的报文，在添加首部后就向下交付给IP层。既不拆分，也不合并，而是保留这些报文的边界，因此，应用程序需要选择合适的报文大小。
+                    <br> “ping”命令的原理就是向对方主机发送UDP数据包，然后对方主机确认收到数据包，如果数据包是否到达的消息及时反馈回来，那么网络就是通的。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案5 end -->
+            </div>
+            <!-- 问题5 end -->
+            <!-- 问题6 -->
+            <div class="col-md-6 col-xs-12 question">
+                6. 简单说说TCP与UDP的区别？
+                <!-- 答案6 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    1.基于连接与无连接；
+                    <br>2.对系统资源的要求（TCP较多，UDP少）；
+                    <br>3.UDP程序结构较简单；
+                    <br>4.流模式与数据报模式 ；
+                    <br>5.TCP保证数据正确性，UDP可能丢包，TCP保证数据顺序，UDP不保证。
+                </div>
+                <!-- 答案6 end -->
+            </div>
+            <!-- 问题6 end -->
+            <!-- 问题7 -->
+            <div class="col-md-6 col-xs-12 question">
+                7. 介绍一下TCP的三次握手。
+                <!-- 答案7 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    名词解释
+                    <br>ACK  TCP报头的控制位之一,对数据进行确认.确认由目的端发出,用它来告诉发送端这个序列号之前的数据段
+                    都收到了.比如,确认号为X,则表示前X-1个数据段都收到了,只有当ACK=1时,确认号才有效,当ACK=0时,确认号无效,这时会要求重传数据,保证数据的完整性.
+                    <br>SYN  同步序列号,TCP建立连接时将这个位置1
+                    <br>FIN  发送端完成发送任务位,当TCP完成数据传输需要断开时,提出断开连接的一方将这位置1
+                    <br>
+                    <br>TCP三次握手过程
+                    <br>1 主机A通过向主机B 发送一个含有同步序列号的标志位的数据段给主机B ,向主机B 请求建立连接,通过这个数据段,
+                    主机A告诉主机B 两件事:我想要和你通信;你可以用哪个序列号作为起始数据段来回应我.
+                    <br>2 主机B 收到主机A的请求后,用一个带有确认应答(ACK)和同步序列号(SYN)标志位的数据段响应主机A,也告诉主机A两件事:
+                    我已经收到你的请求了,你可以传输数据了;你要用哪佧序列号作为起始数据段来回应我
+                    <br>3 主机A收到这个数据段后,再发送一个确认应答,确认已收到主机B 的数据段:"我已收到回复,我现在要开始传输实际数据了
+                    这样3次握手就完成了,主机A和主机B 就可以传输数据了.
+                    <br>3次握手的特点：
+                    <br>没有应用层的数据；
+                    <br>SYN这个标志位只有在TCP建产连接时才会被置1；
+                    <br>握手完成后SYN标志位被置0。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案7 end -->
+            </div>
+            <!-- 问题7 end -->
+            <!-- 问题8 -->
+            <div class="col-md-6 col-xs-12 question">
+                8. TCP的三次握手后，断开连接时进行了怎样的一个过程？
+                <!-- 答案8 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    TCP建立连接要进行3次握手,而断开连接要进行4次
+                    <br>
+                    <br>1 当主机A完成数据传输后,将控制位FIN置1,提出停止TCP连接的请求
+                    <br>2  主机B收到FIN后对其作出响应,确认这一方向上的TCP连接将关闭,将ACK置1
+                    <br>3 由B 端再提出反方向的关闭请求,将FIN置1
+                    <br>4 主机A对主机B的请求进行确认,将ACK置1,双方向的关闭结束.
+                    由TCP的三次握手和四次断开可以看出,TCP使用面向连接的通信方式,大大提高了数据通信的可靠性,使发送数据端和接收端在数据正式传输前就有了交互,为数据正式传输打下了可靠的基础。
+                </div>
+                <!-- 答案8 end -->
+            </div>
+            <!-- 问题8 end -->
+            <!-- 问题9 -->
+            <div class="col-md-6 col-xs-12 question">
+                9. http是什么？
+                <!-- 答案9 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    HTTP是一个客户端和服务器端请求和应答的标准。用于从WWW服务器传输超文本到本地浏览器的传输协议。它可以使浏览器更加高效，使网络传输减少。它不仅保证计算机正确快速地传输超文本文档，还确定传输文档中的哪一部分，以及哪部分内容首先显示(如文本先于图形)等。
+                </div>
+                <!-- 答案9 end -->
+            </div>
+            <!-- 问题9 end -->
+            <!-- 问题10 -->
+            <div class="col-md-6 col-xs-12 question">
+                10. http的工作原理?
+                <!-- 答案10 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    一次HTTP操作称为一个事务，其工作过程可分为四步：
+                    <br> (1) 首先客户机与服务器需要建立连接。只要单击某个超级链接，HTTP的工作就开始了;
+                    <br> (2) 建立连接后，客户机发送一个请求给服务器，请求方式的格式为：
+                    <br>请求行 － 通用信息头 － 请求头 － 实体头 － 报文主体
+                    <br>统一资源标识符（URL）、协议版本号，后边是MIME信息包括请求修饰符、客户机信息和可能的内容;
+                    <br> (3) 服务器接到请求后，给予相应的响应信息，其格式为:
+                    <br>状态行 － 通用信息头 － 响应头 － 实体头 － 报文主体
+                    <br>一个状态行，包括信息的协议版本号、一个成功或错误的代码，后边是MIME信息包括服务器信息、实体信息和可能的内容;
+                    <br> (4) 客户端接收服务器所返回的信息通过浏览器显示在用户的显示屏上，然后客户机与服务器断开连接。
+                    <br>如果在以上过程中的某一步出现错误，那么产生错误的信息将返回到客户端，由显示屏输出。对于用户来说，这些过程是由HTTP自己完成的，用户只要用鼠标点击，等待信息显示就可以了。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案10 end -->
+            </div>
+            <!-- 问题10 end -->
+            <!-- 问题11 -->
+            <div class="col-md-6 col-xs-12 question">
+                11. http与https有什么关系?
+                <!-- 答案11 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    https是在http的基础上加了一个处理加密信息的模块。
+                    <br> https == http + ssl + tls
+                </div>
+                <!-- 答案11 end -->
+            </div>
+            <!-- 问题11 end -->
+            <!-- 问题12 -->
+            <div class="col-md-6 col-xs-12 question">
+                12. https的加密解密过程是怎么完成的？
+                <!-- 答案12 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    https的加密解密过程由其子层SSL(安全套接层)与TLS(传输层安全)组成的安全模块完成,过程如下：
+                    <br> (1) 客户端发起HTTPS请求；
+                    <br> (2) 服务端的配置：采用HTTPS协议的服务器必须要有一套数字证书，可以自己制作，也可以向组织申请。区别就是自己颁发的证书需要客户端验证通过，才可以继续访问，而使用受信任的公司申请的证书则不会弹出提示页面(startssl就是个不错的选择，有1年的免费服务);这套证书其实就是一对公钥和私钥。
+                    <br> (3) 传送证书：这个证书其实就是公钥，只是包含了很多信息，如证书的颁发机构，过期时间等等。服务器根据客户的信息确定是否需要生成新的主密钥，如需要则服务器在响应客户的信息时将包含生成主密钥所需的信息;
+                    <br> (4) 客户端解析证书：这步由TLS来完成解析，首先会验证公钥是否有效，比如颁发机构，过期时间等等，如果发现异常，则会弹出一个警告框，提示证书存在问题，用户可选择是否信任。如果证书没有问题或用户选择了信任该站，那么就生成一个随机值(主密钥)。
+                    <br> (5) 传送加密信息：用服务器的公开密钥(证书)对该随机值进行加密后，传给服务器；目的就是让服务端得到这个随机值，以后客户端和服务端的通信就可以通过这个随机值来进行加密解密了。
+                    <br>因为全程使用公钥、私钥进行非对称加密十分耗费性能，同时，到此步骤后，随机值做为密钥来说，可靠性已经非常高了，所以之后的连接中，双方可以通过这段随机值做为密钥进行不那么耗费性能的对称加密来完成加密、解密操作。
+                    <br> (6) 服务段解密信息:服务端用私钥解密后，得到了客户端传过来的随机值(密钥)，然后把内容通过该值进行对称加密。这里说的对称加密就是将信息和私钥通过某种算法混合在一起，这样除非知道私钥，不然无法获取内容，而正好客户端和服务端都知道这个私钥，所以只要加密算法够彪悍，私钥够复杂，数据就够安全。
+                    <br> (7) 传输加密后的信息：这部分信息是服务端用随机值(密钥)加密后的信息，可以在客户端被还原。
+                    <br> (8) 客户端解密信息：客户端用之前生成的随机值(密钥)解密服务段传过来的信息，于是获取了解密后的内容。整个过程第三方即使监听到了数据，也束手无策。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案12 end -->
+            </div>
+            <!-- 问题12 end -->
+            <!-- 占位元素 -->
+            <div class="col-md-12 col-xs-12 lastDiv"></div>
+            <!-- 占位元素 end -->
+        </div>
+        <!-- 包装.网络 end -->
+        <!-- 包装.html -->
+        <div class="container">
+            <!-- 问题1 -->
+            <div class="col-md-6 col-xs-12 question">
+                1. Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?
+                <!-- 答案1 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1） &lt;!DOCTYPE&gt; 声明位于文档中的最前面，处于 &lt;html&gt; 标签之前。告知浏览器的解析器，用什么文档类型 规范来解析这个文档。
+                    <br> （2）严格模式的排版和 JS 运作模式是 以该浏览器支持的最高标准运行。
+                    <br> （3）在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。
+                    <br> （4）DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。
+                </div>
+                <!-- 答案1 end -->
+            </div>
+            <!-- 问题1 end -->
+            <!-- 问题2 -->
+            <div class="col-md-6 col-xs-12 question">
+                2. 行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？
+                <!-- 答案2 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1）CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，比如div默认display属性值为“block”，成为“块级”元素；span默认display属性值为“inline”，是“行内”元素。
+                    <br> （2）行内元素有：a b span img input select strong（强调的语气） 块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
+                    <br> （3）知名的空元素： &lt;br&gt;&lt;hr&gt;&lt;img&gt;&lt;input&gt;&lt;link&gt;&lt;meta&gt;
+                    <br> 鲜为人知的是： &lt;area&gt;&lt;base&gt;&lt;col&gt;&lt;command&gt;&lt;embed&gt;&lt;keygen&gt;&lt;param&gt;&lt;source&gt;&lt;track&gt;&lt;wbr&gt;
+                </div>
+                <!-- 答案2 end -->
+            </div>
+            <!-- 问题2 end -->
+            <!-- 问题3 -->
+            <div class="col-md-6 col-xs-12 question">
+                3. link 和@import 的区别是？
+                <!-- 答案3 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    @import会降低页面加载速度，不建议使用！
+                    <br>（1）link属于XHTML标签，而@import是CSS提供的;
+                    <br> （2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+                    <br> （3）import只在IE5以上才能识别，而link是XHTML标签，无兼容问题;
+                    <br> （4）link方式的样式的权重 高于@import的权重.
+                </div>
+                <!-- 答案3 end -->
+            </div>
+            <!-- 问题3 end -->
+            <!-- 问题4 -->
+            <div class="col-md-6 col-xs-12 question">
+                4. 浏览器的内核分别是什么？
+                <!-- 答案4 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    IE浏览器的内核Trident;
+                    <br>Mozilla的Gecko;
+                    <br>Chrome的Blink（WebKit的分支）
+                    <br>Opera内核原为Presto，现为Blink。
+                </div>
+                <!-- 答案4 end -->
+            </div>
+            <!-- 问题4 end -->
+            <!-- 问题5 -->
+            <div class="col-md-6 col-xs-12 question">
+                5. 如何让老IE6、7、8支持HTML5新标签？
+                <!-- 答案5 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    IE8/IE7/IE6支持通过document.createElement方法产生的标签，可以利用这一特性让这些浏览器支持HTML5新标签，浏览器支持新标签后，还需要添加标签默认的样式：
+                    <br>当然最好的方式是直接使用成熟的框架、使用最多的是html5shim框架
+                    <br> &lt;!--[if lt IE 9]&gt;
+                    <br> &lt;script&gt; src="http://html5shim.googlecode.com/svn/trunk/html5.js"&lt;/script&gt;
+                    <br> &lt;![endif]--&gt;
+                </div>
+                <!-- 答案5 end -->
+            </div>
+            <!-- 问题5 end -->
+            <!-- 问题6 -->
+            <div class="col-md-6 col-xs-12 question">
+                6. iframe有那些缺点？
+                <!-- 答案6 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    iframe会阻塞主页面的Onload事件；
+                    <br> iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。
+                    <br> 使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript;
+                    <br> 动态给iframe添加src属性值，这样可以可以绕开以上两个问题。
+                </div>
+                <!-- 答案6 end -->
+            </div>
+            <!-- 问题6 end -->
+            <!-- 问题7 -->
+            <div class="col-md-6 col-xs-12 question">
+                7. html5与html相比，哪些方面做出了升级?
+                <!-- 答案7 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1） 设计目的是为了在移动设备上支持多媒体。新的语法特征被引进以支持这一点，如video、audio和canvas标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式。
+                    <br> （2）语义特性上的升级：HTML5赋予网页更好的意义和结构。更加丰富的标签将随着对RDFa的，微数据与微格式等方面的支持，构建对程序、对用户都更有价值的数据驱动的Web。
+                    <br> （3）增加了本地存储特性：基于HTML5开发的网页APP拥有更短的启动时间，更快的联网速度，这些全得益于HTML5 APP Cache，以及本地存储功能。
+                    <br> （4）设备兼容特性升级：HTML5提供了前所未有的数据与应用接入开放接口。使外部应用可以直接与浏览器内部的数据直接相连，例如视频影音可直接与microphones及摄像头相联。
+                    <br> （5）连接特性升级：更有效的连接工作效率，使得基于页面的实时聊天，更快速的网页游戏体验，更优化的在线交流得到了实现。HTML5拥有更有效的服务器推送技术，Server-Sent Event和WebSockets就是其中的两个特性，这两个特性能够帮助我们实现服务器将数据“推送”到客户端的功能。
+                    <br>  (6) 加入网页多媒体特性：支持网页端的Audio、Video等多媒体功能， 与网站自带的APPS，摄像头，影音功能相得益彰。
+                    <br>  (7) 三维、图形及特效特性：基于SVG、Canvas、WebGL及CSS3的3D功能。Flash给很多Web开发者带来了麻烦，要在网页上播放Flash需要一堆代码和插件。&lt;canvas&gt;标签使得开发者只要使用一个标签就能和用户产生UI交互。
+                    <br>  (8) 性能与集成特性：HTML5会通过XMLHttpRequest2等技术，解决以前的跨域等问题，帮助您的Web应用和网站在多样化的环境中更快速的工作。
+                    <br>  (9) CSS3特性：在不牺牲性能和语义结构的前提下，CSS3中提供了更多的风格和更强的效果。此外，较之以前的Web排版，Web的开放字体格式（WOFF）也提供了更高的灵活性和控制性。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案7 end -->
+            </div>
+            <!-- 问题7 end -->
+            <!-- 问题8 -->
+            <div class="col-md-6 col-xs-12 question">
+                8. HTML5 为什么只需要写 &lt;!DOCTYPE HTML&gt;？
+                <!-- 答案8 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    HTML就是由SGML所定义出来,专门使用在WWW上的标记语言，而HTML5不再基于SGML(标准通用标记语言)，因此不需要对DTD进行引用，但是需要DOCTYPE来规范浏览器的行为（告知浏览器的解析器，用什么文档类型 规范来解析这个文档）而HTML4.01基于SGML，所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。所以如果不完全不写，浏览器将不能识别出这是一份HTML类型的文档。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案8 end -->
+            </div>
+            <!-- 问题8 end -->
+            <!-- 占位元素 -->
+            <div class="col-md-12 col-xs-12 lastDiv"></div>
+            <!-- 占位元素 end -->
+        </div>
+        <!-- 包装.html end -->
+        <!-- 包装.css -->
+        <div class="container">
+            <!-- 问题1 -->
+            <div class="col-md-6 col-xs-12 question">
+                1. 介绍一下CSS的盒子模型。
+                <!-- 答案1 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    （1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;
+                    <br> （2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)。
+                </div>
+                <!-- 答案1 end -->
+            </div>
+            <!-- 问题1 end -->
+            <!-- 问题2 -->
+            <div class="col-md-6 col-xs-12 question">
+                2. CSS中的优先级算法如何计算？
+                <!-- 答案2 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    优先级有就近原则，同权重情况下样式定义最近者为准;
+                    <br> 载入样式以最后载入的定位为准;
+                    <br> 优先级为: !important > id > class > tag
+                </div>
+                <!-- 答案2 end -->
+            </div>
+            <!-- 问题2 end -->
+            <!-- 问题3 -->
+            <div class="col-md-6 col-xs-12 question">
+                3. 列出display的值，说明他们的作用。
+                <!-- 答案3 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    block 象块类型元素一样显示。
+                    <br> none 缺省值。象行内元素类型一样显示。
+                    <br> inline-block 象行内元素一样显示，但其内容象块类型元素一样显示。
+                    <br> list-item 象块类型元素一样显示，并添加样式列表标记。
+                </div>
+                <!-- 答案3 end -->
+            </div>
+            <!-- 问题3 end -->
+            <!-- 问题4 -->
+            <div class="col-md-6 col-xs-12 question">
+                4. 列出position的值，relative和absolute定位原点是？
+                <!-- 答案4 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    absolute 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+                    <br> fixed （老IE不支持）生成绝对定位的元素，相对于浏览器窗口进行定位。
+                    <br> relative生成相对定位的元素，相对于其正常位置进行定位。
+                    <br> static 默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right z-index 声明）
+                    <br> inherit 规定从父元素继承 position 属性的值。
+                </div>
+                <!-- 答案4 end -->
+            </div>
+            <!-- 问题4 end -->
+            <!-- 问题5 -->
+            <div class="col-md-6 col-xs-12 question">
+                5. css定义的权重。
+                <!-- 答案5 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    以下是权重的规则：
+                    <br>标签的权重为1，class的权重为10，id的权重为100，以下例子是演示各种定义的权重值：
+                    <br>/*权重为1*/ div{}
+                    <br> /*权重为10*/ .class1{}
+                    <br> /*权重为100*/ #id1{}
+                    <br> /*权重为100+1=101*/ #id1 div{}
+                    <br> /*权重为10+1=11*/ .class1 div{}
+                    <br> /*权重为10+10+1=21*/ .class1 .class2 div{}
+                    <br> 如果权重相同，则最后定义的样式会起作用，但是应该避免这种情况出现
+                </div>
+                <!-- 答案5 end -->
+            </div>
+            <!-- 问题5 end -->
+            <!-- 问题6 -->
+            <div class="col-md-6 col-xs-12 question">
+                6.  如果需要手动写动画，你认为最小时间间隔是多久，为什么？
+                <!-- 答案6 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms。
+                </div>
+                <!-- 答案6 end -->
+            </div>
+            <!-- 问题6 end -->
+            <!-- 问题7 -->
+            <div class="col-md-12 col-xs-12 question">
+                7.  display:inline-block 何时会显示间隙？
+                <!-- 答案7 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    移除空格;<br>使用margin负值;<br>使用font-size:0;<br>letter-spacing;<br>word-spacing
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案7 end -->
+            </div>
+            <!-- 问题7 end -->
+            <!-- 占位元素 -->
+            <div class="col-md-12 col-xs-12 lastDiv"></div>
+            <!-- 占位元素 end -->
+        </div>
+        <!-- 包装.css end -->
+        <!-- 包装.js -->
+        <div class="container">
+            <!-- 问题1 -->
+            <div class="col-md-6 col-xs-12 question">
+                1. ”==”和“===”有什么不同？
+                <!-- 答案1 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    前者会自动转换类型，后者不会。
+                </div>
+                <!-- 答案1 end -->
+            </div>
+            <!-- 问题1 end -->
+            <!-- 问题2 -->
+            <div class="col-md-6 col-xs-12 question">
+                2. JavaScript有哪些数据类型？
+                <!-- 答案2 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    1. Number 数字类型
+                    <br>2. String 字符串类型
+                    <br>3. Boolean 布尔类型
+                    <br>4. Function 函数
+                    <br>5. Object 对象
+                    <br>6. Null
+                    <br>7. Undefined 没有定义类型
+                </div>
+                <!-- 答案2 end -->
+            </div>
+            <!-- 问题2 end -->
+            <!-- 问题3 -->
+            <div class="col-md-6 col-xs-12 question">
+                3. 简述new命令的原理。
+                <!-- 答案3 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    (1) 创建一个空对象，作为将要返回的对象实例
+                    <br> (2) 将这个空对象的原型，指向构造函数的prototype属性
+                    <br> (3) 将这个空对象赋值给函数内部的this关键字
+                    <br> (4) 开始执行构造函数内部的代码
+                </div>
+                <!-- 答案3 end -->
+            </div>
+            <!-- 问题3 end -->
+            <!-- 问题4 -->
+            <div class="col-md-6 col-xs-12 question">
+                4. 闭包是什么？使用时有什么需要注意的地方？
+                <!-- 答案4 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    从目的上来理解：闭包是能够读取其他函数内部变量的函数。
+                    <br> 从语法使用上来理解：闭包是定义在一个函数内部的函数。
+                    <br> 闭包除了能读取其他函数内部变量外，还有一个功能：让这些变量的值始终保持在内存中，所以过多的使用会造成网页的性能问题，在IE中可能导致内存泄露。
+                    <br> 解决这个问题，可以在函数退出前将不使用的局部变量删除掉，即命名为null或""，等待回收机制做出相应的处理。
+                </div>
+                <!-- 答案4 end -->
+            </div>
+            <!-- 问题4 end -->
+            <!-- 问题5 -->
+            <div class="col-md-6 col-xs-12 question">
+                5. Javascript如何实现继承?
+                <!-- 答案5 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    第一步是在子类的构造函数中，调用父类的构造函数。
+                    <br>&nbsp;function Sub(){Father.call(this)};
+                    <br>第二步，是让子类的原型指向父类的原型，这样子类就可以继承父类原型。
+                    <br>&nbsp;Sub.prototype = Object.create(Father.prototype);
+                    <br>&nbsp;Sub.prototype.constructor = Sub;
+                </div>
+                <!-- 答案5 end -->
+            </div>
+            <!-- 问题5 end -->
+            <!-- 问题6 -->
+            <div class="col-md-6 col-xs-12 question">
+                6.  eval是什么？
+                <!-- 答案6 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    eval() 中有一个快速通道通向编译器，可以将string变成可执行的代码。
+                </div>
+                <!-- 答案6 end -->
+            </div>
+            <!-- 问题6 end -->
+            <!-- 问题7 -->
+            <div class="col-md-6 col-xs-12 question">
+                7.  null，undefined的区别？
+                <!-- 答案7 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    null表示"没有对象"，即该处不应该有值;典型用法：
+                    <br>（1） 作为函数的参数，表示该函数的参数不是对象;
+                    <br>（2） 作为对象原型链的终点。
+                    <br>undefined表示"缺少值"，就是此处应该有一个值，但是还没有定义。典型用法是：
+                    <br>（1）变量被声明了，但没有赋值时，就等于undefined。
+                    <br>（2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。
+                    <br>（3）对象没有赋值的属性，该属性的值为undefined。
+                    <br>（4）函数没有返回值时，默认返回undefined。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案7 end -->
+            </div>
+            <!-- 问题7 end -->
+            <!-- 问题8 -->
+            <div class="col-md-6 col-xs-12 question">
+                8.  jquery.extend 与 jquery.fn.extend的区别?
+                <!-- 答案8 -->
+                <div class="col-md-11 col-xs-11 answer">
+                    官方描述：extend是将两个或更多对象的内容合并到第一个对象。
+                    <br> jQuery.extend(object):扩展jQuery类，添加object中特有的属性和方法；
+                    <br> jQuery.fn.extend(object):对jQuery.prototype进得扩展，就是为jQuery类添加“成员函数”。jQuery类的实例可以使用这个“成员函数”。
+                    <!-- 占位元素 -->
+                    <div class="col-md-12 col-xs-12 lastDiv"></div>
+                    <!-- 占位元素 end -->
+                </div>
+                <!-- 答案8 end -->
+            </div>
+            <!-- 问题8 end -->
+            <!-- 占位元素 -->
+            <div class="col-md-12 col-xs-12 lastDiv"></div>
+            <!-- 占位元素 end -->
+        </div>
+        <!-- 包装.js end -->
+    </div>
+    <!-- 背景 end -->
+    <!-- script -->
+    <script src="./js/jquery-3.1.0.js"></script>
+    <script src="./js/QuestionForInterview.js"></script>
+</body>
+
+</html>

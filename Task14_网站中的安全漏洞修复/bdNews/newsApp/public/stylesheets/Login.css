@@ -1,0 +1,169 @@
+/*初始化*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*容器*/
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    line-height: 600px;
+    background: #2980b9;
+    text-align: center;
+    position: fixed;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2980b9, #2c3e50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2980b9, #2c3e50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/*登陆框的容器*/
+
+.wrapperForLogin {
+    float: left;
+    height: 50%;
+    width: 100%;
+    bottom: -150px;
+    position: relative;
+    display: inline-block;
+}
+
+
+/*登陆框*/
+
+.loginBox {
+    width: 260px;
+    height: 275px;
+    margin: 0 auto;
+    box-shadow: 1px 1px rgba(46, 57, 64, 0.8), 2px 2px rgba(46, 57, 64, 0.8);
+    -webkit-box-shadow: 1px 1px rgba(46, 57, 64, 0.3), 2px 2px rgba(46, 57, 64, 0.3), 3px 3px rgba(46, 57, 64, 0.3), 4px 4px rgba(46, 57, 64, 0.3), 5px 5px rgba(46, 57, 64, 0.3);
+    clear: both;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    background: #232B30;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3D4850), color-stop(4%, #313d45), color-stop(100%, #232B30));
+}
+
+
+/*标题栏包装*/
+
+.titleWra {
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 60px;
+    width: 260px;
+    top: 10px;
+}
+
+
+/*标题栏*/
+
+.titleDiv {
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    background-color: black;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    -webkit-box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 2px 2px 1px rgba(255, 255, 255, 0.1);
+}
+
+
+/*h3属性*/
+
+.titleSlogan {
+    color: #E6E6E6;
+    display: inline-block;
+    width: 240px;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(123, 123, 123, 1), 1px 1px 2px rgba(123, 123, 123, .8);
+}
+
+
+/*输入框包装*/
+
+.inputWra {
+    position: relative;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 260px;
+    margin-top: 12px;
+    margin-bottom: 2px;
+}
+
+
+/*重写输入框属性*/
+
+.input-group {
+    margin: 10px auto;
+    width: 240px;
+}
+
+
+/*按钮包装*/
+
+.btnWra {
+    width: 240px;
+    height: 90px;
+    line-height: 90px;
+    margin: 0 auto;
+}
+
+
+/*按钮属性*/
+
+.submitBtn {
+    width: 240px;
+    height: 90px;
+    line-height: 81px;
+    background-color: #ffb515;
+    border-radius: 9px;
+    outline: none;
+    -webkit-animation: animation 3s ease-out infinite 0.75s;
+    border-color: #ffb999;
+}
+
+@-webkit-keyframes animation {
+    0% {
+        background-color: #fc9200;
+        -webkit-box-shadow: 0 0 9px #333;
+    }
+    50% {
+        background-color: #ffb515;
+        -webkit-box-shadow: 0 0 18px #ffb515;
+    }
+    100% {
+        background-color: #fc9200;
+        -webkit-box-shadow: 0 0 9px #333;
+    }
+}
+
+.submitBtn:active .loginFont {
+    text-shadow: 0px 0px 39px white;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+
+/*登录字体*/
+
+.loginFont {
+    display: block;
+    color: white;
+    font-size: 36px;
+    font-family: Verdana, 'Microsoft Yahei', sans-serif;
+}
