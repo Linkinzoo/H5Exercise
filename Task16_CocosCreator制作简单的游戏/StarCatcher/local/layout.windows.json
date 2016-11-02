@@ -1,0 +1,94 @@
+{
+  "version": "1.1.0",
+  "windows": {
+    "main": {
+      "x": 0,
+      "y": 23,
+      "width": 1280,
+      "height": 773,
+      "layout": {
+        "children": [
+          {
+            "children": [
+              {
+                "active": 0,
+                "children": [
+                  "hierarchy"
+                ],
+                "height": 340,
+                "type": "panel",
+                "width": 200
+              },
+              {
+                "active": 0,
+                "children": [
+                  "assets"
+                ],
+                "height": 339,
+                "type": "panel",
+                "width": 200
+              }
+            ],
+            "height": 682,
+            "type": "dock-v",
+            "width": 200
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "active": 0,
+                    "children": [
+                      "scene"
+                    ],
+                    "height": 340,
+                    "type": "panel",
+                    "width": 464
+                  },
+                  {
+                    "active": 0,
+                    "children": [
+                      "node-library"
+                    ],
+                    "height": 340,
+                    "type": "panel",
+                    "width": 276
+                  }
+                ],
+                "height": 340,
+                "type": "dock-h",
+                "width": 743
+              },
+              {
+                "active": 0,
+                "children": [
+                  "console",
+                  "timeline"
+                ],
+                "height": 339,
+                "type": "panel",
+                "width": 743
+              }
+            ],
+            "height": 682,
+            "type": "dock-v",
+            "width": 743
+          },
+          {
+            "active": 0,
+            "children": [
+              "inspector",
+              "builder"
+            ],
+            "height": 682,
+            "type": "panel",
+            "width": 325
+          }
+        ],
+        "snapshot": true,
+        "type": "dock-h"
+      }
+    }
+  }
+}

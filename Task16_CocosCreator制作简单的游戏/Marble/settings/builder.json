@@ -1,0 +1,17 @@
+{
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.Marble",
+  "startScene": "51381c1c-d436-40be-98b4-721702fb6e7a",
+  "title": "Marble",
+  "webOrientation": "auto"
+}

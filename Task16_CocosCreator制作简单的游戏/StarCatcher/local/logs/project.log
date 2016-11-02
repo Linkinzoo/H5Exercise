@@ -1,0 +1,54 @@
+2016-11-01T03:17:32.693Z - normal: Load ~/.CocosCreator/settings.json
+2016-11-01T03:17:32.704Z - normal: checking language setting...
+2016-11-01T03:17:32.704Z - normal: Language: zh
+2016-11-01T03:17:32.731Z - success: protocol editor-framework registered
+2016-11-01T03:17:32.731Z - success: protocol app registered
+2016-11-01T03:17:32.731Z - success: protocol packages registered
+2016-11-01T03:17:32.731Z - success: protocol theme registered
+2016-11-01T03:17:32.732Z - success: protocol unpack registerred
+2016-11-01T03:17:32.882Z - normal: connected!
+2016-11-01T03:17:32.885Z - normal: Check project /Users/LinK/Desktop/2048
+2016-11-01T03:17:32.886Z - normal: Initializing Cocos Creator Editor
+2016-11-01T03:17:33.288Z - normal: Initializing Cocos2d
+2016-11-01T03:17:33.429Z - normal: Initializing Asset Database
+2016-11-01T03:17:33.446Z - success: protocol uuid registerred
+2016-11-01T03:17:33.446Z - success: protocol db registerred
+2016-11-01T03:17:33.446Z - success: protocol thumbnail registerred
+2016-11-01T03:17:33.446Z - normal: Loading editor/builtin packages
+2016-11-01T03:17:33.556Z - success: assets loaded
+2016-11-01T03:17:33.559Z - success: builder loaded
+2016-11-01T03:17:33.563Z - success: hierarchy loaded
+2016-11-01T03:17:33.567Z - success: inspector loaded
+2016-11-01T03:17:33.569Z - success: keystore loaded
+2016-11-01T03:17:33.572Z - success: node-library loaded
+2016-11-01T03:17:33.575Z - success: preferences loaded
+2016-11-01T03:17:33.590Z - success: project-importer loaded
+2016-11-01T03:17:33.592Z - success: project-settings loaded
+2016-11-01T03:17:33.596Z - success: ui-kit loaded
+2016-11-01T03:17:33.600Z - success: ui-grid loaded
+2016-11-01T03:17:33.605Z - success: scene loaded
+2016-11-01T03:17:33.606Z - success: sprite-editor loaded
+2016-11-01T03:17:33.611Z - success: timeline loaded
+2016-11-01T03:17:33.611Z - normal: Loading builtin packages
+2016-11-01T03:17:33.615Z - success: asset-db-debugger loaded
+2016-11-01T03:17:33.618Z - success: cocos-package loaded
+2016-11-01T03:17:33.620Z - success: code-editor loaded
+2016-11-01T03:17:33.621Z - success: color-picker loaded
+2016-11-01T03:17:33.627Z - success: console loaded
+2016-11-01T03:17:33.632Z - success: package-manager loaded
+2016-11-01T03:17:33.638Z - success: tester loaded
+2016-11-01T03:17:33.640Z - success: ui-kit-preview-extra loaded
+2016-11-01T03:17:33.643Z - success: ui-kit-preview loaded
+2016-11-01T03:17:33.646Z - success: ui-tree loaded
+2016-11-01T03:17:33.675Z - normal: Initializing project /Users/LinK/Desktop/2048
+2016-11-01T03:17:33.678Z - normal: Loading packages
+2016-11-01T03:17:33.694Z - normal: Watching packages
+2016-11-01T03:17:33.706Z - normal: Run Application
+2016-11-01T03:17:34.226Z - success: preview server running at http://localhost:7457
+2016-11-01T03:17:37.975Z - normal: 1.3.0
+2016-11-01T16:05:21.027Z - warn: [db-task][sync-changes] Backup unused meta file: db://assets/mikado_outline_shadow.fnt.meta
+2016-11-01T16:50:26.811Z - error: Window "main" unresponsive: [object Object]
+    at BrowserWindow.<anonymous> (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/main/window.js:1:3069)
+    at emitOne (events.js:96:13)
+    at BrowserWindow.emit (events.js:188:7)
+2016-11-01T16:50:28.996Z - info: shutdown preview server
